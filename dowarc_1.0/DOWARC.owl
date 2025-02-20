@@ -586,7 +586,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#address">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioning"/>
-        <rdfs:comment>&quot;Indicates that the enclosed HTML provides contact information for a person or people, or for an organization.&quot; (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address)</rdfs:comment>
+        <rdfs:comment>Indicates that the enclosed HTML provides contact information for a person or people, or for an organization. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address)</rdfs:comment>
         <rdfs:label>address</rdfs:label>
     </owl:NamedIndividual>
     
@@ -604,7 +604,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#article">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioning"/>
-        <rdfs:comment>The &lt;article&gt; HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)</rdfs:comment>
+        <rdfs:comment>The article HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)</rdfs:comment>
         <rdfs:label>article</rdfs:label>
     </owl:NamedIndividual>
     
@@ -614,7 +614,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#aside">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioning"/>
-        <rdfs:comment>The &lt;aside&gt; HTML element represents a portion of a document whose content is only indirectly related to the document&apos;s main content. Asides are frequently presented as sidebars or call-out boxes.</rdfs:comment>
+        <rdfs:comment>The aside HTML element represents a portion of a document whose content is only indirectly related to the document&apos;s main content. Asides are frequently presented as sidebars or call-out boxes.</rdfs:comment>
         <rdfs:label>aside</rdfs:label>
     </owl:NamedIndividual>
     
