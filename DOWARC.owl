@@ -309,12 +309,12 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#InWARCDO -->
+    <!-- https://github.com/DOWARC/dowarc#InWARCrec -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InWARCDO">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InWARCrec">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:comment>Any resource/object contained in a WARC file with a payload.</rdfs:comment>
-        <rdfs:label>InWARCDO</rdfs:label>
+        <rdfs:comment>A WARC record contained in a WARC file with a payload.</rdfs:comment>
+        <rdfs:label>InWARCrec</rdfs:label>
     </owl:Class>
     
 
@@ -323,7 +323,8 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InWARCdoUrl">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#InWARCDO"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#InWARCrec"/>
     </owl:Class>
     
 
@@ -400,15 +401,38 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCDO -->
+    <!-- https://github.com/DOWARC/dowarc#WARCfile -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCDO">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCfile">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>A WARC file. A WARC file can contain one or more digital object with multiple media types (i.e., MIME).</rdfs:comment>
-        <rdfs:label>WARCdo</rdfs:label>
+        <rdfs:label>WARCfile</rdfs:label>
     </owl:Class>
     
+
+
+    <!-- https://github.com/DOWARC/dowarc#WARCrec -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrec">
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>A WARC record. A WARC record can contain one or more digital object with multiple media types (i.e., MIME).</rdfs:comment>
+        <rdfs:label>WARCrec</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- https://github.com/DOWARC/dowarc#WARChive -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARChive">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>The archived representation of a web page or a website, deemed as 'complete'. A WARChive can be a collection of WARC files or a collection of WARC records aggregated in different WARC files.</rdfs:comment>
+        <rdfs:label>WARChive</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCagent -->
@@ -424,7 +448,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcoll">
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
-        <rdfs:comment>A collection (i.e., an aggregate) of WARCdos.</rdfs:comment>
+        <rdfs:comment>A collection (i.e., an aggregate) of WARCfiles.</rdfs:comment>
         <rdfs:label>WARCcoll</rdfs:label>
     </owl:Class>
     
@@ -467,7 +491,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCgraph">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>The Semantic Graph that represents the relationship between InWARCdos and the WARCdo, as well as the InWARCDOs that are aggregated in the WARCdo. A WARCgraph could have a subgraph representing only the relationships between InWARCdos.</rdfs:comment>
+        <rdfs:comment>The Semantic Graph that represents the relationship between Ins and the WARCfile, as well as the Ins that are aggregated in the WARCfile. A WARCgraph could have a subgraph representing only the relationships between Ins.</rdfs:comment>
         <rdfs:label>WARCgraph</rdfs:label>
     </owl:Class>
     
