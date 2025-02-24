@@ -298,6 +298,14 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Forms">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
     </owl:Class>
+
+
+
+    <!-- https://github.com/DOWARC/dowarc#Identifier -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Identifier">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
     
 
 
