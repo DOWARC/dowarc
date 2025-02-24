@@ -32,6 +32,120 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/pav/authoredBy -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/authoredBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBorganization"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBperson"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/contributedBy -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/contributedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBorganization"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBperson"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/createdAt -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/createdAt">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/createdBy -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/createdBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBorganization"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBperson"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/createdWith -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/createdWith">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBhardwareAgent"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBsoftwareAgent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/curatedBy -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/curatedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCagent"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBagent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/derivedFrom -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/derivedFrom">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/aggregates -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/aggregates">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCdoUrl"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrec"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/describes -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/describes">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
