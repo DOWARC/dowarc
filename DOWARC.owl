@@ -324,15 +324,23 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
         <rdfs:comment>A WARC record contained in a WARC file with a payload.</rdfs:comment>
         <rdfs:label>InWARCrec</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- https://github.com/DOWARC/dowarc#InWARCrecDo -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InWARCrecDo">
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+    </owl:Class>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#InWARCdoUrl -->
+    <!-- https://github.com/DOWARC/dowarc#InWARCurl -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InWARCdoUrl">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InWARCurl">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#InWARCrec"/>
+        <rdfs:label>InWARCurl</rdfs:label>
     </owl:Class>
     
 
