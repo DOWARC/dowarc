@@ -86,7 +86,6 @@
 
     
 
-
     <!-- http://purl.org/dc/terms/format -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/format">
@@ -239,12 +238,8 @@ Details about who performed the derivation (e.g. who did the refining or modific
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/hasEarlierVersion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#alternateOf"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
         <rdfs:comment>This versioned resource has an earlier version.
@@ -446,6 +441,62 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/similarTo">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#alternateOf -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#alternateOf">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#generated">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrec"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrec"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
     </rdf:Description>
     
 
