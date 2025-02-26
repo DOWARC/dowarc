@@ -910,7 +910,6 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#WARChive -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARChive">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>The archived representation of a web page or a website, deemed as 'complete'. A WARChive can be a collection of WARC files or a collection of WARC records aggregated in different WARC files.</rdfs:comment>
