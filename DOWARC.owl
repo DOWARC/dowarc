@@ -568,15 +568,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     
 
 
-    <!-- http://purl.org/vocab/frbr/core#Endeavour -->
-
-    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Endeavour">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#Endeavour"/>
-    </rdf:Description>
-    
-
-
     <!-- http://www.loc.gov/premis/rdf/v3/Agent -->
 
     <owl:Class rdf:about="http://www.loc.gov/premis/rdf/v3/Agent">
