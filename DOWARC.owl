@@ -16,7 +16,6 @@
     <owl:Ontology rdf:about="https://github.com/DOWARC/dowarc">
         <owl:versionIRI rdf:resource="https://github.com/DOWARC/dowarc_1.0"/>
         <owl:imports rdf:resource="http://purl.org/pav/2.3"/>
-        <owl:imports rdf:resource="http://purl.org/spar/fabio/2019-02-19"/>
         <owl:imports rdf:resource="https://id.loc.gov/ontologies/premis-3-0-0"/>
         <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/master/ore-owl.owl"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</dc:date>
