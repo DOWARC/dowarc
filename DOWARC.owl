@@ -978,7 +978,15 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCcoll -->
+    <!-- https://github.com/DOWARC/dowarc#WARCcdxFile -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxFile">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>    
+
+
+
+<!-- https://github.com/DOWARC/dowarc#WARCcoll -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcoll">
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
