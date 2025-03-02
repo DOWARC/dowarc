@@ -327,7 +327,6 @@ Note that it might be confusing to indicate pav:previousVersion from a resource 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/retrievedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCsoftwareAgent"/>
         <rdfs:comment>An entity responsible for retrieving the data from an external source.
 
@@ -346,7 +345,6 @@ See pav:importedFrom for a discussion of import vs. retrieve vs. derived.</rdfs:
     <owl:ObjectProperty rdf:about="http://purl.org/pav/retrievedFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:comment>The URI where a resource has been retrieved from.
 
 The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription.
@@ -389,7 +387,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
 
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/isAggregatedBy">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
@@ -416,7 +413,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     <!-- http://www.openarchives.org/ore/terms/proxyFor -->
 
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/proxyFor">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </rdf:Description>
     
@@ -425,7 +421,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     <!-- http://www.openarchives.org/ore/terms/proxyIn -->
 
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/proxyIn">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
@@ -472,7 +467,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Identifier"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
@@ -486,7 +480,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
@@ -501,7 +494,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     <owl:ObjectProperty rdf:about="https://github.com/DOWARC/dowarc#identifiedBy">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
@@ -521,7 +513,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
         <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/Identifier"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
@@ -536,7 +527,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
 
     <owl:ObjectProperty rdf:about="https://github.com/DOWARC/dowarc#locatedAt">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
     </owl:ObjectProperty>
     
 
@@ -830,16 +820,6 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordElement">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:comment>A resource aggregated in a WARC record.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/DOWARC/dowarc#InWARCurl -->
-
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InWARCurl">
-        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:label>InWARCurl</rdfs:label>
     </owl:Class>
     
 
