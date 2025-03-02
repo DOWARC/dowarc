@@ -69,8 +69,8 @@
     <!-- http://purl.org/pav/createdAt -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/pav/createdAt">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:AnnotationProperty>
     
 
@@ -89,7 +89,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/format">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:ObjectProperty>
     
 
@@ -98,9 +98,9 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/language">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
@@ -109,11 +109,11 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/license">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
@@ -121,11 +121,11 @@
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/publisher">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
@@ -133,11 +133,11 @@
     <!-- http://purl.org/dc/terms/rights -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/rights">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
@@ -145,8 +145,8 @@
     <!-- http://purl.org/pav/authoredBy -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/authoredBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBorganization"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBperson"/>
     </owl:ObjectProperty>
@@ -156,8 +156,8 @@
     <!-- http://purl.org/pav/contributedBy -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/contributedBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBorganization"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBperson"/>
     </owl:ObjectProperty>
@@ -167,8 +167,8 @@
     <!-- http://purl.org/pav/createdBy -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/createdBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBorganization"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBperson"/>
     </owl:ObjectProperty>
@@ -178,8 +178,8 @@
     <!-- http://purl.org/pav/createdWith -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/createdWith">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBhardwareAgent"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBsoftwareAgent"/>
     </owl:ObjectProperty>
@@ -190,8 +190,8 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/curatedBy">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCagent"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBagent"/>
     </owl:ObjectProperty>
@@ -202,11 +202,11 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/derivedFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
         <rdfs:comment>Derived from a different resource.
 
 Derivation conserns itself with derived knowledge. If this resource has the same content as the other resource, but has simply been transcribed to fit a different model (like XML -&gt; RDF or SQL -&gt; CVS), use pav:importedFrom. If a resource was simply retrieved, use pav:retrievedFrom. If the content has however been further refined or modified, pav:derivedFrom should be used.
@@ -222,13 +222,13 @@ Details about who performed the derivation (e.g. who did the refining or modific
     <owl:ObjectProperty rdf:about="http://purl.org/pav/hasCurrentVersion">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/pav/hasVersion"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
@@ -237,10 +237,10 @@ Details about who performed the derivation (e.g. who did the refining or modific
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/hasEarlierVersion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#alternateOf"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:comment>This versioned resource has an earlier version.
 
 Any earlier version of this resource can be indicated with pav:hasEarlierVersion, e.g.:
@@ -265,13 +265,13 @@ To indicate that this version is a snapshot of a more general, non-versioned res
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/hasVersion">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
@@ -301,13 +301,13 @@ To indicate which agent(s) performed the import, use pav:importedBy. Use pav:imp
     <owl:ObjectProperty rdf:about="http://purl.org/pav/previousVersion">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/pav/hasEarlierVersion"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:comment>The previous version of a resource in a lineage. For instance a news article updated to correct factual information would point to the previous version of the article with pav:previousVersion. If however the content has significantly changed so that the two resources no longer share lineage (say a new article that talks about the same facts), they can instead be related using pav:derivedFrom.
 
 This property is normally used in a functional way, although PAV does not formally restrict this. Earlier versions which are not direct ancestors of this resource may instead be provided using the superproperty pav:hasEarlierVersion.
@@ -365,13 +365,13 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/aggregates">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCdoUrl"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrec"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:ObjectProperty>
     
 
@@ -380,8 +380,8 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
 
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/describes">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
@@ -392,12 +392,12 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrec"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
@@ -407,9 +407,9 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/isDescribedBy">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
     </owl:ObjectProperty>
     
@@ -419,7 +419,7 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
 
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/proxyFor">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </rdf:Description>
     
 
@@ -429,8 +429,8 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/proxyIn">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
     </rdf:Description>
     
 
@@ -438,8 +438,8 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     <!-- http://www.openarchives.org/ore/terms/similarTo -->
 
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/similarTo">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </rdf:Description>
     
 
@@ -448,9 +448,9 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#alternateOf">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </rdf:Description>
     
 
@@ -459,11 +459,11 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#generated">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
     </rdf:Description>
     
 
@@ -476,11 +476,11 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrec"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
     </rdf:Description>
     
 
@@ -493,8 +493,8 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
     </rdf:Description>
     
@@ -508,13 +508,13 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCrecDo"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCderv"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Identifier"/>
     </owl:ObjectProperty>
     
@@ -530,10 +530,10 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARChive"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrec"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebDO"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
@@ -541,7 +541,7 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
     <!-- https://github.com/DOWARC/dowarc#locatedAt -->
 
     <owl:ObjectProperty rdf:about="https://github.com/DOWARC/dowarc#locatedAt">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCurl"/>
     </owl:ObjectProperty>
     
@@ -752,18 +752,22 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#ARCdo -->
+    <!-- https://github.com/DOWARC/dowarc#PreservationObject -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#ARCdo">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#PreservationObject">
         <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Object"/>
+        <rdfs:comment>Web archiving data object subject to digital preservation. Subclass of premis:Object.</rdfs:comment>
+        <rdfs:label>PreservationObject</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#ARCevent -->
+    <!-- https://github.com/DOWARC/dowarc#PreservationEvent -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#ARCevent">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#PreservationEvent">
         <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Event"/>
+        <rdfs:comment>An action undertaken, or an activity occurring, within or outside the repository that influence its capability to preserve web archiving data objects. Subclass of premis:Event</rdfs:comment>
+        <rdfs:label>PreservationEvent</rdfs:label>
     </owl:Class>
     
 
@@ -771,7 +775,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#ContentSectioning -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#ContentSectioning">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:comment>Content sectioning elements organize the HTML document content into logical pieces. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning)</rdfs:comment>
         <rdfs:label>ContentSectioning</rdfs:label>
     </owl:Class>
@@ -781,7 +785,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#DemarcatingEdits -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#DemarcatingEdits">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -789,7 +793,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#DocumentMetadata -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#DocumentMetadata">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -797,7 +801,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#EmbeddedContent -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#EmbeddedContent">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -805,7 +809,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#Forms -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Forms">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
 
 
@@ -814,6 +818,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Identifier">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>An unambiguous reference (character string or numeric) to a data object.</rdfs:comment>
     </owl:Class>
     
 
@@ -821,7 +826,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#ImageAndMultimedia -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#ImageAndMultimedia">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -857,7 +862,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#InlineTextSemantics -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InlineTextSemantics">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -865,7 +870,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#InteractiveElements -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InteractiveElements">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -873,7 +878,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#MainRoot -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#MainRoot">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -881,7 +886,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -889,7 +894,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#SVGAndMathML -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#SVGAndMathML">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -897,7 +902,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#Scripting -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Scripting">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -905,7 +910,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#SectioningRoot -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#SectioningRoot">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -913,7 +918,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#TableContent -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#TableContent">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -921,7 +926,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#TextContent -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#TextContent">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
@@ -931,30 +936,30 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCfile">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>A WARC file. A WARC file can contain one or more digital object with multiple media types (i.e., MIME).</rdfs:comment>
+        <rdfs:comment>A container file that aggregates a sequence of structured information chunks (WARC records), storing data and metadata. WARC files are the output of web crawling automated activities. A WARC file can contain one or more digital object with multiple media types (i.e., MIME). Subclass of ore:Aggregation.</rdfs:comment>
         <rdfs:label>WARCfile</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCrec -->
+    <!-- https://github.com/DOWARC/dowarc#WARCrecord -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrec">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecord">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>A WARC record. A WARC record can contain one or more digital object with multiple media types (i.e., MIME).</rdfs:comment>
-        <rdfs:label>WARCrec</rdfs:label>
+        <rdfs:comment>A WARC record is a component of a WARC file. A WARC record includes data retrieved from a source in the live Wide World Web, together with synthetic (meta)data providing information about the retrieved content. A WARC record has a header and a content block carrying the payload for the live web data object that was harvested over the HTTP. A WARC record is both an aggregated resource (component of a WARC file) and an aggregation (it includes sub-elements of its own).</rdfs:comment>
+        <rdfs:label>WARCrecord</rdfs:label>
     </owl:Class>
 
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARChive -->
+    <!-- https://github.com/DOWARC/dowarc#WARCarchive -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARChive">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCarchive">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>The archived representation of a web page or a website, deemed as 'complete'. A WARChive can be a collection of WARC files or a collection of WARC records aggregated in different WARC files.</rdfs:comment>
-        <rdfs:label>WARChive</rdfs:label>
+        <rdfs:comment>A collection of WARC files aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a delimited live web object (e.g., a web site, a web page). Subclass of ore:Aggregation.</rdfs:comment>
+        <rdfs:label>WARCarchive</rdfs:label>
     </owl:Class>
 
 
@@ -994,10 +999,12 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCderv -->
+    <!-- https://github.com/DOWARC/dowarc#Derivative -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCderv">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Derivative">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>An object created as a derivative of a web archiving data entity. During the derivation process, modification of the information contained in the original object is allowed; however, some of the original data must be maintained, at a representational and/or content level. The class must be used only when describing web archiving data object. Subclass of prov-o:Entity.</rdfs:comment>
+        <rdfs:label>Derivative</rdfs:label>
     </owl:Class>
     
 
@@ -1023,7 +1030,7 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCgraph">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>The Semantic Graph that represents the relationship between Ins and the WARCfile, as well as the Ins that are aggregated in the WARCfile. A WARCgraph could have a subgraph representing only the relationships between Ins.</rdfs:comment>
+        <rdfs:comment>An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCarchive collection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph (hasPart/isPartOf).</rdfs:comment>
         <rdfs:label>WARCgraph</rdfs:label>
     </owl:Class>
     
@@ -1106,12 +1113,12 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WEBelement -->
+    <!-- https://github.com/DOWARC/dowarc#WebElement -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WEBelement">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebElement">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:comment>An HTML element created using HTML tags.</rdfs:comment>
-        <rdfs:label>WEBelement</rdfs:label>
+        <rdfs:comment>A data object embedded in a HTML document, either directly or via an actionable link. Examples of web element are texts, images, videos, hyperlinks, executable applications.</rdfs:comment>
+        <rdfs:label>WebElement</rdfs:label>
     </owl:Class>
     
 
@@ -1155,18 +1162,18 @@ This is a more &apos;solid&apos; class than Group, which allows for more ad-hoc 
     <!-- https://github.com/DOWARC/dowarc#WebComponents -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebComponents">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WEBelement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:Class>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WebDO -->
+    <!-- https://github.com/DOWARC/dowarc#WebResource -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebDO">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebResource">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>A digital object that is represented as a website or a webpage.</rdfs:comment>
-        <rdfs:label>WEBdo</rdfs:label>
+        <rdfs:comment>A resource that can be accessed via an internet connection and via a web broswer, at a specific location in the Workd Wide Web represented by a URI or URL. A live website is a Web resource, a live web page is a Web resource. A web page is an hypertext document written in HTML and can include elements such as text, images, videos, hyperlinks to other web pages and web sites, as well as stylesheets and script files. A website is made of one or more web pages. All web resources are highly dynamic data objects, subject to changes; they show low levels of resilience and permanence. Web archiving activities target web resources to reduce volatility of web resources and support long term access to them. Subclass of Aggregation.</rdfs:comment>
+        <rdfs:label>WebResource</rdfs:label>
     </owl:Class>
     
 
