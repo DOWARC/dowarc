@@ -163,18 +163,7 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/createdWith -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/createdWith">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBhardwareAgent"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WEBsoftwareAgent"/>
-    </owl:ObjectProperty>
-    
+     
 
 
     <!-- http://purl.org/pav/curatedBy -->
@@ -1089,10 +1078,11 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
 
 
-    <!-- https://github.com/DOWARC/dowarc#WebComponents -->
+    <!-- https://github.com/DOWARC/dowarc#WebComponentsElement -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebComponents">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebComponentsElement">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:label>WebComponentsElement</rdfs:label>
     </owl:Class>
     
 
