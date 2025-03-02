@@ -19,7 +19,7 @@
         <owl:imports rdf:resource="https://id.loc.gov/ontologies/premis-3-0-0"/>
         <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/master/ore-owl.owl"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</dc:date>
-        <dc:title>DOWARC: a domain ontology for web archiving and preservation</dc:title>
+        <dc:title>DOWARC: a domain ontology for web archiving and web preservation</dc:title>
         <terms:creator>Pallotto Strickland, Manuela</terms:creator>
         <terms:creator>Storrar, Tom</terms:creator>
         <terms:license>Apache License 2.0</terms:license>
