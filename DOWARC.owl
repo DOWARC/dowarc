@@ -83,12 +83,6 @@
     
 
 
-    <!-- http://purl.org/pav/createdAt -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/pav/createdAt"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -96,64 +90,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
-
-
-    <!-- http://purl.org/dc/terms/format -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/format">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/language -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/language">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/publisher -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/publisher">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/rights -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/rights">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
-    </owl:ObjectProperty>
     
 
 
@@ -162,6 +98,8 @@
     <owl:ObjectProperty rdf:about="http://purl.org/pav/authoredBy">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:ObjectProperty>
     
 
@@ -172,16 +110,7 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/createdAt -->
-
-    <rdf:Description rdf:about="http://purl.org/pav/createdAt">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
-    </rdf:Description>
-    
+      
 
 
     <!-- http://purl.org/pav/createdBy -->
@@ -189,6 +118,8 @@
     <owl:ObjectProperty rdf:about="http://purl.org/pav/createdBy">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:ObjectProperty>
     
 
@@ -198,8 +129,9 @@
     <owl:ObjectProperty rdf:about="http://purl.org/pav/curatedBy">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebarchivingAgent"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:ObjectProperty>
     
 
@@ -255,10 +187,10 @@ To indicate that this version is a snapshot of a more general, non-versioned res
     <!-- http://purl.org/pav/hasVersion -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/hasVersion">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
 
