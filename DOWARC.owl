@@ -145,11 +145,7 @@
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
-        <rdfs:comment>Derived from a different resource.
-
-Derivation conserns itself with derived knowledge. If this resource has the same content as the other resource, but has simply been transcribed to fit a different model (like XML -&gt; RDF or SQL -&gt; CVS), use pav:importedFrom. If a resource was simply retrieved, use pav:retrievedFrom. If the content has however been further refined or modified, pav:derivedFrom should be used.
-
-Details about who performed the derivation (e.g. who did the refining or modifications) may be indicated with pav:contributedBy and its subproperties.</rdfs:comment>
+        <rdfs:comment>Derived from a different resource. Derivation conserns itself with derived knowledge. If this resource has the same content as the other resource, but has simply been transcribed to fit a different model (like XML -&gt; RDF or SQL -&gt; CVS), use pav:importedFrom. If a resource was simply retrieved, use pav:retrievedFrom. If the content has however been further refined or modified, pav:derivedFrom should be used. Details about who performed the derivation (e.g. who did the refining or modifications) may be indicated with pav:contributedBy and its subproperties.</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/pav/</rdfs:isDefinedBy>
     </owl:ObjectProperty>
     
@@ -164,21 +160,7 @@ Details about who performed the derivation (e.g. who did the refining or modific
     <!-- http://purl.org/pav/hasEarlierVersion -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/hasEarlierVersion">
-        <rdfs:comment>This versioned resource has an earlier version.
-
-Any earlier version of this resource can be indicated with pav:hasEarlierVersion, e.g.:
-
-&lt;http://example.com/v4&gt; pav:hasEarlierVersion &lt;http://example.com/v2&gt; ;
-
-pav:hasEarlierVersion &lt;http://example.com/v1&gt; .
-
-The subproperty pav:previousVersion SHOULD be used if the earlier version is the direct ancestor of this version.
-
-&lt;http://example.com/v4&gt; pav:previousVersion &lt;http://example.com/v3&gt; .
-
-This property is transitive, so it should not be necessary to repeat the earlier versions of an earlier version. A chain of previous versions can be declared using the subproperty pav:previousVersion, implying that the previous previous version is also an earlier version. It might however still be useful to declare an earlier version explicitly, for instance because it is an earlier version of high relevance or because the complete chain of pav:previousVersion is not available.
-
-To indicate that this version is a snapshot of a more general, non-versioned resource, e.g. "Weather Today" vs. "Weather Today on 2013-12-07", see pav:hasVersion.</rdfs:comment>
+        <rdfs:comment>This versioned resource has an earlier version. Any earlier version of this resource can be indicated with pav:hasEarlierVersion, e.g.: &lt; http://example.com/v4&gt; pav:hasEarlierVersion &lt;http://example.com/v2&gt; pav:hasEarlierVersion &lt;http://example.com/v1&gt; . The subproperty pav:previousVersion SHOULD be used if the earlier version is the direct ancestor of this version. &lt;http://example.com/v4&gt; pav:previousVersion &lt;http://example.com/v3&gt; . This property is transitive, so it should not be necessary to repeat the earlier versions of an earlier version. A chain of previous versions can be declared using the subproperty pav:previousVersion, implying that the previous previous version is also an earlier version. It might however still be useful to declare an earlier version explicitly, for instance because it is an earlier version of high relevance or because the complete chain of pav:previousVersion is not available. To indicate that this version is a snapshot of a more general, non-versioned resource, e.g. "Weather Today" vs. "Weather Today on 2013-12-07", see pav:hasVersion.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
     </owl:ObjectProperty>
     
@@ -199,17 +181,7 @@ To indicate that this version is a snapshot of a more general, non-versioned res
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/importedFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <rdfs:comment>The original source of imported information.
-
-Import means that the content has been preserved, but transcribed somehow, for instance to fit a different representation model by converting formats. Examples of import are when the original was JSON and the current resource is RDF, or where the original was an document scan, and this resource is the plain text found through OCR.
-
-The imported resource does not have to be complete, but should be consistent with the knowledge conveyed by the original resource.
-
-If additional knowledge has been contributed, pav:derivedFrom would be more appropriate.
-
-If the resource has been copied verbatim from the original representation (e.g. downloaded), use pav:retrievedFrom.
-
-To indicate which agent(s) performed the import, use pav:importedBy. Use pav:importedOn to indicate when it happened.</rdfs:comment>
+        <rdfs:comment>The original source of imported information. Import means that the content has been preserved, but transcribed somehow, for instance to fit a different representation model by converting formats. Examples of import are when the original was JSON and the current resource is RDF, or where the original was an document scan, and this resource is the plain text found through OCR. The imported resource does not have to be complete, but should be consistent with the knowledge conveyed by the original resource. If additional knowledge has been contributed, pav:derivedFrom would be more appropriate. If the resource has been copied verbatim from the original representation (e.g. downloaded), use pav:retrievedFrom. To indicate which agent(s) performed the import, use pav:importedBy. Use pav:importedOn to indicate when it happened.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
     </owl:ObjectProperty>
     
@@ -218,15 +190,7 @@ To indicate which agent(s) performed the import, use pav:importedBy. Use pav:imp
     <!-- http://purl.org/pav/previousVersion -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/previousVersion">
-        <rdfs:comment>The previous version of a resource in a lineage. For instance a news article updated to correct factual information would point to the previous version of the article with pav:previousVersion. If however the content has significantly changed so that the two resources no longer share lineage (say a new article that talks about the same facts), they can instead be related using pav:derivedFrom.
-
-This property is normally used in a functional way, although PAV does not formally restrict this. Earlier versions which are not direct ancestors of this resource may instead be provided using the superproperty pav:hasEarlierVersion.
-
-A version number of this resource can be provided using the data property pav:version.
-
-To indicate that this version is a snapshot of a more general, non-versioned resource, e.g. "Weather Today" vs. "Weather Today on 2013-12-07", see pav:hasVersion.
-
-Note that it might be confusing to indicate pav:previousVersion from a resource that also has pav:hasVersion or pav:hasCurrentVersion relations, as such resources are intended to be a long-living and "unversioned", while pav:previousVersion is intended for use between permalink-like "snapshots" arranged in a linear history.</rdfs:comment>
+        <rdfs:comment>The previous version of a resource in a lineage. For instance a news article updated to correct factual information would point to the previous version of the article with pav:previousVersion. If however the content has significantly changed so that the two resources no longer share lineage (say a new article that talks about the same facts), they can instead be related using pav:derivedFrom. This property is normally used in a functional way, although PAV does not formally restrict this. Earlier versions which are not direct ancestors of this resource may instead be provided using the superproperty pav:hasEarlierVersion. A version number of this resource can be provided using the data property pav:version. To indicate that this version is a snapshot of a more general, non-versioned resource, e.g. "Weather Today" vs. "Weather Today on 2013-12-07", see pav:hasVersion. Note that it might be confusing to indicate pav:previousVersion from a resource that also has pav:hasVersion or pav:hasCurrentVersion relations, as such resources are intended to be a long-living and "unversioned", while pav:previousVersion is intended for use between permalink-like "snapshots" arranged in a linear history.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
     </owl:ObjectProperty>
     
@@ -238,13 +202,7 @@ Note that it might be confusing to indicate pav:previousVersion from a resource 
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#SoftwareAgent"/>
-        <rdfs:comment>An entity responsible for retrieving the data from an external source.
-
-The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription.
-
-The source that was retrieved should be given with pav:retrievedFrom. The time of the retrieval should be indicated using pav:retrievedOn.
-
-See pav:importedFrom for a discussion of import vs. retrieve vs. derived.</rdfs:comment>
+        <rdfs:comment>An entity responsible for retrieving the data from an external source. The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription. The source that was retrieved should be given with pav:retrievedFrom. The time of the retrieval should be indicated using pav:retrievedOn. See pav:importedFrom for a discussion of import vs. retrieve vs. derived.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
     </owl:ObjectProperty>
     
@@ -255,13 +213,7 @@ See pav:importedFrom for a discussion of import vs. retrieve vs. derived.</rdfs:
     <owl:ObjectProperty rdf:about="http://purl.org/pav/retrievedFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:comment>The URI where a resource has been retrieved from.
-
-The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription.
-
-Retrieval indicates that this resource has the same representation as the original resource. If the resource has been somewhat transformed, use pav:importedFrom instead.
-
-The time of the retrieval should be indicated using pav:retrievedOn. The agent may be indicated with pav:retrievedBy.</rdfs:comment>
+        <rdfs:comment>The URI where a resource has been retrieved from. The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription. Retrieval indicates that this resource has the same representation as the original resource. If the resource has been somewhat transformed, use pav:importedFrom instead. The time of the retrieval should be indicated using pav:retrievedOn. The agent may be indicated with pav:retrievedBy.</rdfs:comment>
         <rdfs:isDefinedBy>http://purl.org/pav/</rdfs:isDefinedBy>
         <rdfs:label>Retrieved from</rdfs:label>
     </owl:ObjectProperty>
@@ -418,14 +370,6 @@ The time of the retrieval should be indicated using pav:retrievedOn. The agent m
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/DOWARC/dowarc#locatedAt -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/DOWARC/dowarc#locatedAt">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:ObjectProperty>
     
 
@@ -2366,55 +2310,9 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
         <rdfs:comment>The "xmp" HTML element renders text between the start and end tags without interpreting the HTML in between and using a monospaced font. The HTML2 specification recommended that it should be rendered wide enough to allow 80 characters per line. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp)</rdfs:comment>
         <rdfs:label>xmp</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
 
-    <rdf:Description rdf:about="http://purl.org/spar/fabio/AnalogStorageMedium">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/AnalogStorageMedium"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/spar/fabio/DigitalStorageMedium">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/DigitalStorageMedium"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/spar/fabio/StorageMedium">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/StorageMedium"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#CorporateBody">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#CorporateBody"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Expression">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Item">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#Item"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Manifestation">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Person">
-        <rdfs:isDefinedBy>http://purl.org/vocab/frbr/core#Person</rdfs:isDefinedBy>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#ResponsibleEntity">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#ResponsibleEntity"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Subject">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#Subject"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/vocab/frbr/core#Work">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Person">
-        <rdfs:comment>Person agents are people.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#Person"/>
-        <rdfs:label>Person</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 
