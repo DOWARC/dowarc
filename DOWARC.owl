@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+     <?xml version="1.0"?>
 <rdf:RDF xmlns="https://github.com/DOWARC/"
      xml:base="https://github.com/DOWARC/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -62,6 +62,24 @@
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+
+
+
+<!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+
+
+
+<!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+
+
+
+<!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
