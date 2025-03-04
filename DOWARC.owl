@@ -1001,922 +1001,922 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#a -->
+    <!-- https://github.com/DOWARC/dowarc#A -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#a">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#A">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "a" HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Content within each "a" should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the "a" element will activate it. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)</rdfs:comment>
-        <rdfs:label>a</rdfs:label>
+        <rdfs:comment>The "A" HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Content within each "A" should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the "A" element will activate it. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)</rdfs:comment>
+        <rdfs:label>A</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#abbr -->
+    <!-- https://github.com/DOWARC/dowarc#Abbr -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#abbr">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Abbr">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "abbr" HTML element represents an abbreviation or acronym. When including an abbreviation or acronym, provide a full expansion of the term in plain text on first use, along with the "abbr" to mark up the abbreviation. This informs the user what the abbreviation or acronym means. The optional title attribute can provide an expansion for the abbreviation or acronym when a full expansion is not present. This provides a hint to user agents on how to announce/display the content while informing all users what the abbreviation means. If present, title must contain this full description and nothing else. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr)</rdfs:comment>
-        <rdfs:label>abbr</rdfs:label>
+        <rdfs:comment>The "Abbr" HTML element represents an abbreviation or acronym. When including an abbreviation or acronym, provide a full expansion of the term in plain text on first use, along with the "Abbr" to mark up the abbreviation. This informs the user what the abbreviation or acronym means. The optional title attribute can provide an expansion for the abbreviation or acronym when a full expansion is not present. This provides a hint to user agents on how to announce/display the content while informing all users what the abbreviation means. If present, title must contain this full description and nothing else. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr)</rdfs:comment>
+        <rdfs:label>Abbr</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#acronym -->
+    <!-- https://github.com/DOWARC/dowarc#Acronym -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#acronym">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Acronym">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "acronym" HTML element allows authors to clearly indicate a sequence of characters that compose an acronym or abbreviation for a word. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym)</rdfs:comment>
-        <rdfs:label>acronym</rdfs:label>
+        <rdfs:comment>The "Acronym" HTML element allows authors to clearly indicate a sequence of characters that compose an acronym or abbreviation for a word. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym)</rdfs:comment>
+        <rdfs:label>Acronym</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#address -->
+    <!-- https://github.com/DOWARC/dowarc#Address -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#address">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Address">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
         <rdfs:comment>Indicates that the enclosed HTML provides contact information for a person or people, or for an organization. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address)</rdfs:comment>
-        <rdfs:label>address</rdfs:label>
+        <rdfs:label>Address</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#area -->
+    <!-- https://github.com/DOWARC/dowarc#Area -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#area">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Area">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ImageAndMultimediaElement"/>
-        <rdfs:comment>The "area" HTML element defines an area inside an image map that has predefined clickable areas. An image map allows geometric areas on an image to be associated with hypertext links. This element is used only within a "map" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area)</rdfs:comment>
-        <rdfs:label>area</rdfs:label>
+        <rdfs:comment>The "Area" HTML element defines an area inside an image map that has predefined clickable areas. An image map allows geometric areas on an image to be associated with hypertext links. This element is used only within a "map" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area)</rdfs:comment>
+        <rdfs:label>Area</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#article -->
+    <!-- https://github.com/DOWARC/dowarc#Article -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#article">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Article">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The article HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)</rdfs:comment>
-        <rdfs:label>article</rdfs:label>
+        <rdfs:comment>The "Article" HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)</rdfs:comment>
+        <rdfs:label>Article</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#aside -->
+    <!-- https://github.com/DOWARC/dowarc#Aside -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#aside">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Aside">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The aside HTML element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</rdfs:comment>
-        <rdfs:label>aside</rdfs:label>
+        <rdfs:comment>The "Aside" HTML element represents a portion of a document whose content is only indirectly related to the document's main content. "Asides" are frequently presented as sidebars or call-out boxes.</rdfs:comment>
+        <rdfs:label>Aside</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#audio -->
+    <!-- https://github.com/DOWARC/dowarc#Audio -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#audio">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Audio">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ImageAndMultimediaElement"/>
-        <rdfs:comment>The "audio" HTML element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the "source" element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)</rdfs:comment>
-        <rdfs:label>audio</rdfs:label>
+        <rdfs:comment>The "Audio" HTML element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the "source" element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)</rdfs:comment>
+        <rdfs:label>Audio</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#b -->
+    <!-- https://github.com/DOWARC/dowarc#B -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#b">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#B">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "b" HTML element is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use "b" for styling text or granting importance. If you wish to create boldface text, you should use the CSS font-weight property. If you wish to indicate an element is of special importance, you should use the "strong" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b)</rdfs:comment>
-        <rdfs:label>b</rdfs:label>
+        <rdfs:comment>The "B" HTML element is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use "B" for styling text or granting importance. If you wish to create boldface text, you should use the CSS font-weight property. If you wish to indicate an element is of special importance, you should use the "strong" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b)</rdfs:comment>
+        <rdfs:label>B</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#base -->
+    <!-- https://github.com/DOWARC/dowarc#Base -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#base">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Base">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#DocumentMetadataElement"/>
-        <rdfs:comment>The base" HTML element specifies the base URL to use for all relative URLs in a document. There can be only one base element in a document. A document's used base URL can be accessed by scripts with Node. baseURI. If the document has no "base" elements, then baseURI defaults to location. href. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)</rdfs:comment>
-        <rdfs:label>base</rdfs:label>
+        <rdfs:comment>The "Base" HTML element specifies the base URL to use for all relative URLs in a document. There can be only one base element in a document. A document's used base URL can be accessed by scripts with Node. baseURI. If the document has no "Base" elements, then baseURI defaults to location. href. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)</rdfs:comment>
+        <rdfs:label>Base</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#bdi -->
+    <!-- https://github.com/DOWARC/dowarc#Bdi -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#bdi">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Bdi">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "bdi" HTML element tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. It's particularly useful when a website dynamically inserts some text and doesn't know the directionality of the text being inserted. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi)</rdfs:comment>
-        <rdfs:label>bdi</rdfs:label>
+        <rdfs:comment>The "Bdi" HTML element tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. It's particularly useful when a website dynamically inserts some text and doesn't know the directionality of the text being inserted. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Bdi)</rdfs:comment>
+        <rdfs:label>Bdi</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#bdo -->
+    <!-- https://github.com/DOWARC/dowarc#Bdo -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#bdo">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Bdo">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "bdo" HTML element overrides the current directionality of text, so that the text within is rendered in a different direction. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo)</rdfs:comment>
-        <rdfs:label>bdo</rdfs:label>
+        <rdfs:comment>The "Bdo" HTML element overrides the current directionality of text, so that the text within is rendered in a different direction. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Bdo)</rdfs:comment>
+        <rdfs:label>Bdo</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#big -->
+    <!-- https://github.com/DOWARC/dowarc#Big -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#big">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Big">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "big" HTML deprecated element renders the enclosed text at a font size one level larger than the surrounding text (medium becomes large, for example). The size is capped at the browser's maximum permitted font size. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big)</rdfs:comment>
-        <rdfs:label>big</rdfs:label>
+        <rdfs:comment>The "Big" HTML deprecated element renders the enclosed text at a font size one level larger than the surrounding text (medium becomes large, for example). The size is capped at the browser's maximum permitted font size. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big)</rdfs:comment>
+        <rdfs:label>Big</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#blockquote -->
+    <!-- https://github.com/DOWARC/dowarc#BlockQuote -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#blockquote">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#BlockQuote">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "blockquote" HTML element indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the "cite" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote)</rdfs:comment>
-        <rdfs:label>blockquote</rdfs:label>
+        <rdfs:comment>The "BlockQuote" HTML element indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the "cite" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/BlockQuote)</rdfs:comment>
+        <rdfs:label>BlockQuote</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#body -->
+    <!-- https://github.com/DOWARC/dowarc#Body -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#body">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Body">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#SectioningRootElement"/>
-        <rdfs:comment>The "body" HTML element represents the content of an HTML document. There can be only one "body" element in a document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)</rdfs:comment>
-        <rdfs:label>body</rdfs:label>
+        <rdfs:comment>The "Body" HTML element represents the content of an HTML document. There can be only one "Body" element in a document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)</rdfs:comment>
+        <rdfs:label>Body</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#br -->
+    <!-- https://github.com/DOWARC/dowarc#Br -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#br">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Br">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "br" HTML element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br)</rdfs:comment>
-        <rdfs:label>br</rdfs:label>
+        <rdfs:comment>The "Br" HTML element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br)</rdfs:comment>
+        <rdfs:label>Br</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#button -->
+    <!-- https://github.com/DOWARC/dowarc#Button -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#button">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "button" HTML element is an interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it then performs an action, such as submitting a form or opening a dialog. By default, HTML buttons are presented in a style resembling the platform the user agent runs on, but you can change buttons" appearance with CSS. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)</rdfs:comment>
-        <rdfs:label>button</rdfs:label>
+        <rdfs:comment>The "Button" HTML element is an interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it then performs an action, such as submitting a form or opening a dialog. By default, HTML buttons are presented in a style resembling the platform the user agent runs on, but you can change "buttons" appearance with CSS. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)</rdfs:comment>
+        <rdfs:label>Button</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#canvas -->
+    <!-- https://github.com/DOWARC/dowarc#Canvas -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#canvas">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Canvas">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ScriptingElement"/>
-        <rdfs:comment>Use the HTML "canvas" element with either the canvas scripting API or the WebGL API to draw graphics and animations. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)</rdfs:comment>
-        <rdfs:label>canvas</rdfs:label>
+        <rdfs:comment>Use the HTML "Canvas" element with either the canvas scripting API or the WebGL API to draw graphics and animations. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)</rdfs:comment>
+        <rdfs:label>Canvas</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#caption -->
+    <!-- https://github.com/DOWARC/dowarc#Caption -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#caption">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Caption">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "caption" HTML element specifies the caption (or title) of a table, providing the table an accessible description. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)</rdfs:comment>
-        <rdfs:label>caption</rdfs:label>
+        <rdfs:comment>The "Caption" HTML element specifies the caption (or title) of a table, providing the table an accessible description. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)</rdfs:comment>
+        <rdfs:label>Caption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#center -->
+    <!-- https://github.com/DOWARC/dowarc#Center -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#center">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Center">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "center" HTML element is a block-level element that displays its block-level or inline contents centered horizontally within its containing element. The container is usually, but isn't required to be, "body". This tag has been deprecated in HTML 4 (and XHTML 1) in favor of the CSS text-align property, which can be applied to the "div" element or to an individual "p". For centering blocks, use other CSS properties like margin-left and margin-right and set them to auto (or set margin to 0 auto). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center)</rdfs:comment>
-        <rdfs:label>center</rdfs:label>
+        <rdfs:comment>The "Center" HTML element is a block-level element that displays its block-level or inline contents centered horizontally within its containing element. The container is usually, but isn't required to be, "body". This tag has been deprecated in HTML 4 (and XHTML 1) in favor of the CSS text-align property, which can be applied to the "div" element or to an individual "p". For centering blocks, use other CSS properties like margin-left and margin-right and set them to auto (or set margin to 0 auto). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center)</rdfs:comment>
+        <rdfs:label>Center</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#cite -->
+    <!-- https://github.com/DOWARC/dowarc#Cite -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#cite">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Cite">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "cite" HTML element is used to mark up the title of a cited creative work. The reference may be in an abbreviated form according to context-appropriate conventions related to citation metadata. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite)</rdfs:comment>
-        <rdfs:label>cite</rdfs:label>
+        <rdfs:comment>The "Cite" HTML element is used to mark up the title of a cited creative work. The reference may be in an abbreviated form according to context-appropriate conventions related to citation metadata. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite)</rdfs:comment>
+        <rdfs:label>Cite</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#code -->
+    <!-- https://github.com/DOWARC/dowarc#Code -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#code">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Code">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "code" HTML element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)</rdfs:comment>
-        <rdfs:label>code</rdfs:label>
+        <rdfs:comment>The "Code" HTML element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)</rdfs:comment>
+        <rdfs:label>Code</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#col -->
+    <!-- https://github.com/DOWARC/dowarc#Col -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#col">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Col">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "col" HTML element defines one or more columns in a column group represented by its parent "colgroup" element. The "col" element is only valid as a child of a "colgroup" element that has no span attribute defined.</rdfs:comment>
-        <rdfs:label>col</rdfs:label>
+        <rdfs:comment>The "Col" HTML element defines one or more columns in a column group represented by its parent "ColGroup" element. The "Col" element is only valid as a child of a "ColGroup" element that has no span attribute defined.</rdfs:comment>
+        <rdfs:label>Col</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#colgroup -->
+    <!-- https://github.com/DOWARC/dowarc#ColGroup -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#colgroup">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#ColGroup">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "colgroup" HTML element defines a group of columns within a table. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup)</rdfs:comment>
-        <rdfs:label>colgroup</rdfs:label>
+        <rdfs:comment>The "ColGroup" HTML element defines a group of columns within a table. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ColGroup)</rdfs:comment>
+        <rdfs:label>ColGroup</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#content -->
+    <!-- https://github.com/DOWARC/dowarc#Content -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#content">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Content">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
         <rdfs:comment>An obsolete part of the Web Components suite of technologies—was used inside of Shadow DOM as an insertion point, and wasn't meant to be used in ordinary HTML. It has now been replaced by the "slot" element, which creates a point in the DOM at which a shadow DOM can be inserted.</rdfs:comment>
-        <rdfs:label>content</rdfs:label>
+        <rdfs:label>Content</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#data -->
+    <!-- https://github.com/DOWARC/dowarc#Data -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#data">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Data">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "data" HTML element links a given piece of content with a machine-readable translation. If the content is time- or date-related, the "time" element must be used. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data)</rdfs:comment>
-        <rdfs:label>data</rdfs:label>
+        <rdfs:comment>The "Data" HTML element links a given piece of content with a machine-readable translation. If the content is time- or date-related, the "time" element must be used. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data)</rdfs:comment>
+        <rdfs:label>Data</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#datalist -->
+    <!-- https://github.com/DOWARC/dowarc#DataList -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#datalist">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#DataList">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "datalist" HTML element contains a set of "option" elements that represent the permissible or recommended options available to choose from within other controls. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist)</rdfs:comment>
-        <rdfs:label>datalist</rdfs:label>
+        <rdfs:comment>The "DataList" HTML element contains a set of "option" elements that represent the permissible or recommended options available to choose from within other controls. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/DataList)</rdfs:comment>
+        <rdfs:label>DataList</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#dd -->
+    <!-- https://github.com/DOWARC/dowarc#Dd -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#dd">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Dd">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "dd" HTML element provides the description, definition, or value for the preceding term ("dt") in a description list ("dl"). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd)</rdfs:comment>
-        <rdfs:label>dd</rdfs:label>
+        <rdfs:comment>The "Dd" HTML element provides the description, definition, or value for the preceding term ("dt") in a description list ("dl"). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd)</rdfs:comment>
+        <rdfs:label>Dd</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#del -->
+    <!-- https://github.com/DOWARC/dowarc#Del -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#del">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Del">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#DemarcatingEditsElement"/>
-        <rdfs:comment>The "del" HTML element represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The "ins" element can be used for the opposite purpose: to indicate text that has been added to the document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del)</rdfs:comment>
-        <rdfs:label>del</rdfs:label>
+        <rdfs:comment>The "Del" HTML element represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The "ins" element can be used for the opposite purpose: to indicate text that has been added to the document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del)</rdfs:comment>
+        <rdfs:label>Del</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#details -->
+    <!-- https://github.com/DOWARC/dowarc#Details -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#details">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Details">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InteractiveElements"/>
-        <rdfs:comment>The "details" HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an open state. A summary or label must be provided using the "summary" element. A disclosure widget is typically presented onscreen using a small triangle that rotates (or twists) to indicate open/closed state, with a label next to the triangle. The contents of the "summary" element are used as the label for the disclosure widget. The contents of the "details" provide the accessible description for the "summary". (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)</rdfs:comment>
-        <rdfs:label>details</rdfs:label>
+        <rdfs:comment>The "Details" HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an open state. A summary or label must be provided using the "summary" element. A disclosure widget is typically presented onscreen using a small triangle that rotates (or twists) to indicate open/closed state, with a label next to the triangle. The contents of the "summary" element are used as the label for the disclosure widget. The contents of the "Details" provide the accessible description for the "summary". (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)</rdfs:comment>
+        <rdfs:label>Details</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#dfn -->
+    <!-- https://github.com/DOWARC/dowarc#Dfn -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#dfn">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Dfn">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "dfn" HTML element indicates a term to be defined. The "dfn" element should be used in a complete definition statement, where the full definition of the term can be one of the following: the ancestor paragraph (a block of text, sometimes marked by a "p" element); the "dt"/"dd" pairing; the nearest section ancestor of the "dfn" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn)</rdfs:comment>
-        <rdfs:label>dfn</rdfs:label>
+        <rdfs:comment>The "Dfn" HTML element indicates a term to be defined. The "Dfn" element should be used in a complete definition statement, where the full definition of the term can be one of the following: the ancestor paragraph (a block of text, sometimes marked by a "p" element); the "dt"/"dd" pairing; the nearest section ancestor of the "Dfn" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Dfn)</rdfs:comment>
+        <rdfs:label>Dfn</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#dialog -->
+    <!-- https://github.com/DOWARC/dowarc#Dialog -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#dialog">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Dialog">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InteractiveElements"/>
-        <rdfs:comment>The "dialog" HTML element represents a modal or non-modal dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow. The HTML "dialog" element is used to create both modal and non-modal dialog boxes. Modal dialog boxes interrupt interaction with the rest of the page being inert, while non-modal dialog boxes allow interaction with the rest of the page. JavaScript should be used to display the "dialog" element. Use the . showModal() method to display a modal dialog and the . show() method to display a non-modal dialog. The dialog box can be closed using the . close() method or using the dialog method when submitting a "form" that is nested within the "dialog" element. Modal dialogs can also be closed by pressing the Esc key. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)</rdfs:comment>
-        <rdfs:label>dialog</rdfs:label>
+        <rdfs:comment>The "Dialog" HTML element represents a modal or non-modal dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow. The HTML "Dialog" element is used to create both modal and non-modal dialog boxes. Modal Dialog boxes interrupt interaction with the rest of the page being inert, while non-modal dialog boxes allow interaction with the rest of the page. JavaScript should be used to display the "Dialog" element. Use the . showModal() method to display a modal dialog and the . show() method to display a non-modal dialog. The dialog box can be closed using the . close() method or using the dialog method when submitting a "form" that is nested within the "Dialog" element. Modal Dialogs can also be closed by pressing the Esc key. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)</rdfs:comment>
+        <rdfs:label>Dialog</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#dir -->
+    <!-- https://github.com/DOWARC/dowarc#Dir -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#dir">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Dir">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "dir" HTML element is used as a container for a directory of files and/or folders, potentially with styles and icons applied by the user agent. Do not use this obsolete element; instead, you should use the "ul" element for lists, including lists of files. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir)</rdfs:comment>
-        <rdfs:label>dir</rdfs:label>
+        <rdfs:comment>The "Dir" HTML element is used as a container for a directory of files and/or folders, potentially with styles and icons applied by the user agent. Do not use this obsolete element; instead, you should use the "ul" element for lists, including lists of files. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir)</rdfs:comment>
+        <rdfs:label>Dir</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#div -->
+    <!-- https://github.com/DOWARC/dowarc#Div -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#div">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Div">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "div" HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e. g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div)</rdfs:comment>
-        <rdfs:label>div</rdfs:label>
+        <rdfs:comment>The "Div" HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e. g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div)</rdfs:comment>
+        <rdfs:label>Div</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#dl -->
+    <!-- https://github.com/DOWARC/dowarc#Dl -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#dl">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Dl">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "dl" HTML element represents a description list. The element encloses a list of groups of terms (specified using the "dt" element) and descriptions (provided by "dd" elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)</rdfs:comment>
-        <rdfs:label>dl</rdfs:label>
+        <rdfs:comment>The "Dl" HTML element represents a description list. The element encloses a list of groups of terms (specified using the "dt" element) and descriptions (provided by "dd" elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)</rdfs:comment>
+        <rdfs:label>Dl</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#dt -->
+    <!-- https://github.com/DOWARC/dowarc#Dt -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#dt">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Dt">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "dt" HTML element specifies a term in a description or definition list, and as such must be used inside a "dl" element. It is usually followed by a "dd" element; however, multiple "dt" elements in a row indicate several terms that are all defined by the immediate next "dd" element. The subsequent "dd" (Description Details) element provides the definition or other related text associated with the term specified using "dt". (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt)</rdfs:comment>
-        <rdfs:label>dt</rdfs:label>
+        <rdfs:comment>The "Dt" HTML element specifies a term in a description or definition list, and as such must be used inside a "dl" element. It is usually followed by a "dd" element; however, multiple "dt" elements in a row indicate several terms that are all defined by the immediate next "dd" element. The subsequent "dd" (Description Details) element provides the definition or other related text associated with the term specified using "dt". (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt)</rdfs:comment>
+        <rdfs:label>Dt</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#em -->
+    <!-- https://github.com/DOWARC/dowarc#Em -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#em">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Em">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "em" HTML element marks text that has stress emphasis. The "em" element can be nested, with each level of nesting indicating a greater degree of emphasis. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em)</rdfs:comment>
+        <rdfs:comment>The "Em" HTML element marks text that has stress emphasis. The "Em" element can be nested, with each level of nesting indicating a greater degree of emphasis. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em)</rdfs:comment>
         <rdfs:label>em</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#embed -->
+    <!-- https://github.com/DOWARC/dowarc#Embed -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#embed">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Embed">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#EmbeddedContentElement"/>
-        <rdfs:comment>The "embed" HTML element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed)</rdfs:comment>
-        <rdfs:label>embed</rdfs:label>
+        <rdfs:comment>The "Embed" HTML element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed)</rdfs:comment>
+        <rdfs:label>Embed</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#fencedframe -->
+    <!-- https://github.com/DOWARC/dowarc#FencedFrame -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#fencedframe">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#FencedFrame">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#EmbeddedContentElement"/>
-        <rdfs:comment>The "fencedframe" HTML element represents a nested browsing context, embedding another HTML page into the current one. "fencedframes" are very similar to "iframe" elements in form and function, except that:The "fencedframe" element is a type of "iframe" with more native privacy features built in. It addresses shortcomings of "iframes" such as reliance on third-party cookies and other privacy risks. See Fenced frame API for more details. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fencedframe)</rdfs:comment>
-        <rdfs:label>fencedframe</rdfs:label>
+        <rdfs:comment>The "FencedFrame" HTML element represents a nested browsing context, embedding another HTML page into the current one. "FencedFrames" are very similar to "Iframe" elements in form and function, except that:The "FencedFrame" element is a type of "Iframe" with more native privacy features built in. It addresses shoRtcomings of "Iframes" such as reliance on third-party cookies and other privacy risks. See Fenced frame API for more details. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/FencedFrame)</rdfs:comment>
+        <rdfs:label>FencedFrame</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#fieldset -->
+    <!-- https://github.com/DOWARC/dowarc#FieldSet -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#fieldset">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#FieldSet">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "fieldset" HTML element is used to group several controls as well as "labels" within a web form. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)</rdfs:comment>
-        <rdfs:label>fieldset</rdfs:label>
+        <rdfs:comment>The "FieldSet" HTML element is used to group several controls as well as "labels" within a web form. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/FieldSet)</rdfs:comment>
+        <rdfs:label>FieldSet</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#figcaption -->
+    <!-- https://github.com/DOWARC/dowarc#FigCaption -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#figcaption">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#FigCaption">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "figcaption" HTML element represents a caption or legend describing the rest of the contents of its parent "figure" element, providing the "figure" an accessible description. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption)</rdfs:comment>
-        <rdfs:label>figcaption</rdfs:label>
+        <rdfs:comment>The "FigCaption" HTML element represents a caption or legend describing the rest of the contents of its parent "figure" element, providing the "figure" an accessible description. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/FigCaption)</rdfs:comment>
+        <rdfs:label>FigCaption</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#figure -->
+    <!-- https://github.com/DOWARC/dowarc#Figure -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#figure">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Figure">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "figure" HTML element represents self-contained content, potentially with an optional caption, which is specified using the "figcaption" element. The figure, its caption, and its contents are referenced as a single unit. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)</rdfs:comment>
-        <rdfs:label>figure</rdfs:label>
+        <rdfs:comment>The "Figure" HTML element represents self-contained content, potentially with an optional caption, which is specified using the "FigCaption" element. The figure, its caption, and its contents are referenced as a single unit. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)</rdfs:comment>
+        <rdfs:label>Figure</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#font -->
+    <!-- https://github.com/DOWARC/dowarc#Font -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#font">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Font">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "font" HTML element defines the font size, color and face for its content. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font)</rdfs:comment>
-        <rdfs:label>font</rdfs:label>
+        <rdfs:comment>The "Font" HTML element defines the font size, color and face for its content. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font)</rdfs:comment>
+        <rdfs:label>Font</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#footer -->
+    <!-- https://github.com/DOWARC/dowarc#Footer -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#footer">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Footer">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The "footer" HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A "footer" typically contains information about the author of the section, copyright data or links to related documents. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)</rdfs:comment>
-        <rdfs:label>footer</rdfs:label>
+        <rdfs:comment>The "Footer" HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A "Footer" typically contains information about the author of the section, copyright data or links to related documents. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)</rdfs:comment>
+        <rdfs:label>Footer</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#form -->
+    <!-- https://github.com/DOWARC/dowarc#Form -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#form">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Form">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "form" HTML element represents a document section containing interactive controls for submitting information. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)</rdfs:comment>
-        <rdfs:label>form</rdfs:label>
+        <rdfs:comment>The "Form" HTML element represents a document section containing interactive controls for submitting information. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)</rdfs:comment>
+        <rdfs:label>Form</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#frame -->
+    <!-- https://github.com/DOWARC/dowarc#Frame -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#frame">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Frame">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "frame" HTML element defines a particular area in which another HTML document can be displayed. A frame should be used within a "frameset". Using the "frame" element is not encouraged because of certain disadvantages such as performance problems and lack of accessibility for users with screen readers. Instead of the "frame" element, "iframe" may be preferred. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frame)</rdfs:comment>
-        <rdfs:label>frame</rdfs:label>
+        <rdfs:comment>The "Frame" HTML element defines a particular area in which another HTML document can be displayed. A frame should be used within a "FrameSet". Using the "frame" element is not encouraged because of certain disadvantages such as performance problems and lack of accessibility for users with screen readers. Instead of the "Frame" element, "Iframe" may be preferred. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frame)</rdfs:comment>
+        <rdfs:label>Frame</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#frameset -->
+    <!-- https://github.com/DOWARC/dowarc#FrameSet -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#frameset">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#FrameSet">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "frameset" HTML element is used to contain "frame&gt; elements. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset)</rdfs:comment>
-        <rdfs:label>frameset</rdfs:label>
+        <rdfs:comment>The "FrameSet" HTML element is used to contain "frame&gt; elements. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/FrameSet)</rdfs:comment>
+        <rdfs:label>FrameSet</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#h1 -->
+    <!-- https://github.com/DOWARC/dowarc#Hn -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#h1">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Hn">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The "h1" to "h6" HTML elements represent six levels of section headings. "h1" is the highest section level and "h6" is the lowest. By default, all heading elements create a block-level box in the layout, starting on a new line and taking up the full width available in their containing block. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)</rdfs:comment>
+        <rdfs:comment>The "Hn" HTML elements represent six levels of section headings (from H1 to H6). H1 is the highest section level and H6 is the lowest. By default, all heading elements create a block-level box in the layout, starting on a new line and taking up the full width available in their containing block. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)</rdfs:comment>
         <rdfs:label>Heading_Elements</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#head -->
+    <!-- https://github.com/DOWARC/dowarc#Head -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#head">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Head">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#DocumentMetadataElement"/>
-        <rdfs:comment>The "head" HTML element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets. There can be only one "head" element in an HTML document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)</rdfs:comment>
-        <rdfs:label>head</rdfs:label>
+        <rdfs:comment>The "Head" HTML element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets. There can be only one "head" element in an HTML document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)</rdfs:comment>
+        <rdfs:label>Head</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#header -->
+    <!-- https://github.com/DOWARC/dowarc#Header -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#header">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Header">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The "header" HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)</rdfs:comment>
-        <rdfs:label>header</rdfs:label>
+        <rdfs:comment>The "Header" HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)</rdfs:comment>
+        <rdfs:label>Header</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#hgroup -->
+    <!-- https://github.com/DOWARC/dowarc#Hgroup -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#hgroup">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Hgroup">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The "hgroup" HTML element represents a heading and related content. It groups a single "h1"–"h6" element with one or more "p". (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup)</rdfs:comment>
-        <rdfs:label>hgroup</rdfs:label>
+        <rdfs:comment>The "Hgroup" HTML element represents a heading and related content. It groups a single "H1"–"H6" element with one or more "p". (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup)</rdfs:comment>
+        <rdfs:label>Hgroup</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#hr -->
+    <!-- https://github.com/DOWARC/dowarc#Hr -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#hr">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Hr">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "hr" HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr)</rdfs:comment>
-        <rdfs:label>hr</rdfs:label>
+        <rdfs:comment>The "Hr" HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr)</rdfs:comment>
+        <rdfs:label>Hr</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#html -->
+    <!-- https://github.com/DOWARC/dowarc#Html -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#html">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Html">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#MainRootElement"/>
-        <rdfs:comment>The "html" HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element. There can be only one "html" element in a document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html)</rdfs:comment>
-        <rdfs:label>html</rdfs:label>
+        <rdfs:comment>The "Html" HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element. There can be only one "html" element in a document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html)</rdfs:comment>
+        <rdfs:label>Html</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#i -->
+    <!-- https://github.com/DOWARC/dowarc#I -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#i">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#I">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
         <rdfs:comment>The "i" HTML element represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, taxonomical designations, among others. Historically, these have been presented using italicized type, which is the original source of the "i" naming of this element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i)</rdfs:comment>
-        <rdfs:label>i</rdfs:label>
+        <rdfs:label>I</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#iframe -->
+    <!-- https://github.com/DOWARC/dowarc#Iframe -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#iframe">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Iframe">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#EmbeddedContentElement"/>
-        <rdfs:comment>The "iframe" HTML element represents a nested browsing context, embedding another HTML page into the current one. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)</rdfs:comment>
-        <rdfs:label>iframe</rdfs:label>
+        <rdfs:comment>The "Iframe" HTML element represents a nested browsing context, embedding another HTML page into the current one. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Iframe)</rdfs:comment>
+        <rdfs:label>Iframe</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#image -->
+    <!-- https://github.com/DOWARC/dowarc#Image -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#image">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Image">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>An ancient and poorly supported precursor to the "img" element. (source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#obsolete_and_deprecated_elements)</rdfs:comment>
-        <rdfs:label>image</rdfs:label>
+        <rdfs:comment>An ancient and poorly supported precursor to the "Img" element. (source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#obsolete_and_deprecated_elements)</rdfs:comment>
+        <rdfs:label>Image</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#img -->
+    <!-- https://github.com/DOWARC/dowarc#Img -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#img">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Img">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ImageAndMultimediaElement"/>
-        <rdfs:comment>The "img" HTML element embeds an image into the document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)</rdfs:comment>
-        <rdfs:label>img</rdfs:label>
+        <rdfs:comment>The "Img" HTML element embeds an image into the document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Img)</rdfs:comment>
+        <rdfs:label>Img</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#input -->
+    <!-- https://github.com/DOWARC/dowarc#Input -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#input">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Input">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "input" HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The "input" element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)</rdfs:comment>
-        <rdfs:label>input</rdfs:label>
+        <rdfs:comment>The "Input" HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The "Input" element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)</rdfs:comment>
+        <rdfs:label>Input</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#ins -->
+    <!-- https://github.com/DOWARC/dowarc#Ins -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#ins">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Ins">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#DemarcatingEditsElement"/>
-        <rdfs:comment>The "ins" HTML element represents a range of text that has been added to a document. You can use the "del" element to similarly represent a range of text that has been deleted from the document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins)</rdfs:comment>
-        <rdfs:label>ins</rdfs:label>
+        <rdfs:comment>The "Ins" HTML element represents a range of text that has been added to a document. You can use the "del" element to similarly represent a range of text that has been deleted from the document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins)</rdfs:comment>
+        <rdfs:label>Ins</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#kbd -->
+    <!-- https://github.com/DOWARC/dowarc#Kbd -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#kbd">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Kbd">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "kbd" HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a "kbd" element using its default monospace font, although this is not mandated by the HTML standard. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd)</rdfs:comment>
-        <rdfs:label>kbd</rdfs:label>
+        <rdfs:comment>The "Kbd" HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a "Kbd" element using its default monospace font, although this is not mandated by the HTML standard. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Kbd)</rdfs:comment>
+        <rdfs:label>Kbd</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#label -->
+    <!-- https://github.com/DOWARC/dowarc#Label -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#label">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Label">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "label" HTML element represents a caption for an item in a user interface. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)</rdfs:comment>
-        <rdfs:label>label</rdfs:label>
+        <rdfs:comment>The "Label" HTML element represents a caption for an item in a user interface. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)</rdfs:comment>
+        <rdfs:label>Label</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#legend -->
+    <!-- https://github.com/DOWARC/dowarc#Legend -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#legend">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Legend">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "legend" HTML element represents a caption for the content of its parent "fieldset". (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)</rdfs:comment>
-        <rdfs:label>legend</rdfs:label>
+        <rdfs:comment>The "Legend" HTML element represents a caption for the content of its parent "FieldSet". (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)</rdfs:comment>
+        <rdfs:label>Legend</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#li -->
+    <!-- https://github.com/DOWARC/dowarc#Li -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#li">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Li">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "li" HTML element is used to represent an item in a list. It must be contained in a parent element: an ordered list ("ol"), an unordered list ("ul"), or a menu ("menu"). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)</rdfs:comment>
-        <rdfs:label>li</rdfs:label>
+        <rdfs:comment>The "Li" HTML element is used to represent an item in a list. It must be contained in a parent element: an ordered list ("ol"), an unordered list ("ul"), or a menu ("menu"). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li)</rdfs:comment>
+        <rdfs:label>Li</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#link -->
+    <!-- https://github.com/DOWARC/dowarc#Link -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#link">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Link">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#DocumentMetadataElement"/>
-        <rdfs:comment>The "link" HTML element specifies relationships between the current document and an external resource. This element is most commonly used to link to stylesheets, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)</rdfs:comment>
-        <rdfs:label>link</rdfs:label>
+        <rdfs:comment>The "Link" HTML element specifies relationships between the current document and an external resource. This element is most commonly used to link to stylesheets, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)</rdfs:comment>
+        <rdfs:label>Link</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#main -->
+    <!-- https://github.com/DOWARC/dowarc#Main -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#main">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Main">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The "main" HTML element represents the dominant content of the "body" of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main)</rdfs:comment>
-        <rdfs:label>main</rdfs:label>
+        <rdfs:comment>The "Main" HTML element represents the dominant content of the "body" of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main)</rdfs:comment>
+        <rdfs:label>Main</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#map -->
+    <!-- https://github.com/DOWARC/dowarc#Map -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#map">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Map">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ImageAndMultimediaElement"/>
-        <rdfs:comment>The "map" HTML element is used with "area" elements to define an image map (a clickable link area). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map)</rdfs:comment>
-        <rdfs:label>map</rdfs:label>
+        <rdfs:comment>The "Map" HTML element is used with "area" elements to define an image map (a clickable link area). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map)</rdfs:comment>
+        <rdfs:label>Map</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#mark -->
+    <!-- https://github.com/DOWARC/dowarc#Mark -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#mark">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Mark">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "mark" HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark)</rdfs:comment>
-        <rdfs:label>mark</rdfs:label>
+        <rdfs:comment>The "Mark" HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark)</rdfs:comment>
+        <rdfs:label>Mark</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#marquee -->
+    <!-- https://github.com/DOWARC/dowarc#Marquee -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#marquee">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Marquee">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "marquee" HTML element is used to insert a scrolling area of text. You can control what happens when the text reaches the edges of its content area using its attributes.(Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee)</rdfs:comment>
-        <rdfs:label>marquee</rdfs:label>
+        <rdfs:comment>The "Marquee" HTML element is used to insert a scrolling area of text. You can control what happens when the text reaches the edges of its content area using its attributes.(Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Marquee)</rdfs:comment>
+        <rdfs:label>Marquee</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#math -->
+    <!-- https://github.com/DOWARC/dowarc#Math -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#math">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Math">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#SVGAndMathMLelement"/>
-        <rdfs:comment>The "math" MathML element is the top-level MathML element, used to write a single mathematical formula. It can be placed in HTML content where flow content is permitted. (Source: https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math)</rdfs:comment>
-        <rdfs:label>math</rdfs:label>
+        <rdfs:comment>The "Math" MathML element is the top-level MathML element, used to write a single mathematical formula. It can be placed in HTML content where flow content is permitted. (Source: https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math)</rdfs:comment>
+        <rdfs:label>Math</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#menu -->
+    <!-- https://github.com/DOWARC/dowarc#Menu -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#menu">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Menu">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "menu" HTML element is described in the HTML specification as a semantic alternative to "ul", but treated by browsers (and exposed through the accessibility tree) as no different than "ul". It represents an unordered list of items (which are represented by "li" elements). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu)</rdfs:comment>
-        <rdfs:label>menu</rdfs:label>
+        <rdfs:comment>The "Menu" HTML element is described in the HTML specification as a semantic alternative to "ul", but treated by browsers (and exposed through the accessibility tree) as no different than "ul". It represents an unordered list of items (which are represented by "li" elements). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu)</rdfs:comment>
+        <rdfs:label>Menu</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#menuitem -->
+    <!-- https://github.com/DOWARC/dowarc#MenuItem -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#menuitem">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MenuItem">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
         <rdfs:comment>Represents a command that a user is able to invoke through a popup menu. This includes context menus, as well as menus that might be attached to a menu button. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#obsolete_and_deprecated_elements)</rdfs:comment>
-        <rdfs:label>menuitem</rdfs:label>
+        <rdfs:label>MenuItem</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#meta -->
+    <!-- https://github.com/DOWARC/dowarc#Meta -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#meta">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Meta">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#DocumentMetadataElement"/>
-        <rdfs:comment>The "meta" HTML element represents metadata that cannot be represented by other HTML meta-related elements, like "base", "link", "script", "style" or "title". The type of metadata provided by the "meta" element can be one of the following: if the name attribute is set, the "meta" element provides document-level metadata, applying to the whole page; if the http-equiv attribute is set, the "meta" element is a pragma directive, providing information equivalent to what can be given by a similarly-named HTTP header; if the charset attribute is set, the "meta" element is a charset declaration, giving the character encoding in which the document is encoded; if the itemprop attribute is set, the "meta" element provides user-defined metadata. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)</rdfs:comment>
-        <rdfs:label>meta</rdfs:label>
+        <rdfs:comment>The "Meta" HTML element represents metadata that cannot be represented by other HTML meta-related elements, like "base", "link", "script", "style" or "title". The type of metadata provided by the "meta" element can be one of the following: if the name attribute is set, the "Meta" element provides document-level metadata, applying to the whole page; if the http-equiv attribute is set, the "Meta" element is a pragma directive, providing information equivalent to what can be given by a similarly-named HTTP header; if the charset attribute is set, the "meta" element is a charset declaration, giving the character encoding in which the document is encoded; if the itemprop attribute is set, the "Meta" element provides user-defined metadata. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)</rdfs:comment>
+        <rdfs:label>Meta</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#meter -->
+    <!-- https://github.com/DOWARC/dowarc#Meter -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#meter">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Meter">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "meter" HTML element represents either a scalar value within a known range or a fractional value. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter)</rdfs:comment>
-        <rdfs:label>meter</rdfs:label>
+        <rdfs:comment>The "Meter" HTML element represents either a scalar value within a known range or a fractional value. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter)</rdfs:comment>
+        <rdfs:label>Meter</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#nav -->
+    <!-- https://github.com/DOWARC/dowarc#Nav -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#nav">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Nav">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The "nav" HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)</rdfs:comment>
-        <rdfs:label>nav</rdfs:label>
+        <rdfs:comment>The "Nav" HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)</rdfs:comment>
+        <rdfs:label>Nav</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#nobr -->
+    <!-- https://github.com/DOWARC/dowarc#NoBr -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#nobr">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#NoBr">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "nobr" HTML element prevents the text it contains from automatically wrapping across multiple lines, potentially resulting in the user having to scroll horizontally to see the entire width of the text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nobr)</rdfs:comment>
-        <rdfs:label>nobr</rdfs:label>
+        <rdfs:comment>The "NoBr" HTML element prevents the text it contains from automatically wrapping across multiple lines, potentially resulting in the user having to scroll horizontally to see the entire width of the text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/NoBr)</rdfs:comment>
+        <rdfs:label>NoBr</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#noembed -->
+    <!-- https://github.com/DOWARC/dowarc#NoEmbed -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#noembed">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#NoEmbed">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "noembed" HTML element is an obsolete, non-standard way to provide alternative, or ""fallback"", content for browsers that do not support the "embed" element or do not support the type of embedded content an author wishes to use. This element was deprecated in HTML 4. 01 and above in favor of placing fallback content between the opening and closing tags of an "object" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noembed)</rdfs:comment>
-        <rdfs:label>noembed</rdfs:label>
+        <rdfs:comment>The "NoEmbed" HTML element is an obsolete, non-standard way to provide alternative, or ""fallback"", content for browsers that do not support the "embed" element or do not support the type of embedded content an author wishes to use. This element was deprecated in HTML 4. 01 and above in favor of placing fallback content between the opening and closing tags of an "object" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/NoEmbed)</rdfs:comment>
+        <rdfs:label>NoEmbed</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#noframes -->
+    <!-- https://github.com/DOWARC/dowarc#NoFrames -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#noframes">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#NoFrames">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "noframes" HTML element provides content to be presented in browsers that don't support (or have disabled support for) the "frame" element. Although most commonly-used browsers support frames, there are exceptions, including certain special-use browsers including some mobile browsers, as well as text-mode browsers. A "noframes" element can contain any HTML elements that are allowed within the body of an HTML document, except for the "frameset" and "frame" elements, since using frames when they aren't supported doesn't make sense. "noframes" can be used to present a message explaining that the user's browser doesn't support frames, but ideally should be used to present an alternate form of the site that doesn't use frames but still offers the same or similar functionality. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noframes)</rdfs:comment>
-        <rdfs:label>noframes</rdfs:label>
+        <rdfs:comment>The "NoFrames" HTML element provides content to be presented in browsers that don't support (or have disabled support for) the "frame" element. Although most commonly-used browsers support frames, there are exceptions, including certain special-use browsers including some mobile browsers, as well as text-mode browsers. A "NoFrames" element can contain any HTML elements that are allowed within the body of an HTML document, except for the "FrameSet" and "frame" elements, since using frames when they aren't supported doesn't make sense. "NoFrames" can be used to present a message explaining that the user's browser doesn't support frames, but ideally should be used to present an alternate form of the site that doesn't use frames but still offers the same or similar functionality. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/NoFrames)</rdfs:comment>
+        <rdfs:label>NoFrames</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#noscript -->
+    <!-- https://github.com/DOWARC/dowarc#NoScript -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#noscript">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#NoScript">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ScriptingElement"/>
-        <rdfs:comment>The "noscript" HTML element defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript)</rdfs:comment>
-        <rdfs:label>noscript</rdfs:label>
+        <rdfs:comment>The "NoScript" HTML element defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/NoScript)</rdfs:comment>
+        <rdfs:label>NoScript</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#object -->
+    <!-- https://github.com/DOWARC/dowarc#Object -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#object">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Object">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#EmbeddedContentElement"/>
-        <rdfs:comment>The "object" HTML element represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object)</rdfs:comment>
-        <rdfs:label>object</rdfs:label>
+        <rdfs:comment>The "Object" HTML element represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object)</rdfs:comment>
+        <rdfs:label>Object</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#ol -->
+    <!-- https://github.com/DOWARC/dowarc#Ol -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#ol">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Ol">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
         <rdfs:comment>The "ol" HTML element represents an ordered list of items — typically rendered as a numbered list. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)</rdfs:comment>
-        <rdfs:label>ol</rdfs:label>
+        <rdfs:label>Ol</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#optgroup -->
+    <!-- https://github.com/DOWARC/dowarc#OptGroup -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#optgroup">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#OptGroup">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "optgroup" HTML element creates a grouping of options within a "select" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup)</rdfs:comment>
-        <rdfs:label>optgroup</rdfs:label>
+        <rdfs:comment>The "OptGroup" HTML element creates a grouping of options within a "select" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup)</rdfs:comment>
+        <rdfs:label>OptGroup</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#option -->
+    <!-- https://github.com/DOWARC/dowarc#Option -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#option">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Option">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "option" HTML element is used to define an item contained in a "select", an "optgroup", or a "datalist" element. As such, "option" can represent menu items in popups and other lists of items in an HTML document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)</rdfs:comment>
-        <rdfs:label>option</rdfs:label>
+        <rdfs:comment>The "Option" HTML element is used to define an item contained in a "select", an "optgroup", or a "DataList" element. As such, "option" can represent menu items in popups and other lists of items in an HTML document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)</rdfs:comment>
+        <rdfs:label>Option</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#output -->
+    <!-- https://github.com/DOWARC/dowarc#Output -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#output">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Output">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "output" HTML element is a container element into which a site or app can inject the results of a calculation or the outcome of a user action. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output)</rdfs:comment>
-        <rdfs:label>output</rdfs:label>
+        <rdfs:comment>The "Output" HTML element is a container element into which a site or app can inject the results of a calculation or the outcome of a user action. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output)</rdfs:comment>
+        <rdfs:label>Output</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#p -->
+    <!-- https://github.com/DOWARC/dowarc#P -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#p">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#P">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "p" HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields. Paragraphs are block-level elements, and notably will automatically close if another block-level element is parsed before the closing "/p" tag. See ""Tag omission"" below. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)</rdfs:comment>
-        <rdfs:label>p</rdfs:label>
+        <rdfs:comment>The "P" HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields. Paragraphs are block-level elements, and notably will automatically close if another block-level element is parsed before the closing "/p" tag. See ""Tag omission"" below. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)</rdfs:comment>
+        <rdfs:label>P</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#param -->
+    <!-- https://github.com/DOWARC/dowarc#Param -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#param">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Param">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "param" HTML element defines parameters for an "object" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param)</rdfs:comment>
-        <rdfs:label>param</rdfs:label>
+        <rdfs:comment>The "Param" HTML element defines parameters for an "object" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param)</rdfs:comment>
+        <rdfs:label>Param</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#picture -->
+    <!-- https://github.com/DOWARC/dowarc#Picture -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#picture">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Picture">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#EmbeddedContentElement"/>
-        <rdfs:comment>The "picture" HTML element contains zero or more "source" elements and one "img" element to offer alternative versions of an image for different display/device scenarios. The browser will consider each child "source" element and choose the best match among them. If no matches are found—or the browser doesn't support the "picture" element—the URL of the "img" element's src attribute is selected. The selected image is then presented in the space occupied by the "img" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)</rdfs:comment>
-        <rdfs:label>picture</rdfs:label>
+        <rdfs:comment>The "Picture" HTML element contains zero or more "source" elements and one "Img" element to offer alternative versions of an image for different display/device scenarios. The browser will consider each child "source" element and choose the best match among them. If no matches are found—or the browser doesn't support the "picture" element—the URL of the "Img" element's src attribute is selected. The selected image is then presented in the space occupied by the "Img" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)</rdfs:comment>
+        <rdfs:label>Picture</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#plaintext -->
+    <!-- https://github.com/DOWARC/dowarc#PlainText -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#plaintext">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#PlainText">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "plaintext" HTML element renders everything following the start tag as raw text, ignoring any following HTML. There is no closing tag, since everything after it is considered raw text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext)</rdfs:comment>
-        <rdfs:label>plaintext</rdfs:label>
+        <rdfs:comment>The "PlainText" HTML element renders everything following the start tag as raw text, ignoring any following HTML. There is no closing tag, since everything after it is considered raw text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/PlainText)</rdfs:comment>
+        <rdfs:label>PlainText</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#pre -->
+    <!-- https://github.com/DOWARC/dowarc#Pre -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#pre">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Pre">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "pre" HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced font. Whitespace inside this element is displayed as written, with one exception. If one or more leading newline characters are included immediately following the opening "pre" tag, the first newline character is stripped. "pre" elements" text content is parsed as HTML, so if you want to ensure that your text content stays as plain text, some syntax characters, such as ", may need to be escaped using their respective character references. See escaping ambiguous characters for more information. "pre" elements commonly contain "code", "samp", and "kbd" elements, to represent computer code, computer output, and user input, respectively. By default, "pre" is a block-level element, i. e. its default display value is block. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)</rdfs:comment>
-        <rdfs:label>pre</rdfs:label>
+        <rdfs:comment>The "pre" HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced font. Whitespace inside this element is displayed as written, with one exception. If one or more leading newline characters are included immediately following the opening "pre" tag, the first newline character is stripped. "pre" elements" text content is parsed as HTML, so if you want to ensure that your text content stays as plain text, some syntax characters, such as ", may need to be escaped using their respective character references. See escaping ambiguous characters for more information. "pre" elements commonly contain "code", "samp", and "Kbd" elements, to represent computer code, computer output, and user input, respectively. By default, "pre" is a block-level element, i. e. its default display value is block. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)</rdfs:comment>
+        <rdfs:label>Pre</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#progress -->
+    <!-- https://github.com/DOWARC/dowarc#Progress -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#progress">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Progress">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "progress" HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)</rdfs:comment>
-        <rdfs:label>progress</rdfs:label>
+        <rdfs:comment>The "Progress" HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)</rdfs:comment>
+        <rdfs:label>Progress</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#q -->
+    <!-- https://github.com/DOWARC/dowarc#Q -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#q">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Q">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "q" HTML element indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the "blockquote" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q)</rdfs:comment>
-        <rdfs:label>q</rdfs:label>
+        <rdfs:comment>The "Q" HTML element indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the "BlockQuote" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q)</rdfs:comment>
+        <rdfs:label>Q</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#rb -->
+    <!-- https://github.com/DOWARC/dowarc#Rb -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#rb">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Rb">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "rb" HTML element is used to delimit the base text component of a "ruby" annotation, i. e. the text that is being annotated. One "rb" element should wrap each separate atomic segment of the base text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb)</rdfs:comment>
-        <rdfs:label>rb</rdfs:label>
+        <rdfs:comment>The "Rb" HTML element is used to delimit the base text component of a "ruby" annotation, i. e. the text that is being annotated. One "rb" element should wrap each separate atomic segment of the base text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb)</rdfs:comment>
+        <rdfs:label>Rb</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#rp -->
+    <!-- https://github.com/DOWARC/dowarc#Rp -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#rp">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Rp">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "rp" HTML element is used to provide fall-back parentheses for browsers that do not support display of ruby annotations using the "ruby" element. One "rp" element should enclose each of the opening and closing parentheses that wrap the "rt" element that contains the annotation's text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp)</rdfs:comment>
-        <rdfs:label>rp</rdfs:label>
+        <rdfs:comment>The "Rp" HTML element is used to provide fall-back parentheses for browsers that do not support display of ruby annotations using the "ruby" element. One "Rp" element should enclose each of the opening and closing parentheses that wrap the "Rt" element that contains the annotation's text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp)</rdfs:comment>
+        <rdfs:label>Rp</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1931,392 +1931,392 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#rtc -->
+    <!-- https://github.com/DOWARC/dowarc#Rtc -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#rtc">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Rtc">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "rtc" HTML element embraces semantic annotations of characters presented in a ruby of "rb" elements used inside of "ruby" element. "rb" elements can have both pronunciation ("rt") and semantic ("rtc") annotations. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rtc)</rdfs:comment>
-        <rdfs:label>rtc</rdfs:label>
+        <rdfs:comment>The "Rtc" HTML element embraces semantic annotations of characters presented in a ruby of "rb" elements used inside of "ruby" element. "rb" elements can have both pronunciation ("rt") and semantic ("Rtc") annotations. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Rtc)</rdfs:comment>
+        <rdfs:label>Rtc</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#ruby -->
+    <!-- https://github.com/DOWARC/dowarc#Ruby -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#ruby">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "ruby" HTML element represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters. It can also be used for annotating other kinds of text, but this usage is less common. The term ruby originated as a unit of measurement used by typesetters, representing the smallest size that text can be printed on newsprint while remaining legible. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby)</rdfs:comment>
-        <rdfs:label>ruby</rdfs:label>
+        <rdfs:comment>The "Ruby" HTML element represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters. It can also be used for annotating other kinds of text, but this usage is less common. The term Ruby originated as a unit of measurement used by typesetters, representing the smallest size that text can be printed on newsprint while remaining legible. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby)</rdfs:comment>
+        <rdfs:label>Ruby</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#s -->
+    <!-- https://github.com/DOWARC/dowarc#S -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#s">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#S">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "s" HTML element renders text with a strikethrough, or a line through it. Use the "s" element to represent things that are no longer relevant or no longer accurate. However, "s" is not appropriate when indicating document edits; for that, use the "del" and "ins" elements, as appropriate. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s)</rdfs:comment>
-        <rdfs:label>s</rdfs:label>
+        <rdfs:comment>The "S" HTML element renders text with a strikethrough, or a line through it. Use the "s" element to represent things that are no longer relevant or no longer accurate. However, "s" is not appropriate when indicating document edits; for that, use the "del" and "ins" elements, as appropriate. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s)</rdfs:comment>
+        <rdfs:label>S</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#samp -->
+    <!-- https://github.com/DOWARC/dowarc#Samp -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#samp">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Samp">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "samp" HTML element is used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp)</rdfs:comment>
-        <rdfs:label>samp</rdfs:label>
+        <rdfs:comment>The "Samp" HTML element is used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp)</rdfs:comment>
+        <rdfs:label>Samp</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#script -->
+    <!-- https://github.com/DOWARC/dowarc#Script -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#script">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Script">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ScriptingElement"/>
-        <rdfs:comment>The "script" HTML element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code. The "script" element can also be used with other languages, such as WebGL's GLSL shader programming language and JSON. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)</rdfs:comment>
-        <rdfs:label>script</rdfs:label>
+        <rdfs:comment>The "Script" HTML element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code. The "script" element can also be used with other languages, such as WebGL's GLSL shader programming language and JSON. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)</rdfs:comment>
+        <rdfs:label>Script</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#search -->
+    <!-- https://github.com/DOWARC/dowarc#Search -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#search">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Search">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The "search" HTML element is a container representing the parts of the document or application with form controls or other content related to performing a search or filtering operation. The "search" element semantically identifies the purpose of the element's contents as having search or filtering capabilities. The search or filtering functionality can be for the website or application, the current web page or document, or the entire Internet or subsection thereof. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search)</rdfs:comment>
-        <rdfs:label>search</rdfs:label>
+        <rdfs:comment>The "Search" HTML element is a container representing the parts of the document or application with form controls or other content related to performing a search or filtering operation. The "search" element semantically identifies the purpose of the element's contents as having search or filtering capabilities. The search or filtering functionality can be for the website or application, the current web page or document, or the entire Internet or subsection thereof. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search)</rdfs:comment>
+        <rdfs:label>Search</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#section -->
+    <!-- https://github.com/DOWARC/dowarc#Section -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#section">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Section">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ContentSectioningElement"/>
-        <rdfs:comment>The "section" HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)</rdfs:comment>
-        <rdfs:label>section</rdfs:label>
+        <rdfs:comment>The "Section" HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)</rdfs:comment>
+        <rdfs:label>Section</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#select -->
+    <!-- https://github.com/DOWARC/dowarc#Select -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#select">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Select">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "select" HTML element represents a control that provides a menu of options. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)</rdfs:comment>
-        <rdfs:label>select</rdfs:label>
+        <rdfs:comment>The "Select" HTML element represents a control that provides a menu of options. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)</rdfs:comment>
+        <rdfs:label>Select</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#shadow -->
+    <!-- https://github.com/DOWARC/dowarc#Shadow -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#shadow">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Shadow">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
         <rdfs:comment>An obsolete part of the Web Components technology suite that was intended to be used as a shadow DOM insertion point. (Source:https://developer.mozilla.org/en-US/docs/Web/HTML/Element#obsolete_and_deprecated_elements)</rdfs:comment>
-        <rdfs:label>shadow</rdfs:label>
+        <rdfs:label>Shadow</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#slot -->
+    <!-- https://github.com/DOWARC/dowarc#Slot -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#slot">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Slot">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WebComponentsElement"/>
-        <rdfs:comment>The "slot" HTML element—part of the Web Components technology suite—is a placeholder inside a web component that you can fill with your own markup, which lets you create separate DOM trees and present them together. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)</rdfs:comment>
-        <rdfs:label>slot</rdfs:label>
+        <rdfs:comment>The "Slot" HTML element—part of the Web Components technology suite—is a placeholder inside a web component that you can fill with your own markup, which lets you create separate DOM trees and present them together. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)</rdfs:comment>
+        <rdfs:label>Slot</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#small -->
+    <!-- https://github.com/DOWARC/dowarc#Small -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#small">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Small">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "small" HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from small to x-small. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small)</rdfs:comment>
-        <rdfs:label>small</rdfs:label>
+        <rdfs:comment>The "Small" HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from small to x-small. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small)</rdfs:comment>
+        <rdfs:label>Small</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#source -->
+    <!-- https://github.com/DOWARC/dowarc#Source -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#source">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Source">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#EmbeddedContentElement"/>
-        <rdfs:comment>The "source" HTML element specifies one or more media resources for the "picture", "audio", and "video" elements. It is a void element, which means that it has no content and does not require a closing tag. This element is commonly used to offer the same media content in multiple file formats in order to provide compatibility with a broad range of browsers given their differing support for image file formats and media file formats. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source)</rdfs:comment>
-        <rdfs:label>source</rdfs:label>
+        <rdfs:comment>The "Source" HTML element specifies one or more media resources for the "picture", "audio", and "video" elements. It is a void element, which means that it has no content and does not require a closing tag. This element is commonly used to offer the same media content in multiple file formats in order to provide compatibility with a broad range of browsers given their differing support for image file formats and media file formats. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source)</rdfs:comment>
+        <rdfs:label>Source</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#span -->
+    <!-- https://github.com/DOWARC/dowarc#Span -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#span">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Span">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "span" HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. "span" is very much like a "div" element, but "div" is a block-level element whereas a "span" is an inline-level element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span)</rdfs:comment>
-        <rdfs:label>span</rdfs:label>
+        <rdfs:comment>The "Span" HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. "Span" is very much like a "div" element, but "div" is a block-level element whereas a "span" is an inline-level element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span)</rdfs:comment>
+        <rdfs:label>Span</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#strike -->
+    <!-- https://github.com/DOWARC/dowarc#Strike -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#strike">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Strike">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "strike" HTML element places a strikethrough (horizontal line) over text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike)</rdfs:comment>
-        <rdfs:label>strike</rdfs:label>
+        <rdfs:comment>The "Strike" HTML element places a strikethrough (horizontal line) over text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike)</rdfs:comment>
+        <rdfs:label>Strike</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#strong -->
+    <!-- https://github.com/DOWARC/dowarc#Strong -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#strong">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Strong">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "strong" HTML element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)</rdfs:comment>
-        <rdfs:label>strong</rdfs:label>
+        <rdfs:comment>The "Strong" HTML element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong)</rdfs:comment>
+        <rdfs:label>Strong</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#style -->
+    <!-- https://github.com/DOWARC/dowarc#Style -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#style">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Style">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#DocumentMetadataElement"/>
-        <rdfs:comment>The "style" HTML element contains style information for a document, or part of a document. It contains CSS, which is applied to the contents of the document containing the "style" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)</rdfs:comment>
-        <rdfs:label>style</rdfs:label>
+        <rdfs:comment>The "Style" HTML element contains style information for a document, or part of a document. It contains CSS, which is applied to the contents of the document containing the "style" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)</rdfs:comment>
+        <rdfs:label>Style</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#sub -->
+    <!-- https://github.com/DOWARC/dowarc#Sub -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#sub">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Sub">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "sub" HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub)</rdfs:comment>
-        <rdfs:label>sub</rdfs:label>
+        <rdfs:comment>The "Sub" HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub)</rdfs:comment>
+        <rdfs:label>Sub</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#summary -->
+    <!-- https://github.com/DOWARC/dowarc#Summary -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#summary">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Summary">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InteractiveElements"/>
-        <rdfs:comment>The "summary" HTML element specifies a summary, caption, or legend for a "details" element's disclosure box. Clicking the "summary" element toggles the state of the parent "details" element open and closed. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)</rdfs:comment>
-        <rdfs:label>summary</rdfs:label>
+        <rdfs:comment>The "Summary" HTML element specifies a summary, caption, or legend for a "details" element's disclosure box. Clicking the "Summary" element toggles the state of the parent "details" element open and closed. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary)</rdfs:comment>
+        <rdfs:label>Summary</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#sup -->
+    <!-- https://github.com/DOWARC/dowarc#Sup -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#sup">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Sup">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "sup" HTML element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup)</rdfs:comment>
-        <rdfs:label>sup</rdfs:label>
+        <rdfs:comment>The "Sup" HTML element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup)</rdfs:comment>
+        <rdfs:label>Sup</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#svg -->
+    <!-- https://github.com/DOWARC/dowarc#Svg -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#svg">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Svg">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#SVGAndMathMLelement"/>
         <rdfs:comment>Container defining a new coordinate system and viewport. It is used as the outermost element of SVG documents, but it can also be used to embed an SVG fragment inside an SVG or HTML document. (source: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg)</rdfs:comment>
-        <rdfs:label>svg</rdfs:label>
+        <rdfs:label>Svg</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#table -->
+    <!-- https://github.com/DOWARC/dowarc#Table -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#table">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Table">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "table" HTML element represents tabular data—that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)</rdfs:comment>
-        <rdfs:label>table</rdfs:label>
+        <rdfs:comment>The "Table" HTML element represents tabular data—that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)</rdfs:comment>
+        <rdfs:label>Table</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#tbody -->
+    <!-- https://github.com/DOWARC/dowarc#Tbody -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#tbody">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Tbody">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "tbody" HTML element encapsulates a set of table rows ("tr" elements), indicating that they comprise the body of a table's (main) data. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody)</rdfs:comment>
-        <rdfs:label>tbody</rdfs:label>
+        <rdfs:comment>The "Tbody" HTML element encapsulates a set of table rows ("tr" elements), indicating that they comprise the body of a table's (main) data. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody)</rdfs:comment>
+        <rdfs:label>Tbody</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#td -->
+    <!-- https://github.com/DOWARC/dowarc#Td -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#td">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Td">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "td" HTML element defines a cell of a table that contains data and may be used as a child of the "tr" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td)</rdfs:comment>
-        <rdfs:label>td</rdfs:label>
+        <rdfs:comment>The "Td" HTML element defines a cell of a table that contains data and may be used as a child of the "tr" element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td)</rdfs:comment>
+        <rdfs:label>Td</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#template -->
+    <!-- https://github.com/DOWARC/dowarc#Template -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#template">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Template">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WebComponentsElement"/>
-        <rdfs:comment>The "template" HTML element serves as a mechanism for holding HTML fragments, which can either be used later via JavaScript or generated immediately into shadow DOM. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)</rdfs:comment>
-        <rdfs:label>template</rdfs:label>
+        <rdfs:comment>The "Template" HTML element serves as a mechanism for holding HTML fragments, which can either be used later via JavaScript or generated immediately into shadow DOM. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)</rdfs:comment>
+        <rdfs:label>Template</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#textarea -->
+    <!-- https://github.com/DOWARC/dowarc#TextArea -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#textarea">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#TextArea">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#FormsElement"/>
-        <rdfs:comment>The "textarea" HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)</rdfs:comment>
-        <rdfs:label>textarea</rdfs:label>
+        <rdfs:comment>The "TextArea" HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)</rdfs:comment>
+        <rdfs:label>TextArea</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#tfoot -->
+    <!-- https://github.com/DOWARC/dowarc#Tfoot -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#tfoot">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Tfoot">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "tfoot" HTML element encapsulates a set of table rows ("tr" elements), indicating that they comprise the foot of a table with information about the table's columns. This is usually a summary of the columns, e. g. , a sum of the given numbers in a column. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot)</rdfs:comment>
-        <rdfs:label>tfoot</rdfs:label>
+        <rdfs:comment>The "Tfoot" HTML element encapsulates a set of table rows ("tr" elements), indicating that they comprise the foot of a table with information about the table's columns. This is usually a summary of the columns, e. g. , a sum of the given numbers in a column. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot)</rdfs:comment>
+        <rdfs:label>Tfoot</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#th -->
+    <!-- https://github.com/DOWARC/dowarc#Th -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#th">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Th">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "th" HTML element defines a cell as the header of a group of table cells and may be used as a child of the "tr" element. The exact nature of this group is defined by the scope and headers attributes. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th)</rdfs:comment>
-        <rdfs:label>th</rdfs:label>
+        <rdfs:comment>The "Th" HTML element defines a cell as the header of a group of table cells and may be used as a child of the "tr" element. The exact nature of this group is defined by the scope and headers attributes. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th)</rdfs:comment>
+        <rdfs:label>Th</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#thead -->
+    <!-- https://github.com/DOWARC/dowarc#Thead -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#thead">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Thead">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "thead" HTML element encapsulates a set of table rows ("tr" elements), indicating that they comprise the head of a table with information about the table's columns. This is usually in the form of column headers ("th" elements). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead)</rdfs:comment>
-        <rdfs:label>thead</rdfs:label>
+        <rdfs:comment>The "Thead" HTML element encapsulates a set of table rows ("tr" elements), indicating that they comprise the head of a table with information about the table's columns. This is usually in the form of column headers ("th" elements). (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead)</rdfs:comment>
+        <rdfs:label>Thead</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#time -->
+    <!-- https://github.com/DOWARC/dowarc#Time -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#time">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Time">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "time" HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders. It may represent one of the following: A time on a 24-hour clock; A precise date in the Gregorian calendar (with optional time and timezone information); A valid time duration. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)</rdfs:comment>
-        <rdfs:label>time</rdfs:label>
+        <rdfs:comment>The "Time" HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders. It may represent one of the following: A time on a 24-hour clock; A precise date in the Gregorian calendar (with optional time and timezone information); A valid time duration. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)</rdfs:comment>
+        <rdfs:label>Time</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#title -->
+    <!-- https://github.com/DOWARC/dowarc#Title -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#title">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Title">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#DocumentMetadataElement"/>
-        <rdfs:comment>The "title" HTML element defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)</rdfs:comment>
-        <rdfs:label>title</rdfs:label>
+        <rdfs:comment>The "Title" HTML element defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)</rdfs:comment>
+        <rdfs:label>Title</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#tr -->
+    <!-- https://github.com/DOWARC/dowarc#Tr -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#tr">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Tr">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TableContentElement"/>
-        <rdfs:comment>The "tr" HTML element defines a row of cells in a table. The row's cells can then be established using a mix of "td" (data cell) and "th" (header cell) elements. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr)</rdfs:comment>
-        <rdfs:label>tr</rdfs:label>
+        <rdfs:comment>The "Tr" HTML element defines a row of cells in a table. The row's cells can then be established using a mix of "td" (data cell) and "th" (header cell) elements. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr)</rdfs:comment>
+        <rdfs:label>Tr</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#track -->
+    <!-- https://github.com/DOWARC/dowarc#Track -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#track">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Track">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ImageAndMultimediaElement"/>
-        <rdfs:comment>The "track" HTML element is used as a child of the media elements, "audio" and "video". Each track element lets you specify a timed text track (or time-based data) that can be displayed in parallel with the media element, for example to overlay subtitles or closed captions on top of a video or alongside audio tracks. Multiple tracks can be specified for a media element, containing different kinds of timed text data, or timed text data that has been translated for different locales. The data that is used will either be the track that has been set to be the default, or a kind and translation based on user preferences. The tracks are formatted in WebVTT format (. vtt files) — Web Video Text Tracks. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track)</rdfs:comment>
-        <rdfs:label>track</rdfs:label>
+        <rdfs:comment>The "Track" HTML element is used as a child of the media elements, "audio" and "video". Each track element lets you specify a timed text track (or time-based data) that can be displayed in parallel with the media element, for example to overlay subtitles or closed captions on top of a video or alongside audio tracks. Multiple tracks can be specified for a media element, containing different kinds of timed text data, or timed text data that has been translated for different locales. The data that is used will either be the track that has been set to be the default, or a kind and translation based on user preferences. The tracks are formatted in WebVTT format (. vtt files) — Web Video Text Tracks. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track)</rdfs:comment>
+        <rdfs:label>Track</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#tt -->
+    <!-- https://github.com/DOWARC/dowarc#Tt -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#tt">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Tt">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "tt" HTML element creates inline text which is presented using the user agent's default monospace font face. This element was created for the purpose of rendering text as it would be displayed on a fixed-width display such as a teletype, text-only screen, or line printer. The terms non-proportional, monotype, and monospace are used interchangeably and have the same general meaning: they describe a typeface whose characters are all the same number of pixels wide. This element is obsolete, however. You should use the more semantically helpful "code", "kbd", "samp", or "var" elements for inline text that needs to be presented in monospace type, or the "pre" tag for content that should be presented as a separate block. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt)</rdfs:comment>
-        <rdfs:label>tt</rdfs:label>
+        <rdfs:comment>The "Tt" HTML element creates inline text which is presented using the user agent's default monospace font face. This element was created for the purpose of rendering text as it would be displayed on a fixed-width display such as a teletype, text-only screen, or line printer. The terms non-proportional, monotype, and monospace are used interchangeably and have the same general meaning: they describe a typeface whose characters are all the same number of pixels wide. This element is obsolete, however. You should use the more semantically helpful "code", "Kbd", "samp", or "var" elements for inline text that needs to be presented in monospace type, or the "pre" tag for content that should be presented as a separate block. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt)</rdfs:comment>
+        <rdfs:label>Tt</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#u -->
+    <!-- https://github.com/DOWARC/dowarc#U -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#u">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#U">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "u" HTML element represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a single solid underline, but may be altered using CSS. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u)</rdfs:comment>
-        <rdfs:label>u</rdfs:label>
+        <rdfs:comment>The "U" HTML element represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a single solid underline, but may be altered using CSS. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u)</rdfs:comment>
+        <rdfs:label>U</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#ul -->
+    <!-- https://github.com/DOWARC/dowarc#Ul -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#ul">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Ul">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#TextContentElement"/>
-        <rdfs:comment>The "ul" HTML element represents an unordered list of items, typically rendered as a bulleted list. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)</rdfs:comment>
-        <rdfs:label>ul</rdfs:label>
+        <rdfs:comment>The "Ul" HTML element represents an unordered list of items, typically rendered as a bulleted list. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)</rdfs:comment>
+        <rdfs:label>Ul</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#var -->
+    <!-- https://github.com/DOWARC/dowarc#Var -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#var">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Var">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "var" HTML element represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var)</rdfs:comment>
-        <rdfs:label>var</rdfs:label>
+        <rdfs:comment>The "Var" HTML element represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var)</rdfs:comment>
+        <rdfs:label>Var</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#video -->
+    <!-- https://github.com/DOWARC/dowarc#Video -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#video">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Video">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ImageAndMultimediaElement"/>
-        <rdfs:comment>The "video" HTML element embeds a media player which supports video playback into the document. You can use video for audio content as well, but the "audio" element may provide a more appropriate user experience. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)</rdfs:comment>
-        <rdfs:label>video</rdfs:label>
+        <rdfs:comment>The "Video" HTML element embeds a media player which supports video playback into the document. You can use video for audio content as well, but the "audio" element may provide a more appropriate user experience. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)</rdfs:comment>
+        <rdfs:label>Video</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#wbr -->
+    <!-- https://github.com/DOWARC/dowarc#Wbr -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#wbr">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Wbr">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement"/>
-        <rdfs:comment>The "wbr" HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr)</rdfs:comment>
-        <rdfs:label>wbr</rdfs:label>
+        <rdfs:comment>The "Wbr" HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Wbr)</rdfs:comment>
+        <rdfs:label>Wbr</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#xmp -->
+    <!-- https://github.com/DOWARC/dowarc#Xmp -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#xmp">
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Xmp">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
-        <rdfs:comment>The "xmp" HTML element renders text between the start and end tags without interpreting the HTML in between and using a monospaced font. The HTML2 specification recommended that it should be rendered wide enough to allow 80 characters per line. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp)</rdfs:comment>
-        <rdfs:label>xmp</rdfs:label>
+        <rdfs:comment>The "Xmp" HTML element renders text between the start and end tags without interpreting the HTML in between and using a monospaced font. The HTML2 specification recommended that it should be rendered wide enough to allow 80 characters per line. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Xmp)</rdfs:comment>
+        <rdfs:label>Xmp</rdfs:label>
     </owl:NamedIndividual>
 
 
