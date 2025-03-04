@@ -828,6 +828,14 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxFile">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     </owl:Class>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#WARCcdxField -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxField">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
     
 
 
@@ -2309,6 +2317,26 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements"/>
         <rdfs:comment>The "xmp" HTML element renders text between the start and end tags without interpreting the HTML in between and using a monospaced font. The HTML2 specification recommended that it should be rendered wide enough to allow 80 characters per line. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp)</rdfs:comment>
         <rdfs:label>xmp</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#MassagedURL -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MassagedURL">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>The URL used in the request, as for the "a" field, but with the hostname translated to SURT form and the scheme component removed so that the value starts with the TLD. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>MassagedURL</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#Date -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Date">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>The URL used in the request, as for the "a" field, but with the hostname translated to SURT form and the scheme component removed so that the value starts with the TLD. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>Date</rdfs:label>
     </owl:NamedIndividual>
 
 
