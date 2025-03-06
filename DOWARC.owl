@@ -2319,8 +2319,6 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
         <rdfs:label>Xmp</rdfs:label>
     </owl:NamedIndividual>
 
-
-
 <!-- https://github.com/DOWARC/dowarc#MassagedURL -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MassagedURL">
@@ -2330,15 +2328,85 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     </owl:NamedIndividual>
 
 
-
 <!-- https://github.com/DOWARC/dowarc#Date -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Date">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>The URL used in the request, as for the "a" field, but with the hostname translated to SURT form and the scheme component removed so that the value starts with the TLD. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment>A timestamp for this record, stored as the 14 digits from the text form of a WARC::Date without the associated marker characters, i.e. YYYYmmddHHMMSS instead of YYYY-mm-ddTHH:MM:SSZ. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>Date</rdfs:label>
     </owl:NamedIndividual>
 
+<!-- https://github.com/DOWARC/dowarc#OriginalURL -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#OriginalURL">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>The URL that was used in the request that produced this response. The url_prefix search key matches a prefix of this value. This value is copied from the WARC-Target-URI header and is written as "-" if the record does not have that header. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>OriginalURL</rdfs:label>
+    </owl:NamedIndividual>
+
+<!-- https://github.com/DOWARC/dowarc#MimeType -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MimeType">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>The MIME type reported in the Content-Type header of the response. Written as "-" if the record does not contain an HTTP response with an entity body. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>MimeType</rdfs:label>
+    </owl:NamedIndividual>
+
+<!-- https://github.com/DOWARC/dowarc#ResponseCode -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#ResponseCode">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>The HTTP status code used in the response. Written as "-" if the record does not contain an HTTP response. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>ResponseCode</rdfs:label>
+    </owl:NamedIndividual>
+
+<!-- https://github.com/DOWARC/dowarc#NewStyleChecksum -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#NewStyleChecksum">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>Typically the base32-encoded SHA1 digest of the response payload. This value is copied from the WARC-Payload-Digest header of a record if available, otherwise "-" is written. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>NewStyleChecksum</rdfs:label>
+    </owl:NamedIndividual>
+
+<!-- https://github.com/DOWARC/dowarc#Redirect -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Redirect>
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>The contents of the Location header of the response, URL-escaped. Some implementations do not properly set this field. Written as "-" if not present or if the record does not contain an HTTP response. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>Redirect</rdfs:label>
+    </owl:NamedIndividual>
+
+<!-- https://github.com/DOWARC/dowarc#MetaTagsAIF -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MetaTagsAIF>
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>This field seems to be very common in CDX files, but no values have been observed and this field appears to be completely undocumented. Ignored on read, but written as "-" if included when building an index. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>MetaTagsAIF</rdfs:label>
+    </owl:NamedIndividual>
+
+<!-- https://github.com/DOWARC/dowarc#CompressedRecordSize -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CompressedRecordSize>
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>The number of octets in the compressed record in the WARC file. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>CompressedRecordSize</rdfs:label>
+    </owl:NamedIndividual>
+
+<!-- https://github.com/DOWARC/dowarc#CompressedARCFileOffset -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CompressedARCFileOffset>
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>The <offset> is the number of bytes from the start of the WARC when the relevant record begins. (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/)</rdfs:comment>
+        <rdfs:label>CompressedARCFileOffset</rdfs:label>
+    </owl:NamedIndividual>
+
+<!-- https://github.com/DOWARC/dowarc#FileName -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#FileName>
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>The name of the WARC volume containing this record. This value is assumed to be relative to the directory containing the CDX file and to always be a Unix-style filename, regardless of the local file name conventions. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:label>FileName</rdfs:label>
+    </owl:NamedIndividual>
 
 
 </rdf:RDF>
