@@ -2370,7 +2370,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
 <!-- https://github.com/DOWARC/dowarc#Redirect -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Redirect>
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Redirect">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:comment>The contents of the Location header of the response, URL-escaped. Some implementations do not properly set this field. Written as "-" if not present or if the record does not contain an HTTP response. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>Redirect</rdfs:label>
@@ -2378,7 +2378,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
 <!-- https://github.com/DOWARC/dowarc#MetaTagsAIF -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MetaTagsAIF>
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MetaTagsAIF">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:comment>This field seems to be very common in CDX files, but no values have been observed and this field appears to be completely undocumented. Ignored on read, but written as "-" if included when building an index. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>MetaTagsAIF</rdfs:label>
@@ -2386,7 +2386,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
 <!-- https://github.com/DOWARC/dowarc#CompressedRecordSize -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CompressedRecordSize>
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CompressedRecordSize">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:comment>The number of octets in the compressed record in the WARC file. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>CompressedRecordSize</rdfs:label>
@@ -2394,15 +2394,15 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
 <!-- https://github.com/DOWARC/dowarc#CompressedARCFileOffset -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CompressedARCFileOffset>
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CompressedARCFileOffset">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>The <offset> is the number of bytes from the start of the WARC when the relevant record begins. (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/)</rdfs:comment>
+        <rdfs:comment>The "offset" is the number of bytes from the start of the WARC when the relevant record begins. (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/)</rdfs:comment>
         <rdfs:label>CompressedARCFileOffset</rdfs:label>
     </owl:NamedIndividual>
 
 <!-- https://github.com/DOWARC/dowarc#FileName -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#FileName>
+    <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#FileName">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:comment>The name of the WARC volume containing this record. This value is assumed to be relative to the directory containing the CDX file and to always be a Unix-style filename, regardless of the local file name conventions. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>FileName</rdfs:label>
