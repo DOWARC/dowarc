@@ -127,7 +127,6 @@
     <!-- http://purl.org/pav/curatedBy -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/pav/curatedBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebarchivingAgent"/>
         <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
@@ -141,7 +140,6 @@
     <owl:ObjectProperty rdf:about="http://purl.org/pav/derivedFrom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
@@ -223,7 +221,6 @@
     <!-- http://www.openarchives.org/ore/terms/aggregates -->
 
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/aggregates">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
@@ -239,7 +236,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/describes">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </owl:ObjectProperty>
     
@@ -250,7 +246,6 @@
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/isAggregatedBy">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
@@ -262,7 +257,6 @@
     <!-- http://www.openarchives.org/ore/terms/isDescribedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/isDescribedBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
@@ -283,7 +277,6 @@
     <!-- http://www.openarchives.org/ore/terms/proxyIn -->
 
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/proxyIn">
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
     </rdf:Description>
@@ -293,7 +286,7 @@
     <!-- http://www.openarchives.org/ore/terms/similarTo -->
 
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/similarTo">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
     </rdf:Description>
     
@@ -304,7 +297,6 @@
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#generated">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
@@ -318,7 +310,6 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Identifier"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
@@ -330,8 +321,6 @@
     <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
@@ -345,7 +334,6 @@
     <owl:ObjectProperty rdf:about="https://github.com/DOWARC/dowarc#identifiedBy">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
@@ -363,7 +351,6 @@
     <owl:ObjectProperty rdf:about="https://github.com/DOWARC/dowarc#identifies">
         <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/Identifier"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCarchive"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
@@ -822,17 +809,6 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCarchive -->
-
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCarchive">
-        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>A collection of WARC files aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a delimited live web object (e.g., a web site, a web page). Subclass of ore:Aggregation.</rdfs:comment>
-        <rdfs:label>WARCarchive</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/DOWARC/dowarc#WARCcdxFile -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxFile">
@@ -908,7 +884,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCgraph">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCarchive collection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph (hasPart/isPartOf).</rdfs:comment>
+        <rdfs:comment>An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCcollection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph (hasPart/isPartOf).</rdfs:comment>
         <rdfs:label>WARCgraph</rdfs:label>
     </owl:Class>
     
