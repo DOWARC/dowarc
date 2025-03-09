@@ -933,6 +933,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecord">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:comment>A WARC record is a component of a WARC file. A WARC record includes data retrieved from a source in the live Wide World Web, together with synthetic (meta)data providing information about the retrieved content. A WARC record has a header and a content block carrying the payload for the live web data object that was harvested over the HTTP. A WARC record is both an aggregated resource (component of a WARC file) and an aggregation (it includes sub-elements of its own).</rdfs:comment>
         <rdfs:label>WARCrecord</rdfs:label>
     </owl:Class>
