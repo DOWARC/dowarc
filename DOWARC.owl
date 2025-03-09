@@ -586,6 +586,16 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
         <rdfs:comment>Content sectioning elements organize the HTML document content into logical pieces. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning)</rdfs:comment>
         <rdfs:label>ContentSectioningElement</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- https://github.com/DOWARC/dowarc#CrawlLog -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#CrawlLog">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>CrawlLog</rdfs:label>
+    </owl:Class>
     
 
 
