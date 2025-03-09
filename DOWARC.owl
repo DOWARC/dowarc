@@ -968,7 +968,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebElement">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>A data object that can be retrieved via a URL over the HTTP.</rdfs:comment>
         <rdfs:label>WebElement</rdfs:label>
     </owl:Class>
     
