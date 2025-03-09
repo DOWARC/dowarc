@@ -2409,6 +2409,270 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     </owl:NamedIndividual>
 
 
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedUrl -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedUrl">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:comment>Canonicalization is applied to URIs to remove trivial differences in the URIs that do not reflect that the URI reference different resources. Examples include removing session ID parameters, unneccessary port declerations (e.g. :80 when crawling HTTP). (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/#appendix-a--canonicalization)</rdfs:comment>
+        <rdfs:label>CanonizedUrl</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#NewsGroup -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#NewsGroup">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>NewsGroup</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#RulespaceCategory -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#RulespaceCategory">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>RulespaceCategory</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CompressedDatFileOffset -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CompressedDatFileOffset">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CompressedDatFileOffset</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedFrame -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedFrame">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedFrame</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#MultiColumnLanguageDescription -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MultiColumnLanguageDescription">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>MultiColumnLanguageDescription</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedHost -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedHost">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedHost</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedImage -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedImage">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedImage</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedJumpPoint -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedJumpPoint">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedJumpPoint</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedLink -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedLink">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedLink</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedPath -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedPath">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedPath</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#LanguageString -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#LanguageString">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>LanguageString</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedRedirect -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedRedirect">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedRedirect</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#Uniqueness -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Uniqueness">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>Uniqueness</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedUrlInOtherHrefTags -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedUrlInOtherHrefTags">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedUrlInOtherHrefTags</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedUrlInOtherSrcTags -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedUrlInOtherSrcTags">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedUrlInOtherSrcTags</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CanonizedUrlFoundInScript -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedUrlFoundInScript">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CanonizedUrlFoundInScript</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#OldStyleChecksum -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#OldStyleChecksum">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>OldStyleChecksum</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#UncompressedDatFileOffset -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#UncompressedDatFileOffset">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>UncompressedDatFileOffset</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#IP -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#IP">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>IP</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CdxFrame -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CdxFrame">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CdxFrame</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#OriginalHost -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#OriginalHost">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>OriginalHost</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CdxImage -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CdxImage">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CdxImage</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#OriginalJumpPoint -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#OriginalJumpPoint">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>OriginalJumpPoint</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CdxLink -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CdxLink">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CdxLink</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#ArcDocumentLength -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#ArcDocumentLength">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>ArcDocumentLength</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#Port -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Port">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>Port</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#OriginalPath -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#OriginalPath">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>OriginalPath</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#CdxTitle -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CdxTitle">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>CdxTitle</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#UncompressedArcFileOffset -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#UncompressedArcFileOffset">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>UncompressedArcFileOffset</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#UrlInOtherHrefTages -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#UrlInOtherHrefTages">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>UrlInOtherHrefTages</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#UrlInOtherSrcTags -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#UrlInOtherSrcTags">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>UrlInOtherSrcTags</rdfs:label>
+     </owl:NamedIndividual>
+
+
+
+<!-- https://github.com/DOWARC/dowarc#UrlFoundInScript -->
+     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#UrlFoundInScript">
+        <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <rdfs:label>UrlFoundInScript</rdfs:label>
+     </owl:NamedIndividual>
+
 </rdf:RDF>
 
 
