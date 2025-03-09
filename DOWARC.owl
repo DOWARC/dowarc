@@ -735,7 +735,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#PersonAgent">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebarchivingAgent"/>
-        <rdfs:label>PersonAgentAgent</rdfs:label>
+        <rdfs:label>PersonAgent</rdfs:label>
     </owl:Class>
     
 
@@ -882,7 +882,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
  <!-- https://github.com/DOWARC/dowarc#WARCfileNamedField -->
 
-    <owl:Class rdf:about="http://purl.org/pav/retrievedBy#WARCfileNamedField">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCfileNamedField">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>Set of elements consisting of a name, a colon, and a value, with long values continued on indented lines. (Source: ISO 28500)</rdfs:comment>
     </owl:Class>
