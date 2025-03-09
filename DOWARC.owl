@@ -569,7 +569,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#ContentSectioningElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#ContentSectioningElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Content sectioning elements organize the HTML document content into logical pieces. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning)</rdfs:comment>
         <rdfs:label>ContentSectioningElement</rdfs:label>
     </owl:Class>
@@ -589,7 +589,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#DemarcatingEditsElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#DemarcatingEditsElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>These elements let you provide indications that specific parts of the text have been altered. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#demarcating_edits)</rdfs:comment>
         <rdfs:label>DemarcatingEditsElement</rdfs:label>
     </owl:Class>
@@ -609,7 +609,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#DocumentMetadataElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#DocumentMetadataElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or linked to another file that has the information. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#document_metadata)</rdfs:comment>
         <rdfs:label>DocumentMetadataElement</rdfs:label>
     </owl:Class>
@@ -619,7 +619,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#EmbeddedContentElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#EmbeddedContentElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>In addition to regular multimedia content, HTML can include a variety of other content, even if it's not always easy to interact with. (Source:https://developer.mozilla.org/en-US/docs/Web/HTML/Element#embedded_content)</rdfs:comment>
         <rdfs:label>EmbeddedContentElement</rdfs:label>
     </owl:Class>
@@ -629,7 +629,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#FormsElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#FormsElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>HTML provides several elements that can be used together to create forms that the user can fill out and submit to the website or application. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#forms)</rdfs:comment>
         <rdfs:label>FormsElement</rdfs:label>
     </owl:Class>
@@ -650,7 +650,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#HTMLelement">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>A data object embedded in a HTML document, either directly or via an actionable link. Examples of web element are texts, images, videos, hyperlinks, executable applications.</rdfs:comment>
         <rdfs:label>HTMLelement</rdfs:label>
     </owl:Class>
     
@@ -668,7 +668,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#ImageAndMultimediaElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#ImageAndMultimediaElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Multimedia resources such as images, audio, and video. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#image_and_multimedia)</rdfs:comment>
         <rdfs:label>ImageAndMultimediaElement</rdfs:label>
     </owl:Class>
@@ -684,7 +684,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#InlineTextSemanticsElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InlineTextSemanticsElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Elements defining meaning, structure, or style of a word, line, or any arbitrary piece of text. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics></rdfs:comment>
         <rdfs:label>InlineTextSemanticsElement</rdfs:label>
     </owl:Class>
@@ -694,7 +694,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#InteractiveElements -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InteractiveElements">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Elements that help create interactive user interface objects. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#interactive_elements)</rdfs:comment>
         <rdfs:label>InteractiveElements</rdfs:label>
     </owl:Class>
@@ -704,7 +704,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#MainRootElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#MainRootElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#main_root)</rdfs:comment>
         <rdfs:label>MainRootElement</rdfs:label>
     </owl:Class>
@@ -714,7 +714,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#ObsoleteAndDeprecatedElements">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment> Old HTML elements that are deprecated. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#obsolete_and_deprecated_elements)</rdfs:comment>
     </owl:Class>
     
@@ -763,7 +763,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#SVGAndMathMLelement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#SVGAndMathMLelement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>XML elements embedded directly in HTML, describing two-dimensional based vector graphics and mathematical notation. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#svg_and_mathml)</rdfs:comment>
         <rdfs:label>SVGAndMathMLelement</rdfs:label>
     </owl:Class>
@@ -773,7 +773,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#ScriptingElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#ScriptingElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Elements belonging to scripting languages, most prominently JavaScript, used to create dynamic content and Web applications. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#scripting)</rdfs:comment>
         <rdfs:label>ScriptingElement</rdfs:label>
     </owl:Class>
@@ -783,7 +783,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#SectioningRootElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#SectioningRootElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Represents the content of an HTML document. There can be only one such element in a document. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#sectioning_root)</rdfs:comment>
         <rdfs:label>SectioningRootElement</rdfs:label>
     </owl:Class>
@@ -802,7 +802,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#TableContentElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#TableContentElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Elements used to create and handle tabular data. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#table_content)</rdfs:comment>
         <rdfs:label>TableContentElement</rdfs:label>
     </owl:Class>
@@ -812,7 +812,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#TextContentElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#TextContentElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Elements used to organize blocks or sections of content placed between the opening "body" and closing "/body" tags. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#text_content)</rdfs:comment>
         <rdfs:label>TextContentElement</rdfs:label>
     </owl:Class>
@@ -957,7 +957,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#WebComponentsElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebComponentsElement">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#HTMLelement"/>
         <rdfs:comment>Made with an HTML-related technology that makes it possible to create and use custom elements as if it were regular HTML. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#web_components)</rdfs:comment>
         <rdfs:label>WebComponentsElement</rdfs:label>
     </owl:Class>
@@ -968,7 +968,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebElement">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:comment>A data object embedded in a HTML document, either directly or via an actionable link. Examples of web element are texts, images, videos, hyperlinks, executable applications.</rdfs:comment>
+        <rdfs:comment></rdfs:comment>
         <rdfs:label>WebElement</rdfs:label>
     </owl:Class>
     
