@@ -829,7 +829,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcoll">
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
-        <rdfs:comment>A collection (i.e., an aggregate) of WARCfiles.</rdfs:comment>
+        <rdfs:comment>A collection of WARC records aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a live web resource (e.g., a web site, a web page). Subclass of ore:Aggregation.</rdfs:comment>
         <rdfs:label>WARCcoll</rdfs:label>
     </owl:Class>
     
