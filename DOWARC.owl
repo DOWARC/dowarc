@@ -16,6 +16,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:dowarc="https://github.com/dowarc/">
     <owl:Ontology rdf:about="https://github.com/DOWARC/dowarc">
+	<rdfs:comment xml:lang="en">This is a domain ontology created to support the Semantic modelling of WARC files. RDF representations of web archiving data objects can play a critical role in addressing sustainable versioning practices in web archiving and web preservation.</rdfs:comment>
         <owl:versionIRI rdf:resource="https://github.com/DOWARC/dowarc_1.0"/>
         <owl:imports rdf:resource="http://purl.org/pav/2.3"/>
         <owl:imports rdf:resource="https://id.loc.gov/ontologies/premis-3-0-0"/>
