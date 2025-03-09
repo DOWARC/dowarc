@@ -887,6 +887,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <!-- https://github.com/DOWARC/dowarc#WARCgraph -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCgraph">
+	<rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCcollection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph (hasPart/isPartOf).</rdfs:comment>
