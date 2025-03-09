@@ -881,6 +881,14 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
         <rdfs:comment>A container file that aggregates a sequence of structured information chunks (WARC records), storing data and metadata. WARC files are the output of web crawling automated activities. A WARC file can contain one or more digital object with multiple media types (i.e., MIME). Subclass of ore:Aggregation.</rdfs:comment>
         <rdfs:label>WARCfile</rdfs:label>
     </owl:Class>
+
+
+
+ <!-- https://github.com/DOWARC/dowarc#WARCfileNamedField -->
+
+    <owl:Class rdf:about="http://purl.org/pav/retrievedBy#WARCfileNamedField">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
     
 
 
