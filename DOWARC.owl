@@ -225,7 +225,6 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#InWARCdoUrl"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
     </owl:ObjectProperty>
@@ -673,12 +672,6 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
         <rdfs:comment>Multimedia resources such as images, audio, and video. (Source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element#image_and_multimedia)</rdfs:comment>
         <rdfs:label>ImageAndMultimediaElement</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- https://github.com/DOWARC/dowarc#InWARCdoUrl -->
-
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#InWARCdoUrl"/>
     
 
 
