@@ -962,6 +962,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebElement">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+	<owl:disjointWith rdf:resource="https://github.com/DOWARC/dowarc#WebResource"/>
         <rdfs:comment>A data object that can be retrieved via a URL over the HTTP.</rdfs:comment>
         <rdfs:label>WebElement</rdfs:label>
     </owl:Class>
@@ -973,7 +974,8 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebResource">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>A resource that can be accessed via an internet connection and via a web broswer, at a specific location in the Workd Wide Web represented by a URI or URL. A live website is a Web resource, a live web page is a Web resource. A web page is an hypertext document written in HTML and can include elements such as text, images, videos, hyperlinks to other web pages and web sites, as well as stylesheets and script files. A website is made of one or more web pages. All web resources are highly dynamic data objects, subject to changes; they show low levels of resilience and permanence. Web archiving activities target web resources to reduce volatility of web resources and support long term access to them. Subclass of Aggregation.</rdfs:comment>
+	<owl:disjointWith rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:comment>A resource that can be accessed via an internet connection and via a web broswer, at a specific location in the Workd Wide Web represented by a URI or URL. A web resource is a type of aggregation that aggregates web elements and/or HTML elements. A live website is a Web resource, a live web page is a Web resource. A web page is an hypertext document written in HTML and can include elements such as text, images, videos, hyperlinks to other web pages and web sites, as well as stylesheets and script files. A website is made of one or more web pages. All web resources are highly dynamic data objects, subject to changes; they show low levels of resilience and permanence. Web archiving activities target web resources to reduce volatility of web resources and support long term access to them. </rdfs:comment>
         <rdfs:label>WebResource</rdfs:label>
     </owl:Class>
     
