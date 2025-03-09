@@ -643,6 +643,16 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
         <rdfs:comment></rdfs:comment>
         <rdfs:label>HardwareAgent</rdfs:label>
     </owl:Class>
+
+
+
+    <!-- https://github.com/DOWARC/dowarc#HTMLelement -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#HTMLelement">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebElement"/>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>HTMLelement</rdfs:label>
+    </owl:Class>
     
 
 
