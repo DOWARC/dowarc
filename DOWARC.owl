@@ -2346,6 +2346,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#OriginalURL">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+        <owl:sameAs rdf:resource="https://github.com/DOWARC/dowarc#WARC-Target-URI"/>
         <rdfs:comment>The URL that was used in the request that produced this response. The url_prefix search key matches a prefix of this value. This value is copied from the WARC-Target-URI header and is written as "-" if the record does not have that header. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>OriginalURL</rdfs:label>
     </owl:NamedIndividual>
@@ -2354,6 +2355,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MimeType">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+	<owl:sameAs rdf:resource="https://github.com/DOWARC/dowarc#Content-Type"/>
         <rdfs:comment>The MIME type reported in the Content-Type header of the response. Written as "-" if the record does not contain an HTTP response with an entity body. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>MimeType</rdfs:label>
     </owl:NamedIndividual>
@@ -2370,6 +2372,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#NewStyleChecksum">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+    <owl:sameAs rdf:resource="https://github.com/DOWARC/dowarc#WARC-Payload-Digest"/>
         <rdfs:comment>Typically the base32-encoded SHA1 digest of the response payload. This value is copied from the WARC-Payload-Digest header of a record if available, otherwise "-" is written. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>NewStyleChecksum</rdfs:label>
     </owl:NamedIndividual>
@@ -2723,6 +2726,7 @@ prefix such as "http:" or "urn:"). All records have a WARC-Record-ID field. (Sou
 <!-- https://github.com/DOWARC/dowarc#Content-Type -->
      <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Content-Type">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCfileNamedField"/>
+	<owl:sameAs rdf:resource="https://github.com/DOWARC/dowarc#MimeType"/>
 	<rdfs:comment>The MIME type [RFC2045] of the information contained in the record's block. For example, in HTTP request and response records, this would be 'application/http' as per section 19.1 of [RFC2616] (or 'application/http; msgtype=request' and 'application/http; msgtype=response' respectively). In particular, the content-type is not the value of the HTTP Content-Type header in an HTTP response but a MIME type to describe the full archived HTTP message (hence 'application/http' if the block contains request or response headers). All records with a non-empty block (non-zero Content-Length), except 'continuation' records, should have a Content-Type field. Only if the media type is not given by a Content-Type field, a reader may attempt to guess the media type via inspection of its content and/or the name extension(s) of the URI used to identify the resource. If the media type remains unknown, the reader should treat it as type "application/octet stream". (Source: ISO 28500)</rdfs:comment>
         <rdfs:label>Content-Type</rdfs:label>
      </owl:NamedIndividual>
@@ -2750,6 +2754,7 @@ prefix such as "http:" or "urn:"). All records have a WARC-Record-ID field. (Sou
 <!-- https://github.com/DOWARC/dowarc#WARC-Payload-Digest -->
      <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#WARC-Payload-Digest">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCfileNamedField"/>
+	<owl:sameAs rdf:resource="https://github.com/DOWARC/dowarc#NewStyleChecksum"/>
 	<rdfs:comment>An optional parameter indicating the algorithm name and calculated value of a digest applied to the payload referred to or contained by the record - which is not necessarily equivalent to the record block. An example is a SHA-1 labelled Base32 ([RFC3548]) value. The payload of an application/http block is its 'entity-body' (per [RFC2616]). In contrast to WARC-Block Digest, the WARC-Payload-Digest field is also  used for data not actually present in the current record block, for example when a block is left off in accordance with a 'revisit' profile (see 'revisit'), or when a record is segmented (the WARC-Payload-Digest recorded in the first segment of a segmented record is the digest of the payload of the logical record). The WARC-Payload-Digest field is used on WARC records with a well-defined payload and is not used on records without a well-defined payload.(Source: ISO 28500)</rdfs:comment>
         <rdfs:label>WARC-Payload-Digest</rdfs:label>
      </owl:NamedIndividual>
@@ -2777,6 +2782,7 @@ prefix such as "http:" or "urn:"). All records have a WARC-Record-ID field. (Sou
 <!-- https://github.com/DOWARC/dowarc#WARC-Target-URI -->
      <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#WARC-Target-URI">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCfileNamedField"/>
+	<owl:sameAs rdf:resource="https://github.com/DOWARC/dowarc#OriginalURL"/>
 	<rdfs:comment>The original URI whose capture gave rise to the information content in this record. In the context of web harvesting, this is the URI that was the target of a crawler's retrieval request. For a 'revisit' record, it is the URI that was the target of a retrieval request. Indirectly, such as for a 'metadata', or 'conversion' record, it is a copy of the WARC-Target-URI appearing in the original record to which the newer record pertains. The URI in this value is escaped according to [RFC3986] and written with no internal whitespace. All 'response', 'resource', 'request', 'revisit', ‘conversion’ and 'continuation' records have a WARC Target-URI field. A 'metadata' record might have a WARC-Target-URI field. A 'warcinfo' record does not have a WARC-Target-URI field. (Source: ISO 28500)</rdfs:comment>
         <rdfs:label>WARC-Target-URI</rdfs:label>
      </owl:NamedIndividual>
