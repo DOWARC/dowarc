@@ -661,6 +661,7 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Identifier">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>An unambiguous reference (character string or numeric) to a data object.</rdfs:comment>
+	<rdfs:label>Identifier</rdfs:label>
     </owl:Class>
     
 
@@ -845,9 +846,9 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCcrawl -->
+    <!-- https://github.com/DOWARC/dowarc#Crawling -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcrawl">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Crawling">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
     </owl:Class>
     
@@ -861,9 +862,9 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCextract -->
+    <!-- https://github.com/DOWARC/dowarc#Extracting -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCextract">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Extracting">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
     </owl:Class>
     
@@ -900,25 +901,25 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCindex -->
+    <!-- https://github.com/DOWARC/dowarc#Indexing -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCindex">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Indexing">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
     </owl:Class>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCpublish -->
+    <!-- https://github.com/DOWARC/dowarc#Publishing -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCpublish">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Publishing">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
     </owl:Class>
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCqa -->
+    <!-- https://github.com/DOWARC/dowarc#QA -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCqa">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#QA">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
     </owl:Class>
     
@@ -946,9 +947,9 @@ This is a more "solid" class than Group, which allows for more ad-hoc collection
     
 
 
-    <!-- https://github.com/DOWARC/dowarc#WARCreplay -->
+    <!-- https://github.com/DOWARC/dowarc#Replaying -->
 
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCreplay">
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Replaying">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
     </owl:Class>
     
