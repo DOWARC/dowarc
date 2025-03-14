@@ -31,7 +31,6 @@
   </rdfs:Class>
 
 <rdf:Description rdf:about="dowarc.warc">
-    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
     <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
     <rdfs:label xml:lang="en">dowarc.warc_WARCfile</rdfs:label>
     <ore:aggregates rdf:resource="urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7"/>
