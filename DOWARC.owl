@@ -297,7 +297,10 @@
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
-        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity""/>
+	<rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+	<rdfs:range rdf:resource="https://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
     </rdf:Description>
     
 
@@ -308,6 +311,7 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
+	<rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxFile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
     </rdf:Description>
     
@@ -910,6 +914,7 @@ prefix such as &quot;http:&quot; or &quot;urn:&quot;). All records have a WARC-R
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxField">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+	<rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:comment></rdfs:comment>
         <rdfs:label>WARCcdxField</rdfs:label>
     </owl:Class>
