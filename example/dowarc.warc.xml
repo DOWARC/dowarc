@@ -29,10 +29,38 @@
   <rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
     <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
   </rdfs:Class>
+  <rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WebarchivingAgent">
+	<rdfs:subClassOf rdf:about="http://xmlns.com/foaf/0.1/Agent">
+	<rdfs:subClassOf rdf:about="http://www.w3.org/ns/prov#Agent"/>
+  </rdfs:Class>
+  
+<rdf:Description rdf:about="Storrar, Tom"></rdf:Description>
+	<rdf:Type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+<rdf:Description rdf:about="Pallotto Strickland, Manuela"></rdf:Description>
+	<rdf:Type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	
+	
+	
+	
+<rdf:Description rdf:about="dowarc.warc-crawl">
+	<rdfs:type rdf:resource="https://github.com/DOWARC/dowarc#Crawling"/>
+	<prov:atTime xsd:dateTime="2025-03-09T15:24:57"/>
+	<prov:wasInfluencedBy rdf:resource="Storrar, Tom"/>	
+</rdf:Description>
+<rdf:Description rdf:about="dowarc.warc-index">
+	<rdfs:type rdf:resource="https://github.com/DOWARC/dowarc#Indexing"/>
+	<prov:atTime xsd:dateTime="2025-03-09T15:25:57"/>
+	<prov:wasInfluencedBy rdf:resource="Storrar, Tom"/>	
+</rdf:Description>
 
-<rdf:Description rdf:about="dowarc.warc">
+
+
+
+
+<rdf:Description rdf:about="NameOfCollection/warcs/dowarc.warc">
     <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
     <rdfs:label xml:lang="en">dowarc.warc_WARCfile</rdfs:label>
+	<prov:wasGeneratedBy rdf:resource="dowarc.warc-crawl">
     <ore:aggregates rdf:resource="urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7"/>
     <ore:aggregates rdf:resource="urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1"/>    
     <ore:aggregates rdf:resource="urn:uuid:09932ac8-873e-5450-be74-1951c4f9e101"/>
@@ -246,9 +274,13 @@
     <ore:aggregates rdf:resource="urn:uuid:088792bc-147c-5bcf-93bd-b9961146be2c"/>
     <ore:aggregates rdf:resource="urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7"/>
 </rdf:Description>
+
+
+
 <rdf:Description rdf:about="urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7">
 	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
 	<rdfs:label xml:lang="en">urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7_WARC-Record</rdfs:label>
+	<ore:isAggregatedBy rdf:resource="NameOfCollection/warcs/dowarc.warc"/>
 	<ore:aggregates rdf:resource="dowarc.warc"/>
 	<ore:aggregates rdf:resource="2025-03-09T15:24:10Z"/>
 	<ore:aggregates rdf:resource="warcinfo"/>
@@ -257,32 +289,149 @@
 	<ore:aggregates rdf:resource="sha1:3NDDX7ITM6QIW43T4MGIMQEWXNSNT2UE"/>
 </rdf:Description>
 <rdf:Description rdf:about="dowarc.warc">
-	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Filename"/>
 	<rdfs:label xml:lang="en">dowarc.warc_WARC-Filename</rdfs:label>
 	<prov:value rdf:datatype="xsd:string">dowarc.warc</prov:value>
 </rdf:Description>
 <rdf:Description rdf:about="2025-03-09T15:24:10Z">
-	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Date"/>
 	<rdfs:label xml:lang="en">dowarc.warc_WARC-Date</rdfs:label>
 	<prov:value rdf:datatype="xsd:dateTime">2025-03-09T15:24:10Z</prov:value>
 </rdf:Description>
 <rdf:Description rdf:about="warcinfo">
-	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Type"/>
 	<rdfs:label xml:lang="en">dowarc.warc_WARC-Type</rdfs:label>
 	<prov:value rdf:datatype="xsd:string">warcinfo</prov:value>
 </rdf:Description>
 <rdf:Description rdf:about="application/warc-fields">
-	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#Content-Type"/>
 	<rdfs:label xml:lang="en">dowarc.warc_Content-Type</rdfs:label>
 	<prov:value rdf:datatype="xsd:string">application/warc-fields</prov:value>
 </rdf:Description>
 <rdf:Description rdf:about="117">
-	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#Content-Length"/>
 	<rdfs:label xml:lang="en">dowarc.warc_Content-Length</rdfs:label>
 	<prov:value rdf:datatype="xsd:integer">117</prov:value>
 </rdf:Description>
 <rdf:Description rdf:about="sha1:3NDDX7ITM6QIW43T4MGIMQEWXNSNT2UE">
-	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Block-Digest"/>
 	<rdfs:label xml:lang="en">dowarc.warc_WARC-Block-Digest</rdfs:label>
 	<prov:value rdf:datatype="xsd:string">sha1:3NDDX7ITM6QIW43T4MGIMQEWXNSNT2UE</prov:value>
 </rdf:Description>
+
+<rdf:Description rdf:about="urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1">
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
+	<rdfs:label xml:lang="en">urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1_WARC-Record</rdfs:label>
+	<ore:isAggregatedBy rdf:resource="NameOfCollection/warcs/dowarc.warc"/>
+	<ore:aggregates rdf:resource="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg"/>
+	<ore:aggregates rdf:resource="2025-03-09T15:24:57Z"/>
+	<ore:aggregates rdf:resource="response"/>
+	<ore:aggregates rdf:resource="application/http; msgtype=response"/>
+	<ore:aggregates rdf:resource="sha1:RY5CURZN5XRVK5YFKG4HYCGTASEPU2OY"/>
+	<ore:aggregates rdf:resource="sha1:A6B52NZOB5N6HGBWCRHTQZNXUMGQX4BJ">
+	<ore:aggregates rdf:resource="125786">
+	<ore:aggregates rdf:resource="125218">
+	<ore:aggregates rdf:resource="image/jpeg">
+</rdf:Description>
+<rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg">
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Target-URI"/>
+	<rdfs:label xml:lang="en">No10DoorAjar-2.jpg_WARC-Target-URI</rdfs:label>
+	<prov:value rdf:datatype="xsd:string">https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg</prov:value>
+</rdf:Description>
+<rdf:Description>
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Date"/>
+	<rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Date</rdfs:label>
+	<prov:value rdf:datatype="xsd:dateTime">2025-03-09T15:24:57Z</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="response">
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Type"/>
+	<rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Type</rdfs:label>
+	<prov:value rdf:datatype="xsd:string">response</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="application/http; msgtype=response">
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Content-Type"/>
+	<rdfs:label xml:lang="en">WARCrecord[ID]_Content-Type</rdfs:label>
+	<prov:value rdf:datatype="xsd:string">application/http; msgtype=response</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="sha1:RY5CURZN5XRVK5YFKG4HYCGTASEPU2OY">
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Payload-Digest"/>
+	<rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Payload-Digest</rdfs:label>
+	<prov:value rdf:datatype="xsd:string">sha1:RY5CURZN5XRVK5YFKG4HYCGTASEPU2OY</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="sha1:A6B52NZOB5N6HGBWCRHTQZNXUMGQX4BJ">
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Block-Digest"/>
+	<rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Block-Digest</rdfs:label>
+	<prov:value rdf:datatype="xsd:string">sha1:A6B52NZOB5N6HGBWCRHTQZNXUMGQX4BJ</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="125786">
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Content-Length"/>
+	<rdfs:label xml:lang="en">WARCrecord[ID]_Content-Length</rdfs:label>
+	<prov:value rdf:datatype="xsd:integer">125786</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="125218">
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Content-Length"/>
+	<rdfs:label xml:lang="en">WARCrecord[ID]_Content-Length</rdfs:label>
+	<prov:value rdf:datatype="xsd:integer">125218</prov:value>
+</rdf:Description>
+
+
+
+
+
+
+
+<rdf:Description rdf:about="NameOfCollection/cdxs/dowarc-warc1_0.cdxj">
+    <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxFile"/>
+    <rdfs:label xml:lang="en">dowarc-warc1_0.cdxj_WARCcdxFile</rdfs:label>
+	<prov:wasDerivedFrom rdf:resource="NameOfCollection/warcs/dowarc.warc"/>
+	<prov:wasGeneratedBy rdf:resource="dowarc.warc-index"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/5a37dae940f0b649cceb1841/s300_number10.jpg"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66893af0541aeb9e928f4599/53836009867_63fd6cdffe_b.jpg"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/668e54977541f54efe51bd6d/s465_2024-07-09_6Things_DO.png"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66a8e3ccce1fd0da7b592fa7/s465_2024-07-30_Minimum_Wage_GOVUK_DO.png"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66b219ee0808eaf43b50ddac/s465_2024-07-30_BluePrint_GOVUK_DO.png"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66c5aeaf29be2af083dd2772/s465_Pension_Credit_Reminder_GOV_Website.jpg"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/6707f9a6080bdf716392f1c6/s465_Employment_Rights_Bill_GOVUK_960x640-100__1_.jpg"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/6725098c9a3062820f4d8a24/s465_Budget_What_you_need_to_know_GOV_UK_960x640.jpg"/>
+	<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/675193f86da7a3435fecbd17/s465_PFC_GOV_UK_960x640-100.jpg"/>
+	<dcterms:hasPart rdf:resource="https://i.ytimg.com/vi_webp/2Q7xXRorUnk/maxresdefault.webp"/>
+	<dcterms:hasPart rdf:resource="https://www.gov.uk/assets/collections/govuk_publishing_components/crests/dbt_crest_18px_x2-466ba3b86548d551359eeb8c70f96e42f49520cfdc47e8e7b27014f1ee505b1b.png"/>
+	<dcterms:hasPart rdf:resource="https://www.gov.uk/assets/collections/govuk_publishing_components/crests/ho_crest_18px_x2-7a7e0779277444d8dcc197ec66c2d04409cf465fd267a5a03c5cd1d1542cf7d0.png"/>
+	<dcterms:hasPart rdf:resource="https://www.gov.uk/assets/collections/govuk_publishing_components/crests/mod_crest_18px_x2-3360a0705ca8cf4f3fe4e6f9ecd84e17b51ac94dc9d6d517a192f4b7a74cebe8.png"/>
+</rdf:Description>
+
+
+
+
+<rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg">
+	<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+	<rdfs:label xml:lang="en">No10DoorAjar-2.jpg_OriginalURL</rdfs:label>
+	<dcterms:isPartOf rdf:resource="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"/>
+	<pav:importedFrom rdf:resource="urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1"/>
+	</rdf:Description>
+<rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/5a37dae940f0b649cceb1841/s300_number10.jpg">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+	<rdfs:label xml:lang="en">s300_number10.jpg_OriginalURL</rdfs:label>
+	<dcterms:isPartOf rdf:resource="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"/>
+	<pav:importedFrom rdf:resource="urn:uuid:4138ea3b-c079-5433-8050-485b3391008d"/>
+	</rdf:Description>
+<rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/66893af0541aeb9e928f4599/53836009867_63fd6cdffe_b.jpg">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+	<rdfs:label xml:lang="en">53836009867_63fd6cdffe_b.jpg_OriginalURL</rdfs:label>
+	<dcterms:isPartOf rdf:resource="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"/>
+	<pav:importedFrom rdf:resource="urn:uuid:a0011393-bd14-593d-bc7d-18af42d304f1"/>
+	</rdf:Description>
+</rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+<rdf:Description rdf:about=""></rdf:Description>
+
+
