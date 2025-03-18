@@ -297,7 +297,7 @@
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity""/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
 	<rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
 	<rdfs:range rdf:resource="https://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
