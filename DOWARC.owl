@@ -567,8 +567,7 @@
 
     <owl:Class rdf:about="http://xmlns.com/foaf/spec/#term_Organization">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment>The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc.
-This is a more &quot;solid&quot; class than Group, which allows for more ad-hoc collections of individuals. These terms, like the corresponding natural language concepts, have some overlap, but different emphasis.</rdfs:comment>
+        <rdfs:comment>The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc. This is a more &quot;solid&quot; class than Group, which allows for more ad-hoc collections of individuals. These terms, like the corresponding natural language concepts, have some overlap, but different emphasis.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/spec/#term_Organization"/>
         <rdfs:label>Organization</rdfs:label>
     </owl:Class>
@@ -815,10 +814,7 @@ This is a more &quot;solid&quot; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Record-ID">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>An identifier assigned to the current record that is globally unique for its period of intended use. No 
-identifier scheme is mandated by this specification, but each record-id shall be a legal URI and 
-clearly indicate a documented and registered scheme to which it conforms (e.g., via a URI scheme 
-prefix such as &quot;http:&quot; or &quot;urn:&quot;). All records have a WARC-Record-ID field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
+        <rdfs:comment>An identifier assigned to the current record that is globally unique for its period of intended use. No identifier scheme is mandated by this specification, but each record-id shall be a legal URI and clearly indicate a documented and registered scheme to which it conforms (e.g., via a URI scheme prefix such as &quot;http:&quot; or &quot;urn:&quot;). All records have a WARC-Record-ID field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Record-ID"/>
         <rdfs:label>WARC-Record-ID</rdfs:label>
     </owl:Class>
