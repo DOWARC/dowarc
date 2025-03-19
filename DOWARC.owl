@@ -589,7 +589,7 @@ This is a more &quot;solid&quot; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Crawling">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>The act of creating an archive through the process of capturing data into a WARC file.</rdfs:comment>
         <rdfs:label>Crawling</rdfs:label>
     </owl:Class>
     
@@ -609,7 +609,7 @@ This is a more &quot;solid&quot; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Extracting">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>An extract, derived in part or in full, from a WARC file</rdfs:comment>
         <rdfs:label>Extracting</rdfs:label>
     </owl:Class>
     
@@ -639,7 +639,7 @@ This is a more &quot;solid&quot; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Indexing">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>The creation of an index (CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
         <rdfs:label>Indexing</rdfs:label>
     </owl:Class>
     
@@ -689,7 +689,7 @@ This is a more &quot;solid&quot; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Publishing">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>The act of making a WARC file, or resources within a WARC file, availavable for use</rdfs:comment>
         <rdfs:label>Publishing</rdfs:label>
     </owl:Class>
     
@@ -699,7 +699,7 @@ This is a more &quot;solid&quot; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#QA">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>The act of checking the quality of a web archive using a combination of data-driven and manual checks. This process includes the act of patching, during which time missing content is added to the archive to imprve its completeness or quality.</rdfs:comment>
         <rdfs:label>QA</rdfs:label>
     </owl:Class>
     
@@ -709,7 +709,7 @@ This is a more &quot;solid&quot; class than Group, which allows for more ad-hoc 
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Replaying">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>Retrieval and rendering of the data stored in a WARC file over HTTP. This may be through a Wayback-style system via a browser, or programatically replayed in some other way.</rdfs:comment>
         <rdfs:label>Replaying</rdfs:label>
     </owl:Class>
     
@@ -915,7 +915,7 @@ prefix such as &quot;http:&quot; or &quot;urn:&quot;). All records have a WARC-R
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxField">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
 	<rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>The fields contained within a CDX or CDXJ file. Source: https://iipc.github.io/warc-specifications/specifications/cdx-format/cdx-2015/</rdfs:comment>
         <rdfs:label>WARCcdxField</rdfs:label>
     </owl:Class>
     
@@ -925,7 +925,7 @@ prefix such as &quot;http:&quot; or &quot;urn:&quot;). All records have a WARC-R
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxFile">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>An index (normally a CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
         <rdfs:label>WARCcdxFile</rdfs:label>
     </owl:Class>
     
@@ -945,7 +945,7 @@ prefix such as &quot;http:&quot; or &quot;urn:&quot;). All records have a WARC-R
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCevent">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>An activity which relates to or involves creating, indexing, modifying or replaying a WARC file.</rdfs:comment>
         <rdfs:label>WARCevent</rdfs:label>
     </owl:Class>
     
