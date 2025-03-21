@@ -1,17 +1,195 @@
-<?xml version="1.0"?><rdf:RDF xmlns="https://github.com/DOWARC/" xml:base="https://github.com/DOWARC/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:pav="http://purl.org/pav/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dowarc="https://github.com/dowarc/" xmlns:ore="http://www.openarchives.org/ore/terms/"><rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WARCfile"><rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/></rdfs:Class><rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecord"><rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/><rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/></rdfs:Class><rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordElement"><rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/></rdfs:Class><rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordNamedField"><rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/></rdfs:Class>
-<rdf:Description rdf:about="Storrar, Tom">
-<rdf:Type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/DOWARC/" xml:base="https://github.com/DOWARC/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:pav="http://purl.org/pav/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dowarc="https://github.com/dowarc/" xmlns:ore="http://www.openarchives.org/ore/terms/">
+<rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WARCfile">
+<rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecord">
+<rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+<rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordElement">
+<rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordNamedField">
+<rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+<rdf:Description>
+<foaf:name>Storrar, Tom</foaf:name>
+<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
 </rdf:Description>
-<rdf:Description rdf:about="Pallotto Strickland, Manuela">
-<rdf:Type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+<rdf:Description>
+<foaf:name>Pallotto, Strickland</foaf:name>
+<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+</rdf:Description>
+<rdf:Description rdf:about="NameOfCollection/warcs/dowarc.warc">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
+<rdfs:label xml:lang="en">dowarc.warc_WARCfile</rdfs:label>
+<prov:wasGeneratedBy rdf:resource="dowarc.warc-crawl"/>
+<ore:aggregates rdf:resource="urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7"/>
+<ore:aggregates rdf:resource="urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1"/>
+<ore:aggregates rdf:resource="urn:uuid:09932ac8-873e-5450-be74-1951c4f9e101"/>
+<ore:aggregates rdf:resource="urn:uuid:4138ea3b-c079-5433-8050-485b3391008d"/>
+<ore:aggregates rdf:resource="urn:uuid:c01373a2-6b1d-58cf-af79-a9c437e14bbe"/>
+<ore:aggregates rdf:resource="urn:uuid:a0011393-bd14-593d-bc7d-18af42d304f1"/>
+<ore:aggregates rdf:resource="urn:uuid:56267f37-8499-5625-aaab-274c0c4c418d"/>
+<ore:aggregates rdf:resource="urn:uuid:bf952c98-7989-5c24-80d2-ae46ac18657b"/>
+<ore:aggregates rdf:resource="urn:uuid:250d652a-5768-5539-ae48-e0bf51668722"/>
+<ore:aggregates rdf:resource="urn:uuid:98ac4c59-6bb1-53bd-a330-4265232378fb"/>
+<ore:aggregates rdf:resource="urn:uuid:9a946ebf-47a6-50ce-ba27-0235f6e55564"/>
+<ore:aggregates rdf:resource="urn:uuid:c202068c-10a0-5793-abfc-2e6475ff669f"/>
+<ore:aggregates rdf:resource="urn:uuid:2d569c91-52bd-549f-bee9-2ff0a66d9ee7"/>
+<ore:aggregates rdf:resource="urn:uuid:9ff08ed7-e469-5c97-9f01-8a03f41cecce"/>
+<ore:aggregates rdf:resource="urn:uuid:5dfdb63f-d19b-59c9-82c9-3102bc6ed392"/>
+<ore:aggregates rdf:resource="urn:uuid:ab07050d-5673-5fab-a673-b3a8738fcfb2"/>
+<ore:aggregates rdf:resource="urn:uuid:f16235fc-26f7-52c1-933d-6f0212038937"/>
+<ore:aggregates rdf:resource="urn:uuid:f5116901-e8c1-5ce2-b903-fc85777a2b69"/>
+<ore:aggregates rdf:resource="urn:uuid:e4de2c4b-99f1-5d2b-b2b8-aa9f6ddaf62d"/>
+<ore:aggregates rdf:resource="urn:uuid:e4146cd6-601c-5e59-b841-b4562c681527"/>
+<ore:aggregates rdf:resource="urn:uuid:958ab9de-f67f-5ae2-aff2-59dd06000894"/>
+<ore:aggregates rdf:resource="urn:uuid:8999ee50-4bbb-5fc3-8b13-b6fd3cb0f6af"/>
+<ore:aggregates rdf:resource="urn:uuid:2ac05b0f-1bd4-5a8c-b43c-69444f92701d"/>
+<ore:aggregates rdf:resource="urn:uuid:972a86ff-cb79-5192-9960-5b5223f17021"/>
+<ore:aggregates rdf:resource="urn:uuid:47849160-123e-53ba-9e37-ac94b5b44cbf"/>
+<ore:aggregates rdf:resource="urn:uuid:3d39ffe6-49f0-599b-b834-364fcba0b092"/>
+<ore:aggregates rdf:resource="urn:uuid:56bdbdae-5def-52c5-8acf-a547985bc50b"/>
+<ore:aggregates rdf:resource="urn:uuid:eec38f48-2b7e-59d2-a941-32fa62966efe"/>
+<ore:aggregates rdf:resource="urn:uuid:21f1e12c-bb77-52be-9bf6-b9302dabc257"/>
+<ore:aggregates rdf:resource="urn:uuid:5183b9a9-6d21-5b09-9e22-e27a30eb67d8"/>
+<ore:aggregates rdf:resource="urn:uuid:980bae6d-e41c-5bde-ba63-e24d528c1b13"/>
+<ore:aggregates rdf:resource="urn:uuid:0c79697c-f56a-5481-81cf-451fa9c792d8"/>
+<ore:aggregates rdf:resource="urn:uuid:ab02754f-a175-5924-9d8e-802ca71e5fa7"/>
+<ore:aggregates rdf:resource="urn:uuid:a56b594c-a151-5d67-9def-cd947cd0a7e5"/>
+<ore:aggregates rdf:resource="urn:uuid:8ac53017-ccb8-5dc3-87f3-ea81e867d7c0"/>
+<ore:aggregates rdf:resource="urn:uuid:2edb7b4c-ed11-5c8b-8d34-98d4deac04e8"/>
+<ore:aggregates rdf:resource="urn:uuid:4219d49e-16d4-5377-ad58-5bde9c0a4bdd"/>
+<ore:aggregates rdf:resource="urn:uuid:a63f0722-8ad5-5e41-b8b1-a70db1831ccc"/>
+<ore:aggregates rdf:resource="urn:uuid:bc98fa08-759d-55c5-b619-8f2d7f27a1c1"/>
+<ore:aggregates rdf:resource="urn:uuid:acb035e1-a983-58c7-9ae0-cb94ba11cefd"/>
+<ore:aggregates rdf:resource="urn:uuid:f4a5808a-48ff-5bc8-9910-ebf8c84673f7"/>
+<ore:aggregates rdf:resource="urn:uuid:bb92c9dd-e8d0-5783-920b-026be8f66bf0"/>
+<ore:aggregates rdf:resource="urn:uuid:94d07d8a-31d5-5a72-b540-b95c04f1"/>
+</rdf:Description>
+<rdf:Description rdf:about="urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
+<rdfs:label xml:lang="en">urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7_WARC-Record</rdfs:label>
+<ore:isAggregatedBy rdf:resource="NameOfCollection/warcs/dowarc.warc"/>
+<ore:aggregates rdf:resource="dowarc.warc"/>
+<ore:aggregates rdf:resource="date_20250309T152410Z"/>
+<ore:aggregates rdf:resource="warcinfo"/>
+<ore:aggregates rdf:resource="application/warc-fields"/>
+<ore:aggregates rdf:resource="117"/>
+<ore:aggregates rdf:resource="sha1:3NDDX7ITM6QIW43T4MGIMQEWXNSNT2UE"/>
+</rdf:Description>
+<rdf:Description rdf:about="dowarc.warc">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Filename"/>
+<rdfs:label xml:lang="en">dowarc.warc_WARC-Filename</rdfs:label>
+<prov:value rdf:datatype="xsd:string">dowarc.warc</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="date_20250309T152410Z">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Date"/>
+<rdfs:label xml:lang="en">dowarc.warc_WARC-Date</rdfs:label>
+<prov:value rdf:datatype="xsd:dateTime">2025-03-09T15:24:10Z</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="warcinfo">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Type"/>
+<rdfs:label xml:lang="en">dowarc.warc_WARC-Type</rdfs:label>
+<prov:value rdf:datatype="xsd:string">warcinfo</prov:value>
+</rdf:Description><rdf:Description rdf:about="application/warc-fields">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#Content-Type"/>
+<rdfs:label xml:lang="en">dowarc.warc_Content-Type</rdfs:label>
+<prov:value rdf:datatype="xsd:string">application/warc-fields</prov:value>
+</rdf:Description><rdf:Description rdf:about="117">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#Content-Length"/>
+<rdfs:label xml:lang="en">dowarc.warc_Content-Length</rdfs:label>
+<prov:value rdf:datatype="xsd:integer">117</prov:value>
+</rdf:Description><rdf:Description rdf:about="sha1:3NDDX7ITM6QIW43T4MGIMQEWXNSNT2UE">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Block-Digest"/>
+<rdfs:label xml:lang="en">dowarc.warc_WARC-Block-Digest</rdfs:label>
+<prov:value rdf:datatype="xsd:string">sha1:3NDDX7ITM6QIW43T4MGIMQEWXNSNT2UE</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
+<rdfs:label xml:lang="en">urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1_WARC-Record</rdfs:label>
+<ore:isAggregatedBy rdf:resource="NameOfCollection/warcs/dowarc.warc"/>
+<ore:aggregates rdf:resource="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg"/>
+<ore:aggregates rdf:resource="date_20250309T152457Z"/>
+<ore:aggregates rdf:resource="response"/>
+<ore:aggregates rdf:resource="application/http; msgtype=response"/>
+<ore:aggregates rdf:resource="sha1:RY5CURZN5XRVK5YFKG4HYCGTASEPU2OY"/>
+<ore:aggregates rdf:resource="sha1:A6B52NZOB5N6HGBWCRHTQZNXUMGQX4BJ"/>
+<ore:aggregates rdf:resource="125786"/><ore:aggregates rdf:resource="125218"/>
+<ore:aggregates rdf:resource="image/jpeg"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="dowarc.warc-crawl">
-<rdfs:type rdf:resource="https://github.com/DOWARC/dowarc#Crawling"/>
-<prov:atTime xsd:dateTime="2025-03-09T15:24:57"/>
-<prov:wasInfluencedBy rdf:resource="Storrar, Tom"/>
+<rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Target-URI"/>
+<rdfs:label xml:lang="en">No10DoorAjar-2.jpg_WARC-Target-URI</rdfs:label>
+<prov:value rdf:datatype="xsd:string">https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg</prov:value>
 </rdf:Description>
-
-<rdf:Description rdf:about="dowarc.warc-index">
-<rdfs:type rdf:resource="https://github.com/DOWARC/dowarc#Indexing"/>
-<prov:atTime xsd:dateTime="2025-03-09T15:25:57"/><prov:wasInfluencedBy rdf:resource="Storrar, Tom"/></rdf:Description><rdf:Description rdf:about="NameOfCollection/warcs/dowarc.warc"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/><rdfs:label xml:lang="en">dowarc.warc_WARCfile</rdfs:label><prov:wasGeneratedBy rdf:resource="dowarc.warc-crawl"/><ore:aggregates rdf:resource="urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7"/><ore:aggregates rdf:resource="urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1"/><ore:aggregates rdf:resource="urn:uuid:09932ac8-873e-5450-be74-1951c4f9e101"/><ore:aggregates rdf:resource="urn:uuid:4138ea3b-c079-5433-8050-485b3391008d"/><ore:aggregates rdf:resource="urn:uuid:c01373a2-6b1d-58cf-af79-a9c437e14bbe"/><ore:aggregates rdf:resource="urn:uuid:a0011393-bd14-593d-bc7d-18af42d304f1"/><ore:aggregates rdf:resource="urn:uuid:56267f37-8499-5625-aaab-274c0c4c418d"/><ore:aggregates rdf:resource="urn:uuid:bf952c98-7989-5c24-80d2-ae46ac18657b"/><ore:aggregates rdf:resource="urn:uuid:250d652a-5768-5539-ae48-e0bf51668722"/><ore:aggregates rdf:resource="urn:uuid:98ac4c59-6bb1-53bd-a330-4265232378fb"/><ore:aggregates rdf:resource="urn:uuid:9a946ebf-47a6-50ce-ba27-0235f6e55564"/><ore:aggregates rdf:resource="urn:uuid:c202068c-10a0-5793-abfc-2e6475ff669f"/><ore:aggregates rdf:resource="urn:uuid:2d569c91-52bd-549f-bee9-2ff0a66d9ee7"/><ore:aggregates rdf:resource="urn:uuid:9ff08ed7-e469-5c97-9f01-8a03f41cecce"/><ore:aggregates rdf:resource="urn:uuid:5dfdb63f-d19b-59c9-82c9-3102bc6ed392"/><ore:aggregates rdf:resource="urn:uuid:ab07050d-5673-5fab-a673-b3a8738fcfb2"/><ore:aggregates rdf:resource="urn:uuid:f16235fc-26f7-52c1-933d-6f0212038937"/><ore:aggregates rdf:resource="urn:uuid:f5116901-e8c1-5ce2-b903-fc85777a2b69"/><ore:aggregates rdf:resource="urn:uuid:e4de2c4b-99f1-5d2b-b2b8-aa9f6ddaf62d"/><ore:aggregates rdf:resource="urn:uuid:e4146cd6-601c-5e59-b841-b4562c681527"/><ore:aggregates rdf:resource="urn:uuid:958ab9de-f67f-5ae2-aff2-59dd06000894"/><ore:aggregates rdf:resource="urn:uuid:8999ee50-4bbb-5fc3-8b13-b6fd3cb0f6af"/><ore:aggregates rdf:resource="urn:uuid:2ac05b0f-1bd4-5a8c-b43c-69444f92701d"/><ore:aggregates rdf:resource="urn:uuid:972a86ff-cb79-5192-9960-5b5223f17021"/><ore:aggregates rdf:resource="urn:uuid:47849160-123e-53ba-9e37-ac94b5b44cbf"/><ore:aggregates rdf:resource="urn:uuid:3d39ffe6-49f0-599b-b834-364fcba0b092"/><ore:aggregates rdf:resource="urn:uuid:56bdbdae-5def-52c5-8acf-a547985bc50b"/><ore:aggregates rdf:resource="urn:uuid:eec38f48-2b7e-59d2-a941-32fa62966efe"/><ore:aggregates rdf:resource="urn:uuid:21f1e12c-bb77-52be-9bf6-b9302dabc257"/><ore:aggregates rdf:resource="urn:uuid:5183b9a9-6d21-5b09-9e22-e27a30eb67d8"/><ore:aggregates rdf:resource="urn:uuid:980bae6d-e41c-5bde-ba63-e24d528c1b13"/><ore:aggregates rdf:resource="urn:uuid:0c79697c-f56a-5481-81cf-451fa9c792d8"/><ore:aggregates rdf:resource="urn:uuid:ab02754f-a175-5924-9d8e-802ca71e5fa7"/><ore:aggregates rdf:resource="urn:uuid:a56b594c-a151-5d67-9def-cd947cd0a7e5"/><ore:aggregates rdf:resource="urn:uuid:8ac53017-ccb8-5dc3-87f3-ea81e867d7c0"/><ore:aggregates rdf:resource="urn:uuid:2edb7b4c-ed11-5c8b-8d34-98d4deac04e8"/><ore:aggregates rdf:resource="urn:uuid:4219d49e-16d4-5377-ad58-5bde9c0a4bdd"/><ore:aggregates rdf:resource="urn:uuid:a63f0722-8ad5-5e41-b8b1-a70db1831ccc"/><ore:aggregates rdf:resource="urn:uuid:bc98fa08-759d-55c5-b619-8f2d7f27a1c1"/><ore:aggregates rdf:resource="urn:uuid:acb035e1-a983-58c7-9ae0-cb94ba11cefd"/><ore:aggregates rdf:resource="urn:uuid:f4a5808a-48ff-5bc8-9910-ebf8c84673f7"/><ore:aggregates rdf:resource="urn:uuid:bb92c9dd-e8d0-5783-920b-026be8f66bf0"/><ore:aggregates rdf:resource="urn:uuid:94d07d8a-31d5-5a72-b540-b95c04f1"/></rdf:Description><rdf:Description rdf:about="urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/><rdfs:label xml:lang="en">urn:uuid:0721e3b9-718c-5fe8-bc2d-7e6051e00bb7_WARC-Record</rdfs:label><ore:isAggregatedBy rdf:resource="NameOfCollection/warcs/dowarc.warc"/><ore:aggregates rdf:resource="dowarc.warc"/><ore:aggregates rdf:resource="2025-03-09T15:24:10Z"/><ore:aggregates rdf:resource="warcinfo"/><ore:aggregates rdf:resource="application/warc-fields"/><ore:aggregates rdf:resource="117"/><ore:aggregates rdf:resource="sha1:3NDDX7ITM6QIW43T4MGIMQEWXNSNT2UE"/></rdf:Description><rdf:Description rdf:about="dowarc.warc"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Filename"/><rdfs:label xml:lang="en">dowarc.warc_WARC-Filename</rdfs:label><prov:value rdf:datatype="xsd:string">dowarc.warc</prov:value></rdf:Description><rdf:Description rdf:about="2025-03-09T15:24:10Z"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Date"/><rdfs:label xml:lang="en">dowarc.warc_WARC-Date</rdfs:label><prov:value rdf:datatype="xsd:dateTime">2025-03-09T15:24:10Z</prov:value></rdf:Description><rdf:Description rdf:about="warcinfo"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Type"/><rdfs:label xml:lang="en">dowarc.warc_WARC-Type</rdfs:label><prov:value rdf:datatype="xsd:string">warcinfo</prov:value></rdf:Description><rdf:Description rdf:about="application/warc-fields"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#Content-Type"/><rdfs:label xml:lang="en">dowarc.warc_Content-Type</rdfs:label><prov:value rdf:datatype="xsd:string">application/warc-fields</prov:value></rdf:Description><rdf:Description rdf:about="117"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#Content-Length"/><rdfs:label xml:lang="en">dowarc.warc_Content-Length</rdfs:label><prov:value rdf:datatype="xsd:integer">117</prov:value></rdf:Description><rdf:Description rdf:about="sha1:3NDDX7ITM6QIW43T4MGIMQEWXNSNT2UE"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Block-Digest"/><rdfs:label xml:lang="en">dowarc.warc_WARC-Block-Digest</rdfs:label><prov:value rdf:datatype="xsd:string">sha1:3NDDX7ITM6QIW43T4MGIMQEWXNSNT2UE</prov:value></rdf:Description><rdf:Description rdf:about="urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/><rdfs:label xml:lang="en">urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1_WARC-Record</rdfs:label><ore:isAggregatedBy rdf:resource="NameOfCollection/warcs/dowarc.warc"/><ore:aggregates rdf:resource="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg"/><ore:aggregates rdf:resource="2025-03-09T15:24:57Z"/><ore:aggregates rdf:resource="response"/><ore:aggregates rdf:resource="application/http; msgtype=response"/><ore:aggregates rdf:resource="sha1:RY5CURZN5XRVK5YFKG4HYCGTASEPU2OY"/><ore:aggregates rdf:resource="sha1:A6B52NZOB5N6HGBWCRHTQZNXUMGQX4BJ"/><ore:aggregates rdf:resource="125786"/><ore:aggregates rdf:resource="125218"/><ore:aggregates rdf:resource="image/jpeg"/></rdf:Description><rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Target-URI"/><rdfs:label xml:lang="en">No10DoorAjar-2.jpg_WARC-Target-URI</rdfs:label><prov:value rdf:datatype="xsd:string">https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg</prov:value></rdf:Description><rdf:Description><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Date"/><rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Date</rdfs:label><prov:value rdf:datatype="xsd:dateTime">2025-03-09T15:24:57Z</prov:value></rdf:Description><rdf:Description rdf:about="response"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Type"/><rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Type</rdfs:label><prov:value rdf:datatype="xsd:string">response</prov:value></rdf:Description><rdf:Description rdf:about="application/http; msgtype=response"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Content-Type"/><rdfs:label xml:lang="en">WARCrecord[ID]_Content-Type</rdfs:label><prov:value rdf:datatype="xsd:string">application/http; msgtype=response</prov:value></rdf:Description><rdf:Description rdf:about="sha1:RY5CURZN5XRVK5YFKG4HYCGTASEPU2OY"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Payload-Digest"/><rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Payload-Digest</rdfs:label><prov:value rdf:datatype="xsd:string">sha1:RY5CURZN5XRVK5YFKG4HYCGTASEPU2OY</prov:value></rdf:Description><rdf:Description rdf:about="sha1:A6B52NZOB5N6HGBWCRHTQZNXUMGQX4BJ"/><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Block-Digest"/><rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Block-Digest</rdfs:label><prov:value rdf:datatype="xsd:string">sha1:A6B52NZOB5N6HGBWCRHTQZNXUMGQX4BJ</prov:value></rdf:Description><rdf:Description rdf:about="125786"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Content-Length"/><rdfs:label xml:lang="en">WARCrecord[ID]_Content-Length</rdfs:label><prov:value rdf:datatype="<rdf:Description rdf:about="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxFile"/><rdfs:label xml:lang="en">dowarc-warc1_0.cdxj_WARCcdxFile</rdfs:label><prov:wasDerivedFrom rdf:resource="NameOfCollection/warcs/dowarc.warc"/><prov:wasGeneratedBy rdf:resource="dowarc.warc-index"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/5a37dae940f0b649cceb1841/s300_number10.jpg"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66893af0541aeb9e928f4599/53836009867_63fd6cdffe_b.jpg"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/668e54977541f54efe51bd6d/s465_2024-07-09_6Things_DO.png"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66a8e3ccce1fd0da7b592fa7/s465_2024-07-30_Minimum_Wage_GOVUK_DO.png"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66b219ee0808eaf43b50ddac/s465_2024-07-30_BluePrint_GOVUK_DO.png"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66c5aeaf29be2af083dd2772/s465_Pension_Credit_Reminder_GOV_Website.jpg"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/6707f9a6080bdf716392f1c6/s465_Employment_Rights_Bill_GOVUK_960x640-100__1_.jpg"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/6725098c9a3062820f4d8a24/s465_Budget_What_you_need_to_know_GOV_UK_960x640.jpg"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/675193f86da7a3435fecbd17/s465_PFC_GOV_UK_960x640-100.jpg"/><dcterms:hasPart rdf:resource="https://i.ytimg.com/vi_webp/2Q7xXRorUnk/maxresdefault.webp"/><dcterms:hasPart rdf:resource="https://www.gov.uk/assets/collections/govuk_publishing_components/crests/dbt_crest_18px_x2-466ba3b86548d551359eeb8c70f96e42f49520cfdc47e8e7b27014f1ee505b1b.png"/><dcterms:hasPart rdf:resource="https://www.gov.uk/assets/collections/govuk_publishing_components/crests/ho_crest_18px_x2-7a7e0779277444d8dcc197ec66c2d04409cf465fd267a5a03c5cd1d1542cf7d0.png"/><dcterms:hasPart rdf:resource="https://www.gov.uk/assets/collections/govuk_publishing_components/crests/mod_crest_18px_x2-3360a0705ca8cf4f3fe4e6f9ecd84e17b51ac94dc9d6d517a192f4b7a74cebe8.png"/></rdf:Description><rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/><rdfs:label xml:lang="en">No10DoorAjar-2.jpg_OriginalURL</rdfs:label><dcterms:isPartOf rdf:resource="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"/><pav:importedFrom rdf:resource="urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1"/></rdf:Description><rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/5a37dae940f0b649cceb1841/s300_number10.jpg"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/><rdfs:label xml:lang="en">s300_number10.jpg_OriginalURL</rdfs:label><dcterms:isPartOf rdf:resource="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"/><pav:importedFrom rdf:resource="urn:uuid:4138ea3b-c079-5433-8050-485b3391008d"/></rdf:Description><rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/66893af0541aeb9e928f4599/53836009867_63fd6cdffe_b.jpg"><rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/><rdfs:label xml:lang="en">53836009867_63fd6cdffe_b.jpg_OriginalURL</rdfs:label><dcterms:isPartOf rdf:resource="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"/><pav:importedFrom rdf:resource="urn:uuid:a0011393-bd14-593d-bc7d-18af42d304f1"/></rdf:Description></rdf:RDF>
+<rdf:Description>
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Date"/>
+<rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Date</rdfs:label>
+<prov:value rdf:datatype="xsd:dateTime">2025-03-09T15:24:57Z</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="response">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Type"/>
+<rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Type</rdfs:label>
+<prov:value rdf:datatype="xsd:string">response</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="application/http; msgtype=response">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Content-Type"/>
+<rdfs:label xml:lang="en">WARCrecord[ID]_Content-Type</rdfs:label>
+<prov:value rdf:datatype="xsd:string">application/http; msgtype=response</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="sha1:RY5CURZN5XRVK5YFKG4HYCGTASEPU2OY">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Payload-Digest"/>
+<rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Payload-Digest</rdfs:label>
+<prov:value rdf:datatype="xsd:string">sha1:RY5CURZN5XRVK5YFKG4HYCGTASEPU2OY</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="sha1:A6B52NZOB5N6HGBWCRHTQZNXUMGQX4BJ">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Block-Digest"/>
+<rdfs:label xml:lang="en">WARCrecord[ID]_WARC-Block-Digest</rdfs:label>
+<prov:value rdf:datatype="xsd:string">sha1:A6B52NZOB5N6HGBWCRHTQZNXUMGQX4BJ</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="125786">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-WARC-Content-Length"/>
+<rdfs:label xml:lang="en">WARCrecord[ID]_Content-Length</rdfs:label>
+<prov:value rdf:datatype="xsd:integer">125786</prov:value>
+</rdf:Description>
+<rdf:Description rdf:about="NameOfCollection/cdxs/dowarc-warc1_0.cdxj">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxFile"/>
+<rdfs:label xml:lang="en">dowarc-warc1_0.cdxj_WARCcdxFile</rdfs:label>
+<prov:wasDerivedFrom rdf:resource="NameOfCollection/warcs/dowarc.warc"/>
+<prov:wasGeneratedBy rdf:resource="dowarc.warc-index"/>
+<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg"/>
+<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/5a37dae940f0b649cceb1841/s300_number10.jpg"/>
+<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66893af0541aeb9e928f4599/53836009867_63fd6cdffe_b.jpg"/>
+<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/668e54977541f54efe51bd6d/s465_2024-07-09_6Things_DO.png"/>
+<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66a8e3ccce1fd0da7b592fa7/s465_2024-07-30_Minimum_Wage_GOVUK_DO.png"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66b219ee0808eaf43b50ddac/s465_2024-07-30_BluePrint_GOVUK_DO.png"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/66c5aeaf29be2af083dd2772/s465_Pension_Credit_Reminder_GOV_Website.jpg"/><dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/6707f9a6080bdf716392f1c6/s465_Employment_Rights_Bill_GOVUK_960x640-100__1_.jpg"/>
+<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/6725098c9a3062820f4d8a24/s465_Budget_What_you_need_to_know_GOV_UK_960x640.jpg"/>
+<dcterms:hasPart rdf:resource="https://assets.publishing.service.gov.uk/media/675193f86da7a3435fecbd17/s465_PFC_GOV_UK_960x640-100.jpg"/>
+<dcterms:hasPart rdf:resource="https://i.ytimg.com/vi_webp/2Q7xXRorUnk/maxresdefault.webp"/>
+<dcterms:hasPart rdf:resource="https://www.gov.uk/assets/collections/govuk_publishing_components/crests/dbt_crest_18px_x2-466ba3b86548d551359eeb8c70f96e42f49520cfdc47e8e7b27014f1ee505b1b.png"/>
+<dcterms:hasPart rdf:resource="https://www.gov.uk/assets/collections/govuk_publishing_components/crests/ho_crest_18px_x2-7a7e0779277444d8dcc197ec66c2d04409cf465fd267a5a03c5cd1d1542cf7d0.png"/>
+<dcterms:hasPart rdf:resource="https://www.gov.uk/assets/collections/govuk_publishing_components/crests/mod_crest_18px_x2-3360a0705ca8cf4f3fe4e6f9ecd84e17b51ac94dc9d6d517a192f4b7a74cebe8.png"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/5a37c88540f0b649cceb1777/No10DoorAjar-2.jpg">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+<rdfs:label xml:lang="en">No10DoorAjar-2.jpg_OriginalURL</rdfs:label>
+<dcterms:isPartOf rdf:resource="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"/>
+<pav:importedFrom rdf:resource="urn:uuid:0817bcbf-3524-525a-9c0c-e85022824be1"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/5a37dae940f0b649cceb1841/s300_number10.jpg">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+<rdfs:label xml:lang="en">s300_number10.jpg_OriginalURL</rdfs:label>
+<dcterms:isPartOf rdf:resource="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"/>
+<pav:importedFrom rdf:resource="urn:uuid:4138ea3b-c079-5433-8050-485b3391008d"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://assets.publishing.service.gov.uk/media/66893af0541aeb9e928f4599/53836009867_63fd6cdffe_b.jpg">
+<rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
+<rdfs:label xml:lang="en">53836009867_63fd6cdffe_b.jpg_OriginalURL</rdfs:label>
+<dcterms:isPartOf rdf:resource="NameOfCollection/cdxs/dowarc-warc1_0.cdxj"/>
+<pav:importedFrom rdf:resource="urn:uuid:a0011393-bd14-593d-bc7d-18af42d304f1"/>
+</rdf:Description>
+</rdf:RDF>
