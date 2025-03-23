@@ -6,4 +6,4 @@ It was created as a metadata tool for web archivists and digital preservationist
 
 The data model underpinning DOWARC is not far from vanilla implementation of the ORE-OAI model on which it openly builds. DOWARC imports and extends Dublin Core, FOAF, PAV, ORE-OAI, PROV, PREMIS. To facilitate use of DOWARC in diverse web archiving contexts (i.e., libraries and archives), the ontology also implement a high-level extension of FRBR and RiC.
 
-DOWARC is currently in draft status. It will be presented to the GLAM and the Digital Humanities communities at the BDCAM2025 conference in London, and at the IIPC conference in Oslo.
+DOWARC is currently in draft status. It will be presented to the GLAM and the Digital Humanities communities at the [BDCAM2025](https://www.sas.ac.uk/about-us/institutes-centres/digital-humanities-research-hub/events/born-digital-collections-archives-memory) conference in London, and at the [IIPC](https://netpreserve.org/event/wac2025/) conference in Oslo.
