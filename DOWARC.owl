@@ -30,8 +30,14 @@
         <terms:license>Apache License 2.0</terms:license>
         <rdfs:comment rdf:datatype="string">0.1</rdfs:comment>
         <rdfs:comment xml:lang="en">DOWARC is a domain ontology for the Semantic modelling of web archiving artefacts such as WARC and CDX files. It was created as a metadata tool for web archivists and digital preservationists, to support more sustainable and accessible archiving and preservation practices, particularly with regard to issues engendered by intensive versioning activities, such as lack of context and rise in storage demands.
+
+
 The data model underpinning DOWARC is not far from vanilla implementation of the ORE-OAI model on which it openly builds. DOWARC imports and extends Dublin Core, FOAF, PAV, ORE-OAI, PROV, PREMIS. To facilitate use of DOWARC in diverse web archiving contexts (i.e., libraries and archives), the ontology also implement a high-level extension of FRBR and RiC.
+
+
 DOWARC is expected to support automated description of web archiving artefacts at scale. To further its applicability and maintain a high level of flexibility, DOWARC does not implement logical constraints to ensure its own consistency. With very few exceptions, cardinality is not formalised, which allows the description of an entity such a WARC record at the same time as a resource aggregated in a WARC file, and an aggregation of sub-entities (e.g., payload, named fields).
+
+
 DOWARC is currently in draft status. It was presented to the GLAM and Digital Humanities communities at the BDCAM2025 conference in London, and at the IIPC conference in Oslo.</rdfs:comment>
         <rdfs:label>DOWARC</rdfs:label>
         <owl:versionInfo xml:lang="en">Current version, draft status; 2025-03-29</owl:versionInfo>
