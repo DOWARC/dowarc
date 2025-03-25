@@ -16,8 +16,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:dowarc="https://github.com/dowarc/"
      xmlns:premis="https://id.loc.gov/ontologies/premis-3-0-0"
-	 xmlns:frbr="http://purl.org/vocab/frbr/core#"
-	 xmlns:rico="https://www.ica.org/standards/RiC/ontology">
+     xmlns:frbr="http://purl.org/vocab/frbr/core#"
+     xmlns:rico="https://www.ica.org/standards/RiC/ontology">
     <owl:Ontology rdf:about="https://github.com/DOWARC/dowarc">
         <owl:versionIRI rdf:resource="https://github.com/DOWARC/dowarc_1.0"/>
         <owl:imports rdf:resource="http://purl.org/pav/2.3"/>
