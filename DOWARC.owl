@@ -1085,6 +1085,7 @@ DOWARC is currently in draft status. It was presented to the GLAM and Digital Hu
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordNamedField">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
         <rdfs:comment>Set of elements consisting of a name, a colon, and a value, with long values continued on indented lines. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
+        <rdfs:label>WARCrecordNamedField</rdfs:label>
     </owl:Class>
     
 
