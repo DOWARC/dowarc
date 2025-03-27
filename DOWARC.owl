@@ -986,6 +986,7 @@
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxFile">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:comment>An index (normally a CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
         <rdfs:label>WARCcdxFile</rdfs:label>
     </owl:Class>
