@@ -974,7 +974,6 @@
     <!-- https://github.com/DOWARC/dowarc#WARCcdxField -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxField">
-        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:comment>The fields contained within a CDX or CDXJ file. Source: https://iipc.github.io/warc-specifications/specifications/cdx-format/cdx-2015/</rdfs:comment>
         <rdfs:label>WARCcdxField</rdfs:label>
