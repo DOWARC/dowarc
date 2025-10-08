@@ -155,3 +155,6 @@ prov:wasGeneratedBy
 
 note: dowarc:WARCevent is a subclass of prov:Activity and dowarc:Derivative, dowarc:WARCcdxFile, dowarc:WARCfile, dowarc:WARCgraph, dowarc:WARCrecord, dowarc:WARCrecordElement, and dowarc:Identifier are all aligned with prov:Entity.
 
+----------
+
+Remove probably unwanted `rdfs:isDefinedBy` statements
