@@ -193,10 +193,10 @@ dowarc:MultiColumnLanguageDescription
     rdfs:label "MultiColumnLanguageDescription" .
 
 dowarc:NewStyleChecksum
-    pav:importedFrom dowarc:WARC-Payload-Digest ;
     a owl:NamedIndividual, dowarc:WARCcdxField ;
     rdfs:comment "Typically the base32-encoded SHA1 digest of the response payload. This value is copied from the WARC-Payload-Digest header of a record if available, otherwise \"-\"is written. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
-    rdfs:label "NewStyleChecksum" .
+    rdfs:label "NewStyleChecksum" ;
+    rdfs:seeAlso dowarc:WARC-Payload-Digest .
 
 dowarc:NewsGroup
     a owl:NamedIndividual, dowarc:WARCcdxField ;
@@ -224,10 +224,10 @@ dowarc:OriginalPath
     rdfs:label "OriginalPath" .
 
 dowarc:OriginalURL
-    pav:importedFrom dowarc:WARC-Target-URI ;
     a owl:NamedIndividual, dowarc:WARCcdxField ;
     rdfs:comment "The URL that was used in the request that produced this response. The url_prefix search key matches a prefix of this value. This value is copied from the WARC-Target-URI header and is written as \"-\"if the record does not have that header. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
-    rdfs:label "OriginalURL" .
+    rdfs:label "OriginalURL" ;
+    rdfs:seeAlso dowarc:WARC-Target-URI .
 
 dowarc:PersonAgent
     a owl:Class ;

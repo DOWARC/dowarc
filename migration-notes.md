@@ -158,3 +158,7 @@ note: dowarc:WARCevent is a subclass of prov:Activity and dowarc:Derivative, dow
 ----------
 
 Remove probably unwanted `rdfs:isDefinedBy` statements
+
+----------
+
+Replace `pav:importedFrom` statements by `rdfs:seeAlso` since the property definition it self was not imported from the respective WARC field.

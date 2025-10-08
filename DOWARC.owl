@@ -863,9 +863,9 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#NewStyleChecksum">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <pav:importedFrom rdf:resource="https://github.com/DOWARC/dowarc#WARC-Payload-Digest"/>
         <rdfs:comment>Typically the base32-encoded SHA1 digest of the response payload. This value is copied from the WARC-Payload-Digest header of a record if available, otherwise "-"is written. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>NewStyleChecksum</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/DOWARC/dowarc#WARC-Payload-Digest"/>
     </owl:NamedIndividual>
 
 
@@ -919,9 +919,9 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#OriginalURL">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <pav:importedFrom rdf:resource="https://github.com/DOWARC/dowarc#WARC-Target-URI"/>
         <rdfs:comment>The URL that was used in the request that produced this response. The url_prefix search key matches a prefix of this value. This value is copied from the WARC-Target-URI header and is written as "-"if the record does not have that header. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>OriginalURL</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/DOWARC/dowarc#WARC-Target-URI"/>
     </owl:NamedIndividual>
 
 
