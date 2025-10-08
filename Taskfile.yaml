@@ -41,7 +41,7 @@ tasks:
       - "{{ .RAPPER_CMD }} -i rdfxml -c DOWARC.owl"
       - "{{ .RAPPER_CMD }} -i turtle -c dowarc.ttl"
 
-  documentaion:
+  documentation:
     aliases: [docu]
     desc: Build the vocabulary documentation
     cmds:
