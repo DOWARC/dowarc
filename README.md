@@ -1,6 +1,6 @@
 # DOWARC ontology
 
-DOWARC is a domain ontology for the Semantic modelling of web archiving artefacts, such as WARC and CDX files, and web archiving activities. 
+DOWARC is a domain ontology for the Semantic modelling of web archiving artefacts, such as WARC ([WARC 1.0](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/), [WARC 1.1](https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/)) and CDX files ([CDX 2006](https://iipc.github.io/warc-specifications/specifications/cdx-format/cdx-2006/), [CDX 2025](https://iipc.github.io/warc-specifications/specifications/cdx-format/cdx-2015/)), and web archiving activities.
 
 It was created as a metadata tool for web archivists and digital preservationists, to support more sustainable and accessible archiving and preservation practices, particularly with regard to issues engendered by intensive versioning activities, such as lack of context and rise in storage demands.
 
