@@ -1,0 +1,595 @@
+@prefix : <https://github.com/DOWARC/> .
+@prefix dowarc: <https://github.com/DOWARC/dowarc#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcmit: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+
+pav:curatedBy
+    a owl:ObjectProperty ;
+    rdfs:domain dowarc:WARCcoll ;
+    rdfs:range foaf:Organization, foaf:Person, dowarc:WebArchivingAgent .
+
+pav:derivedFrom
+    a owl:ObjectProperty ;
+    rdfs:comment "Derived from a different resource. Derivation conserns itself with derived knowledge. If this resource has the same content as the other resource, but has simply been transcribed to fit a different model (like XML -\"RDF or SQL -\"CVS), use pavimportedFrom. If a resource was simply retrieved, use pavretrievedFrom. If the content has however been further refined or modified, pavderivedFrom should be used. Details about who performed the derivation (e.g. who did the refining or modifications) may be indicated with pavcontributedBy and its subproperties." ;
+    rdfs:domain dowarc:Derivative ;
+    rdfs:isDefinedBy "http://purl.org/pav/" ;
+    rdfs:range dowarc:WARCfile, dowarc:WARCgraph, dowarc:WARCrecord ;
+    rdfs:subPropertyOf prov:wasDerivedFrom .
+
+pav:retrievedBy
+    a owl:ObjectProperty ;
+    rdfs:comment "An entity responsible for retrieving the data from an external source. The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription. The source that was retrieved should be given with pavretrievedFrom. The time of the retrieval should be indicated using pavretrievedOn. See pavimportedFrom for a discussion of import vs. retrieve vs. derived." ;
+    rdfs:domain dowarc:WARCrecordElement ;
+    rdfs:isDefinedBy <http://purl.org/pav/> ;
+    rdfs:range dowarc:SoftwareAgent ;
+    rdfs:subPropertyOf prov:wasAttributedTo .
+
+pav:retrievedFrom
+    a owl:ObjectProperty ;
+    rdfs:comment "The URI where a resource has been retrieved from. The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription. Retrieval indicates that this resource has the same representation as the original resource. If the resource has been somewhat transformed, use pavimportedFrom instead. The time of the retrieval should be indicated using pavretrievedOn. The agent may be indicated with pavretrievedBy." ;
+    rdfs:domain dowarc:WARCrecordElement ;
+    rdfs:isDefinedBy "http://purl.org/pav/" ;
+    rdfs:label "Retrieved from" ;
+    rdfs:subPropertyOf prov:wasDerivedFrom .
+
+ore:aggregates
+    a owl:ObjectProperty ;
+    rdfs:domain dowarc:WARCcoll, dowarc:WARCfile, dowarc:WARCrecord ;
+    rdfs:range dowarc:WARCrecordElement .
+
+ore:describes
+    a owl:ObjectProperty ;
+    rdfs:domain dowarc:WARCgraph .
+
+ore:isAggregatedBy
+    a owl:ObjectProperty ;
+    rdfs:domain dowarc:WARCrecordElement ;
+    rdfs:range dowarc:WARCcoll, dowarc:WARCfile, dowarc:WARCrecord .
+
+ore:isDescribedBy
+    a owl:ObjectProperty ;
+    rdfs:domain dowarc:WARCcoll, dowarc:WARCfile, dowarc:WARCrecord ;
+    rdfs:range dowarc:WARCgraph .
+
+ore:proxyIn
+    rdfs:range dowarc:WARCfile, dowarc:WARCrecord .
+
+ore:similarTo
+    rdfs:domain dowarc:WARCcoll .
+
+prov:generated
+    rdfs:domain dowarc:WARCevent ;
+    rdfs:range dowarc:Derivative, dowarc:WARCfile, dowarc:WARCgraph, dowarc:WARCrecord .
+
+prov:used
+    rdfs:domain dowarc:WARCevent ;
+    rdfs:range dowarc:Derivative, dowarc:Identifier, dowarc:WARCfile, dowarc:WARCgraph, dowarc:WARCrecord, dowarc:WARCrecordElement .
+
+prov:wasGeneratedBy
+    rdfs:domain dowarc:WARCcdxFile, dowarc:WARCfile, dowarc:WARCrecord, dowarc:WARCrecordElement ;
+    rdfs:range dowarc:WARCevent .
+
+:dowarc
+    dc:date 2025 ;
+    dc:title "DOWARC: a domain ontology for web archiving and web preservation" ;
+    dcterms:creator "Pallotto Strickland, Manuela", "Storrar, Tom" ;
+    dcterms:license "Apache License 2.0" ;
+    a owl:Ontology ;
+    rdfs:comment "0.1"^^:string, "This is a domain ontology created to support the Semantic modelling of WARC files. RDF representations of web archiving data objects can play a critical role in addressing sustainable versioning practices in web archiving and web preservation."@en ;
+    rdfs:label "DOWARC" ;
+    owl:imports <http://purl.org/pav/2.3>, <https://id.loc.gov/ontologies/premis-3-0-0>, <https://raw.github.com/wf4ever/ro/master/ore-owl.owl> ;
+    owl:versionIRI <https://github.com/DOWARC/dowarc_1.0> ;
+    owl:versionInfo "Current version, draft status; 2025-03-29"@en .
+
+dowarc:ArcDocumentLength
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "ArcDocumentLength" .
+
+dowarc:CanonizedFrame
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedFrame" .
+
+dowarc:CanonizedHost
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedHost" .
+
+dowarc:CanonizedImage
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedImage" .
+
+dowarc:CanonizedJumpPoint
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedJumpPoint" .
+
+dowarc:CanonizedLink
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedLink" .
+
+dowarc:CanonizedPath
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedPath" .
+
+dowarc:CanonizedRedirect
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedRedirect" .
+
+dowarc:CanonizedUrl
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "Canonicalization is applied to URIs to remove trivial differences in the URIs that do not reflect that the URI reference different resources. Examples include removing session ID parameters, unneccessary port declerations (e.g. :80 when crawling HTTP). (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/#appendix-a--canonicalization)" ;
+    rdfs:label "CanonizedUrl" .
+
+dowarc:CanonizedUrlFoundInScript
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedUrlFoundInScript" .
+
+dowarc:CanonizedUrlInOtherHrefTags
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedUrlInOtherHrefTags" .
+
+dowarc:CanonizedUrlInOtherSrcTags
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CanonizedUrlInOtherSrcTags" .
+
+dowarc:CdxFrame
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CdxFrame" .
+
+dowarc:CdxImage
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CdxImage" .
+
+dowarc:CdxLink
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CdxLink" .
+
+dowarc:CdxTitle
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CdxTitle" .
+
+dowarc:CompressedARCFileOffset
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "The \"offset\"is the number of bytes from the start of the WARC when the relevant record begins. (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/)" ;
+    rdfs:label "CompressedARCFileOffset" .
+
+dowarc:CompressedDatFileOffset
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "CompressedDatFileOffset" .
+
+dowarc:CompressedRecordSize
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "The number of octets in the compressed record in the WARC file. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "CompressedRecordSize" .
+
+dowarc:Content-TypeType
+    a owl:NamedIndividual ;
+    owl:sameAs dowarc:MimeTypeOfOriginalDocument .
+
+dowarc:CrawlLog
+    a owl:Class ;
+    rdfs:comment "" ;
+    rdfs:label "CrawlLog" ;
+    rdfs:subClassOf prov:Entity .
+
+dowarc:Crawling
+    a owl:Class ;
+    rdfs:comment "The act of creating an archive through the process of capturing data into a WARC file." ;
+    rdfs:label "Crawling" ;
+    rdfs:subClassOf dowarc:WARCevent .
+
+dowarc:Date
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "A timestamp for this record, stored as the 14 digits from the text form of a WARC::Date without the associated marker characters, i.e. YYYYmmddHHMMSS instead of YYYY-mm-ddTHH:MM:SSZ. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "Date" .
+
+dowarc:Derivative
+    a owl:Class ;
+    rdfs:comment "An object created as a derivative of a web archiving data entity. During the derivation process, modification of the information contained in the original object is allowed; however, some of the original data must be maintained, at a representational and/or content level. An example of Derivative is a list of URLs extracted from a WARC file. This class must be used only when describing web archiving data object. Subclass of prov-o:Entity." ;
+    rdfs:label "Derivative" ;
+    rdfs:subClassOf prov:Entity .
+
+dowarc:Extracting
+    a owl:Class ;
+    rdfs:comment "The act of extracting data from a WARC file and/or a CDX file." ;
+    rdfs:label "Extracting" ;
+    rdfs:subClassOf dowarc:WARCevent .
+
+dowarc:FileName
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "The name of the WARC volume containing this record. This value is assumed to be relative to the directory containing the CDX file and to always be a Unix-style filename, regardless of the local file name conventions. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "FileName" .
+
+dowarc:HardwareAgent
+    a owl:Class ;
+    rdfs:comment "" ;
+    rdfs:label "HardwareAgent" ;
+    rdfs:subClassOf dowarc:WebArchivingAgent .
+
+dowarc:IP
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "IP" .
+
+dowarc:Identifier
+    a owl:Class ;
+    rdfs:comment "An unambiguous reference (character string or numeric) to a data object." ;
+    rdfs:label "Identifier" ;
+    rdfs:subClassOf prov:Entity .
+
+dowarc:Indexing
+    a owl:Class ;
+    rdfs:comment "The creation of an index (CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html" ;
+    rdfs:label "Indexing" ;
+    rdfs:subClassOf dowarc:WARCevent .
+
+dowarc:LanguageString
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "LanguageString" .
+
+dowarc:MassagedURL
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "The URL used in the request, as for the \"a\"field, but with the hostname translated to SURT form and the scheme component removed so that the value starts with the TLD. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "MassagedURL" .
+
+dowarc:MetaTagsAIF
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "This field seems to be very common in CDX files, but no values have been observed and this field appears to be completely undocumented. Ignored on read, but written as \"-\"if included when building an index. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "MetaTagsAIF" .
+
+dowarc:MimeType
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "The MIME type reported in the Content-Type header of the response. Written as \"-\"if the record does not contain an HTTP response with an entity body. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "MimeType" .
+
+dowarc:MimeTypeOfOriginalDocument
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "Content-Type of the resource record - in alexa-made dat file (Source: https://archive.org/web/researcher/dat_file_format.php)" ;
+    rdfs:label "MimeTypeOfOriginalDocument" .
+
+dowarc:MultiColumnLanguageDescription
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "MultiColumnLanguageDescription" .
+
+dowarc:NewStyleChecksum
+    pav:importedFrom dowarc:WARC-Payload-Digest ;
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "Typically the base32-encoded SHA1 digest of the response payload. This value is copied from the WARC-Payload-Digest header of a record if available, otherwise \"-\"is written. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "NewStyleChecksum" .
+
+dowarc:NewsGroup
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "NewsGroup" .
+
+dowarc:OldStyleChecksum
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "OldStyleChecksum" .
+
+dowarc:OrganizationAgent
+    a owl:Class ;
+    rdfs:label "OrganizationAgent" ;
+    rdfs:subClassOf foaf:Organization, dowarc:WebArchivingAgent .
+
+dowarc:OriginalHost
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "OriginalHost" .
+
+dowarc:OriginalJumpPoint
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "OriginalJumpPoint" .
+
+dowarc:OriginalPath
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "OriginalPath" .
+
+dowarc:OriginalURL
+    pav:importedFrom dowarc:WARC-Target-URI ;
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "The URL that was used in the request that produced this response. The url_prefix search key matches a prefix of this value. This value is copied from the WARC-Target-URI header and is written as \"-\"if the record does not have that header. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "OriginalURL" .
+
+dowarc:PersonAgent
+    a owl:Class ;
+    rdfs:label "PersonAgent" ;
+    rdfs:subClassOf foaf:Person, dowarc:WebArchivingAgent .
+
+dowarc:Port
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "Port" .
+
+dowarc:PreservationEvent
+    a owl:Class ;
+    rdfs:comment "An action undertaken, or an activity occurring, within or outside the repository that influence its capability to preserve web archiving data objects. Subclass of premis:Event" ;
+    rdfs:label "PreservationEvent" ;
+    rdfs:subClassOf premis:Event .
+
+dowarc:PreservationObject
+    a owl:Class ;
+    rdfs:comment "Web archiving data object subject to digital preservation. Subclass of premis:Object." ;
+    rdfs:label "PreservationObject" ;
+    rdfs:subClassOf premis:Object .
+
+dowarc:Publishing
+    a owl:Class ;
+    rdfs:comment "The act of making a WARC file, or resources within a WARC file, availavable for use" ;
+    rdfs:label "Publishing" ;
+    rdfs:subClassOf dowarc:WARCevent .
+
+dowarc:QA
+    a owl:Class ;
+    rdfs:comment "The act of checking the quality of a web archive using a combination of data-driven and manual checks. This process includes the act of patching, during which time missing content is added to the archive to imprve its completeness or quality." ;
+    rdfs:label "QA" ;
+    rdfs:subClassOf dowarc:WARCevent .
+
+dowarc:Redirect
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "The contents of the Location header of the response, URL-escaped. Some implementations do not properly set this field. Written as \"-\"if not present or if the record does not contain an HTTP response. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "Redirect" .
+
+dowarc:Replaying
+    a owl:Class ;
+    rdfs:comment "Retrieval and rendering of the data stored in a WARC file over HTTP. This may be through a Wayback-style system via a browser, or programatically replayed in some other way." ;
+    rdfs:label "Replaying" ;
+    rdfs:subClassOf dowarc:WARCevent .
+
+dowarc:ResponseCode
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:comment "The HTTP status code used in the response. Written as \"-\"if the record does not contain an HTTP response. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)" ;
+    rdfs:label "ResponseCode" .
+
+dowarc:RulespaceCategory
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "RulespaceCategory" .
+
+dowarc:SoftwareAgent
+    a owl:Class ;
+    rdfs:label "SoftwareAgent" ;
+    rdfs:subClassOf dowarc:WebArchivingAgent .
+
+dowarc:UncompressedArcFileOffset
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "UncompressedArcFileOffset" .
+
+dowarc:UncompressedDatFileOffset
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "UncompressedDatFileOffset" .
+
+dowarc:Uniqueness
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "Uniqueness" .
+
+dowarc:UrlFoundInScript
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "UrlFoundInScript" .
+
+dowarc:UrlInOtherHrefTages
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "UrlInOtherHrefTages" .
+
+dowarc:UrlInOtherSrcTags
+    a owl:NamedIndividual, dowarc:WARCcdxField ;
+    rdfs:label "UrlInOtherSrcTags" .
+
+dowarc:WARC-Block-Digest
+    a owl:Class ;
+    rdfs:comment "An optional parameter indicating the algorithm name and calculated value of a digest applied to the full block of the record. An example is a SHA-1 labelled Base32 ([RFC3548]) value. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Block-Digest ;
+    rdfs:label "WARC-Block-Digest" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Concurrent-To
+    a owl:Class ;
+    rdfs:comment "The WARC-Record-IDs of any records created as part of the same capture event as the current record. A capture event comprises the information automatically gathered by a retrieval against a single target-URI; for example, it might be represented by a \"response\"or \"revisit\"record plus its associated \"request\"record. This field may be used to associate records of types \"request\", \"response\", \"resource\", \"metadata\", and \"revisit\"with one another when they arise from a single capture event (When so used, any WARC Concurrent-To association shall be considered bidirectional even if the header only appears on one record.) As an exception to the general rule, it is allowed to repeat several WARC-Concurrent-To fields within the same WARC record. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Concurrent-To ;
+    rdfs:label "WARC-Concurrent-To" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Date
+    a owl:Class ;
+    rdfs:comment "A 14-digit UTC timestamp formatted according to YYYY-MM-DDThh:mm:ssZ, described in the W3C profile of ISO8601 [W3CDTF]. The timestamp shall represent the instant that data capture for record creation began. Multiple records written as part of a single capture event (see section 5.7) use the same WARC-Date, even though the times of their writing will not be exactly synchronized. All records have a WARC-Date field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Date ;
+    rdfs:label "WARC-Date" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Filename
+    a owl:Class ;
+    rdfs:comment "The filename containing the current \"warcinfo\"record.The WARC-Filename field might be used in \"warcinfo\"type records and is not used for other record types. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Filename ;
+    rdfs:label "WARC-Filename" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-IP-Address
+    a owl:Class ;
+    rdfs:comment "The numeric Internet address contacted to retrieve any included content. An IPv4 address is written as a \"dotted quad\"; an IPv6 address is written as per [RFC1884]. For an HTTP retrieval, this is the IP address used at retrieval time corresponding to the hostname in the record\"s target-Uri. The WARC-IP-Address field is used on \"response\", \"resource\", \"request\", \"metadata\", and \"revisit\"records, but is not used on ‘warcinfo’, \"conversion\"or \"continuation\"records. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-IP-Address ;
+    rdfs:label "WARC-IP-Address" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Identified-Payload-Type
+    a owl:Class ;
+    rdfs:comment "The content-type of the record\"s payload as determined by an independent check. The WARC-Identified-Payload-Type field might be used on WARC records with a well-defined payload and is not used on records without a well-defined payload. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Identified-Payload-Type ;
+    rdfs:label "WARC-Identified-Payload-Type" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Payload-Digest
+    a owl:Class, owl:NamedIndividual ;
+    rdfs:comment "An optional parameter indicating the algorithm name and calculated value of a digest applied to the payload referred to or contained by the record - which is not necessarily equivalent to the record block. An example is a SHA-1 labelled Base32 ([RFC3548]) value. The payload of an application/http block is its \"entity-body\"(per [RFC2616]). In contrast to WARC-Block Digest, the WARC-Payload-Digest field is also  used for data not actually present in the current record block, for example when a block is left off in accordance with a \"revisit\"profile (see \"revisit\"), or when a record is segmented (the WARC-Payload-Digest recorded in the first segment of a segmented record is the digest of the payload of the logical record). The WARC-Payload-Digest field is used on WARC records with a well-defined payload and is not used on records without a well-defined payload.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)", "An optional parameter indicating the algorithm name and calculated value of a digest applied to the payload referred to or contained by the record - which is not necessarily equivalent to the record block. The payload of an application/http block is its ‘entity-body’ (per [RFC2616]). In contrast to WARC-Block-Digest, the WARC-Payload-Digest field may also be used for data not actually present in the current record block, for example when a block is left off in accordance with a ‘revisit’ profile (see ‘revisit’), or when a record is segmented (the WARC-Payload-Digest recorded in the first segment of a segmented record shall be the digest of the payload of the logical record). The WARC-Payload-Digest field might be used on WARC records with a well-defined payload and is not used on records without a well-defined payload." ;
+    rdfs:isDefinedBy dowarc:WARC-Payload-Digest ;
+    rdfs:label "WARC-Payload-Digest" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Profile
+    a owl:Class ;
+    rdfs:comment "A URI signifying the kind of analysis and handling applied in a \"revisit\"record. (Like an XML namespace, the URI may, but need not, return human-readable or machine-readable documentation.) If reading software does not recognize the given URI as a supported kind of handling, it does not attempt to interpret the associated record block.The section \"revisit\"defines two initial profile options for the WARC-Profile header for \"revisit\"records. The WARC-Profile field is mandatory on \"revisit\"type records and undefined for other record types.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Profile ;
+    rdfs:label "WARC-Profile" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Record-ID
+    a owl:Class ;
+    rdfs:comment "An identifier assigned to the current record that is globally unique for its period of intended use. No identifier scheme is mandated by this specification, but each record-id shall be a legal URI and clearly indicate a documented and registered scheme to which it conforms (e.g., via a URI scheme prefix such as \"http:\"or \"urn:\"). All records have a WARC-Record-ID field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Record-ID ;
+    rdfs:label "WARC-Record-ID" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Refers-To
+    a owl:Class ;
+    rdfs:comment "The WARC-Record-ID of a single record for which the present record holds additional content. The WARC-Refers-To field might be used to associate a \"metadata\"record to another record it describes. The WARC-Refers-To field might also be used to associate a record of type \"revisit\"or \"conversion\"with the preceding record which helped determine the present record content. The WARC-Refers-To field is not used in \"warcinfo\", \"response\", ‘resource’, \"request\", and \"continuation\"records.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Refers-To ;
+    rdfs:label "WARC-Refers-To" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Refers-To-Date
+    a owl:NamedIndividual, dowarc:WARC-Refers-To ;
+    rdfs:comment " The WARC-Refers-To-Date field might be used in ‘revisit’ records and is not used in \"warcinfo\", \"response\", \"metadata\", \"conversion\", ‘resource’, \"request\", and \"continuation\"records.  (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:label "WARC-Refers-To-Date" .
+
+dowarc:WARC-Refers-To-Target-URI
+    a owl:NamedIndividual, dowarc:WARC-Refers-To ;
+    rdfs:comment " The WARC-Refers-To-Target-URI field might be used in ‘revisit’ records and is not used in \"warcinfo\", \"response\", \"metadata\", \"conversion\", ‘resource’, \"request\", and \"continuation\"records. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:label "WARC-Refers-To-Target-URI" .
+
+dowarc:WARC-Segment-Number
+    a owl:Class ;
+    rdfs:comment "Reports the current record\"s relative ordering in a sequence of segmented records. In the first segment of any record that is completed in one or more later \"continuation\"WARC records, this parameter is mandatory. Its value there is \"1\". In a \"continuation\"record, this parameter is also mandatory. Its value is the sequence number of the current segment in the logical whole record, increasing by 1 in each next segment. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Segment-Number ;
+    rdfs:label "WARC-Segment-Number" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Segment-Origin-ID
+    a owl:Class ;
+    rdfs:comment "Identifies the starting record in a series of segmented records whose content blocks are reassembled to obtain a logically complete content block. This field is mandatory on all \"continuation\"records, and is not used in other records.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Segment-Origin-ID ;
+    rdfs:label "WARC-Segment-Origin-ID" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Segment-Total-Length
+    a owl:Class ;
+    rdfs:comment "In the final record of a segmented series, reports the total length of all segment content blocks when concatenated together. This field is mandatory on the last \"continuation\"record of a series, and is not used elsewhere. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Segment-Total-Length ;
+    rdfs:label "WARC-Segment-Total-Length" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Target-URI
+    a owl:Class, owl:NamedIndividual ;
+    rdfs:comment "The original URI whose capture gave rise to the information content in this record. In the context of web harvesting, this is the URI that was the target of a crawler’s retrieval request. For a ‘revisit’ record, it is the URI that was the target of a retrieval request. Indirectly, such as for a ‘metadata’, or ‘conversion’ record, it is a copy of the WARC-Target-URI appearing in the original record to which the newer record pertains. The URI in this value shall be properly escaped according to [RFC3986] and written with no internal whitespace. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Target-URI ;
+    rdfs:label "WARC-Target-URI" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Truncated
+    a owl:Class ;
+    rdfs:comment "For practical reasons, writers of the WARC format may place limits on the time or storage allocated to archiving a single resource. As a result, only a truncated portion of the original resource may be available for saving into a WARC record. Any record might indicate that truncation of its content block has occurred and give the reason with a \"WARC-Truncated\"field. For example, if the capture of what appeared to be a multi-gigabyte resource was cut short after a transfer time limit was reached, the partial resource could be saved to a WARC record with this field. The WARC-Truncated field might be used on any WARC record. The WARC field Content-Length still reports the actual truncated size of the record block. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Truncated ;
+    rdfs:label "WARC-Truncated" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Type
+    a owl:Class ;
+    rdfs:comment "The type of WARC record: one of \"warcinfo\", \"response\", \"resource\", \"request\", \"metadata\", \"revisit\",\"conversion\", or \"continuation\". Other types of WARC records may be defined in extensions of the core format. Types are further described in WARC Record Types. All records have a WARC-Type field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Type ;
+    rdfs:label "WARC-Type" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARC-Warcinfo-ID
+    a owl:Class ;
+    rdfs:comment " When present, indicates the WARC-Record-ID of the associated \"warcinfo\"record for this record. Typically, the Warcinfo-ID parameter is used when the context of the applicable \"warcinfo\"record is unavailable, such as after distributing single records into separate WARC files. WARC writing applications (such web crawlers) might choose to always record this parameter.The WARC-Warcinfo-ID field value overrides any association with a previously occurring (in the WARC) \"warcinfo\"record, thus providing a way to protect the true association when records are combined from different WARCs. The WARC-Warcinfo-ID field might be used in any record type except \"warcinfo\". (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:isDefinedBy dowarc:WARC-Warcinfo-ID ;
+    rdfs:label "WARC-Warcinfo-ID" ;
+    rdfs:subClassOf dowarc:WARCrecordNamedField .
+
+dowarc:WARCcdxField
+    a owl:Class ;
+    rdfs:comment "The fields contained within a CDX or CDXJ file. Source: https://iipc.github.io/warc-specifications/specifications/cdx-format/cdx-2015/" ;
+    rdfs:label "WARCcdxField" ;
+    rdfs:subClassOf prov:Entity .
+
+dowarc:WARCcdxFile
+    a owl:Class ;
+    rdfs:comment "An index (normally a CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html" ;
+    rdfs:label "WARCcdxFile" ;
+    rdfs:subClassOf ore:Aggregation, prov:Entity .
+
+dowarc:WARCcoll
+    a owl:Class ;
+    rdfs:comment "A collection of WARC records aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a live web resource (e.g., a web site, a web page). Subclass of ore:Aggregation." ;
+    rdfs:label "WARCcoll" ;
+    rdfs:subClassOf dcmit:Collection .
+
+dowarc:WARCevent
+    a owl:Class ;
+    rdfs:comment "An activity which relates to or involves creating, indexing, modifying or replaying a WARC file." ;
+    rdfs:label "WARCevent" ;
+    rdfs:subClassOf prov:Activity .
+
+dowarc:WARCfile
+    a owl:Class ;
+    rdfs:comment "A container file that aggregates a sequence of structured information chunks (WARC records), storing data and metadata. WARC files are the output of web crawling automated activities. A WARC file can contain one or more digital object with multiple media types (i.e., MIME). Subclass of ore:Aggregation." ;
+    rdfs:label "WARCfile" ;
+    rdfs:subClassOf ore:Aggregation, prov:Entity .
+
+dowarc:WARCgraph
+    a owl:Class ;
+    rdfs:comment "An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCcollection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph (hasPart/isPartOf)." ;
+    rdfs:label "WARCgraph" ;
+    rdfs:subClassOf ore:ResourceMap, rdfg:Graph, prov:Entity .
+
+dowarc:WARCrecord
+    a owl:Class ;
+    rdfs:comment "A WARC record is a component of a WARC file. A WARC record includes data retrieved from a source in the live Wide World Web, together with synthetic (meta)data providing information about the retrieved content. A WARC record has a header and a content block carrying the payload for the live web data object that was harvested over the HTTP. A WARC record is both an aggregated resource (component of a WARC file) and an aggregation (it includes sub-elements of its own)." ;
+    rdfs:label "WARCrecord" ;
+    rdfs:subClassOf ore:AggregatedResource, ore:Aggregation, prov:Entity .
+
+dowarc:WARCrecordContentBlock
+    a owl:Class ;
+    rdfs:comment "Part (zero or more octets) of a WARC record that follows the header and that forms the main body of a WARC record. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)" ;
+    rdfs:label "WARCrecordContentBlock" ;
+    rdfs:subClassOf dowarc:WARCrecordElement .
+
+dowarc:WARCrecordElement
+    a owl:Class ;
+    rdfs:comment "A resource aggregated in a WARC record." ;
+    rdfs:label "WARCrecordElement" ;
+    rdfs:subClassOf ore:AggregatedResource .
+
+dowarc:WARCrecordHeader
+    a owl:Class ;
+    rdfs:comment "Beginning of a WARC record, consisting of one first line declaring the record to be in the WARC format with a given version number, followed by lines of named fields up to a blank line. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)" ;
+    rdfs:label "WARCrecordHeader" ;
+    rdfs:subClassOf dowarc:WARCrecordElement .
+
+dowarc:WARCrecordNamedField
+    a owl:Class ;
+    rdfs:comment "Set of elements consisting of a name, a colon, and a value, with long values continued on indented lines. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)" ;
+    rdfs:subClassOf dowarc:WARCrecordElement .
+
+dowarc:WARCrecordPayload
+    a owl:Class ;
+    rdfs:comment "Data object referred to, or contained by a WARC record as a meaningful subset of the content block. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)" ;
+    rdfs:label "WARCrecordPayload" ;
+    rdfs:subClassOf dowarc:WARCrecordElement .
+
+dowarc:WebArchivingAgent
+    a owl:Class ;
+    rdfs:comment "Subclass of \"foaf:Agent\"and \"prov:Agent\", specified in a web archiving environment. \"Class: foaf:Agent. An agent (eg. person, group, software or physical artifact).\"(Source: http://xmlns.com/foaf/spec/#term_Agent) - \"Class: prov:Agent. An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent\"s activity.\"(Source: https://www.w3.org/TR/prov-o/#Agent)" ;
+    rdfs:label "WebArchivingAgent" ;
+    rdfs:subClassOf prov:Agent, foaf:Agent .
+
+dowarc:identifiedBy
+    a owl:ObjectProperty ;
+    rdfs:domain prov:Agent, dowarc:Derivative, dowarc:WARCcoll, dowarc:WARCfile, dowarc:WARCgraph, dowarc:WARCrecord, dowarc:WARCrecordElement ;
+    rdfs:range dowarc:Identifier .
+
+dowarc:identifies
+    a owl:ObjectProperty ;
+    rdfs:domain premis:Identifier ;
+    rdfs:range prov:Agent, dowarc:WARCcoll, dowarc:WARCfile, dowarc:WARCrecord, dowarc:WARCrecordElement .
+
