@@ -1,6 +1,6 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix : <https://github.com/DOWARC/> .
 @prefix dowarc: <https://github.com/DOWARC/dowarc#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -12,72 +12,6 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix premis: <http://www.loc.gov/premis/rdf/v3/> .
 @prefix ore: <http://www.openarchives.org/ore/terms/> .
-
-pav:curatedBy
-    a owl:ObjectProperty ;
-    rdfs:domain dowarc:WARCcoll ;
-    rdfs:range foaf:Organization, foaf:Person, dowarc:WebArchivingAgent .
-
-pav:derivedFrom
-    a owl:ObjectProperty ;
-    rdfs:comment "Derived from a different resource. Derivation conserns itself with derived knowledge. If this resource has the same content as the other resource, but has simply been transcribed to fit a different model (like XML -\"RDF or SQL -\"CVS), use pavimportedFrom. If a resource was simply retrieved, use pavretrievedFrom. If the content has however been further refined or modified, pavderivedFrom should be used. Details about who performed the derivation (e.g. who did the refining or modifications) may be indicated with pavcontributedBy and its subproperties." ;
-    rdfs:domain dowarc:Derivative ;
-    rdfs:isDefinedBy "http://purl.org/pav/" ;
-    rdfs:range dowarc:WARCfile, dowarc:WARCgraph, dowarc:WARCrecord ;
-    rdfs:subPropertyOf prov:wasDerivedFrom .
-
-pav:retrievedBy
-    a owl:ObjectProperty ;
-    rdfs:comment "An entity responsible for retrieving the data from an external source. The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription. The source that was retrieved should be given with pavretrievedFrom. The time of the retrieval should be indicated using pavretrievedOn. See pavimportedFrom for a discussion of import vs. retrieve vs. derived." ;
-    rdfs:domain dowarc:WARCrecordElement ;
-    rdfs:isDefinedBy <http://purl.org/pav/> ;
-    rdfs:range dowarc:SoftwareAgent ;
-    rdfs:subPropertyOf prov:wasAttributedTo .
-
-pav:retrievedFrom
-    a owl:ObjectProperty ;
-    rdfs:comment "The URI where a resource has been retrieved from. The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription. Retrieval indicates that this resource has the same representation as the original resource. If the resource has been somewhat transformed, use pavimportedFrom instead. The time of the retrieval should be indicated using pavretrievedOn. The agent may be indicated with pavretrievedBy." ;
-    rdfs:domain dowarc:WARCrecordElement ;
-    rdfs:isDefinedBy "http://purl.org/pav/" ;
-    rdfs:label "Retrieved from" ;
-    rdfs:subPropertyOf prov:wasDerivedFrom .
-
-ore:aggregates
-    a owl:ObjectProperty ;
-    rdfs:domain dowarc:WARCcoll, dowarc:WARCfile, dowarc:WARCrecord ;
-    rdfs:range dowarc:WARCrecordElement .
-
-ore:describes
-    a owl:ObjectProperty ;
-    rdfs:domain dowarc:WARCgraph .
-
-ore:isAggregatedBy
-    a owl:ObjectProperty ;
-    rdfs:domain dowarc:WARCrecordElement ;
-    rdfs:range dowarc:WARCcoll, dowarc:WARCfile, dowarc:WARCrecord .
-
-ore:isDescribedBy
-    a owl:ObjectProperty ;
-    rdfs:domain dowarc:WARCcoll, dowarc:WARCfile, dowarc:WARCrecord ;
-    rdfs:range dowarc:WARCgraph .
-
-ore:proxyIn
-    rdfs:range dowarc:WARCfile, dowarc:WARCrecord .
-
-ore:similarTo
-    rdfs:domain dowarc:WARCcoll .
-
-prov:generated
-    rdfs:domain dowarc:WARCevent ;
-    rdfs:range dowarc:Derivative, dowarc:WARCfile, dowarc:WARCgraph, dowarc:WARCrecord .
-
-prov:used
-    rdfs:domain dowarc:WARCevent ;
-    rdfs:range dowarc:Derivative, dowarc:Identifier, dowarc:WARCfile, dowarc:WARCgraph, dowarc:WARCrecord, dowarc:WARCrecordElement .
-
-prov:wasGeneratedBy
-    rdfs:domain dowarc:WARCcdxFile, dowarc:WARCfile, dowarc:WARCrecord, dowarc:WARCrecordElement ;
-    rdfs:range dowarc:WARCevent .
 
 :dowarc
     dc:date 2025 ;
@@ -522,7 +456,7 @@ dowarc:WARCcoll
     a owl:Class ;
     rdfs:comment "A collection of WARC records aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a live web resource (e.g., a web site, a web page). Subclass of ore:Aggregation." ;
     rdfs:label "WARCcoll" ;
-    rdfs:subClassOf dcmit:Collection .
+    rdfs:subClassOf ore:Aggregation, prov:Entity .
 
 dowarc:WARCevent
     a owl:Class ;
@@ -558,7 +492,7 @@ dowarc:WARCrecordElement
     a owl:Class ;
     rdfs:comment "A resource aggregated in a WARC record." ;
     rdfs:label "WARCrecordElement" ;
-    rdfs:subClassOf ore:AggregatedResource .
+    rdfs:subClassOf ore:AggregatedResource, prov:Entity .
 
 dowarc:WARCrecordHeader
     a owl:Class ;
