@@ -1,0 +1,15 @@
+title: "DOWARC: a domain ontology for web archiving and web preservation"
+baseurl: "/DOWARC/dowarc"
+url: "https://github.com"
+theme: jekyll-theme-jod
+jekyll_rdf:
+    restriction: "SELECT ?resourceUri WHERE { ?resourceUri ?p ?o . FILTER regex(str(?resourceUri), \"^https://github.com/DOWARC/dowarc#\") }"
+exclude:
+- DOWARC-diagram.svg
+- DOWARC.owl
+- DOWARC.owl.svg
+- dowarc.ttl
+- migration-notes.md
+- ontology.ttl
+- Taskfile.yaml
+- README.md

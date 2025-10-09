@@ -1,0 +1,48 @@
+version: 3
+
+vars:
+  UID:
+    sh: id -u
+  GID:
+    sh: id -g
+  SHELL_PWD:
+    sh: pwd
+
+  DOCKER_PWD: /data
+  DOCKER_DIRS: -v "{{.SHELL_PWD}}:{{.DOCKER_PWD}}" -w {{.DOCKER_PWD}}
+  DOCKER_PARAMS_DEFAULT: -u {{.UID}}:{{.GID}} --rm
+  DOCKER_PARAMS: '{{.DOCKER_PARAMS | default .DOCKER_PARAMS_DEFAULT }}'
+
+  RAPPER_IMAGE: docker.io/pheyvaer/raptor
+  RAPPER_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.RAPPER_IMAGE}}
+  RAPPER_CMD: '{{.RAPPER_DOCKER}}'
+
+  JOD_IMAGE: ghcr.io/eccenca/jod:main
+  JOD_DOCKER_PARAMS: -e JOD_TITLE="DOWARC" -e JOD_CONFIG_BASEURL=https://github.com -e JOD_CONFIG_URL=/DOWARC/dowarc# -e JOD_URL=https://github.com/DOWARC/dowarc# -e JOD_RESTRICTION_URL=True
+  JOD_PARAMS: jekyll build --disable-disk-cache
+  JOD_DOCKER: docker run {{.DOCKER_PARAMS}} {{.DOCKER_DIRS}} {{.JOD_DOCKER_PARAMS}} {{.JOD_IMAGE}} {{.JOD_PARAMS}}
+  JOD_CMD: '{{.JOD_DOCKER}}'
+
+tasks:
+  default:
+    desc: List the available tasks
+    cmds:
+      - task -l
+
+  ci:
+    desc: Build tasks for the CI
+    cmds:
+      - task: check
+      - task: documentation
+
+  check:
+    desc: Test that the serialization is still valid
+    cmds:
+      - "{{ .RAPPER_CMD }} -i rdfxml -c DOWARC.owl"
+      - "{{ .RAPPER_CMD }} -i turtle -c dowarc.ttl"
+
+  documentation:
+    aliases: [docu]
+    desc: Build the vocabulary documentation
+    cmds:
+      - "{{ .JOD_CMD }}"
