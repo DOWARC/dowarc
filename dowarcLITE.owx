@@ -39,9 +39,10 @@
     <owl:ObjectProperty rdf:about="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr">
         <rdfs:subPropertyOf rdf:resource="http://www.loc.gov/premis/rdf/v3/relationship"/>
         <owl:inverseOf rdf:resource="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
@@ -58,9 +59,10 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
         <rdfs:comment>A relationship in which a file or representation is captured in an abstract intellectual entity description that it represents. It is a statement of what can depict or stand for the Intellectual Entity. Has a reciprocal relationship of isRepresentedBy. (Source: https://id.loc.gov/vocabulary/preservation/relationshipSubType/rep.html)</rdfs:comment>
         <rdfs:label>represents</rdfs:label>
     </owl:ObjectProperty>
@@ -127,6 +129,7 @@
     <!-- http://purl.org/pav/previousVersion -->
 
     <rdf:Description rdf:about="http://purl.org/pav/previousVersion">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
@@ -134,7 +137,7 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
@@ -142,7 +145,6 @@
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
     </rdf:Description>
     
 
@@ -195,6 +197,7 @@
     <!-- http://www.openarchives.org/ore/terms/isAggregatedBy -->
 
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/isAggregatedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
@@ -227,6 +230,7 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Replaying"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
@@ -262,10 +266,11 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Replaying"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#ConfigFile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
     </rdf:Description>
     
 
@@ -282,7 +287,6 @@
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Replaying"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
     </owl:ObjectProperty>
     
 
@@ -315,6 +319,7 @@
     <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
 
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
@@ -336,6 +341,7 @@
     <!-- http://www.w3.org/ns/prov#wasUsedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasUsedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#ConfigFile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
@@ -447,11 +453,11 @@
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#value">
         <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/StorageLocation"/>
         <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/StorageMedium"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </rdf:Description>
     
@@ -474,10 +480,29 @@
     
 
 
+    <!-- https://github.com/DOWARC/dowarcLITE#ArchivedWebResource -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Representation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment>A resource made available online. It can be a website or a webpage or a digital object embedded in a webpage or linked to by a webpage. It is always intended as the digital &apos;representation of&apos; an untangible/intellectual entity. It is also &apos;represented by&apos; its archival counterpart, which is rendered (replayed) using WARC files.</rdfs:comment>
+        <rdfs:label>ArchivedWebResource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#ConfigFile -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#ConfigFile">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/DOWARC/dowarcLITE#Crawling -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Crawling">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>The act of creating an archive through the process of capturing data into a WARC file.</rdfs:comment>
         <rdfs:label>Crawling</rdfs:label>
     </owl:Class>
@@ -487,7 +512,7 @@
     <!-- https://github.com/DOWARC/dowarcLITE#Extracting -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Extracting">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>The act of extracting data from a WARC file and/or a CDX file.</rdfs:comment>
         <rdfs:label>Extracting</rdfs:label>
     </owl:Class>
@@ -497,7 +522,7 @@
     <!-- https://github.com/DOWARC/dowarcLITE#Indexing -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Indexing">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>The creation of an index (CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
         <rdfs:label>Indexing</rdfs:label>
     </owl:Class>
@@ -507,7 +532,7 @@
     <!-- https://github.com/DOWARC/dowarcLITE#Publishing -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Publishing">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>The act of making a WARC file, or resources within a WARC file, availavable for use.</rdfs:comment>
         <rdfs:label>Publishing</rdfs:label>
     </owl:Class>
@@ -517,7 +542,7 @@
     <!-- https://github.com/DOWARC/dowarcLITE#QA -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#QA">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>The act of checking the quality of a web archive using a combination of data-driven and manual checks. This process includes the act of patching, during which time missing content is added to the archive to improve its completeness or quality.</rdfs:comment>
         <rdfs:label>QA</rdfs:label>
     </owl:Class>
@@ -527,7 +552,7 @@
     <!-- https://github.com/DOWARC/dowarcLITE#Replaying -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Replaying">
-        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:comment>Retrieval and rendering of the data stored in a WARC file over HTTP. This may be through a Wayback-style system via a browser, or programatically replayed in some other way.</rdfs:comment>
         <rdfs:label>Replaying</rdfs:label>
     </owl:Class>
@@ -551,16 +576,6 @@
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:comment>A collection of WARC records aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a live web resource (e.g., a web site, a web page). Subclass of ore:Aggregation.</rdfs:comment>
         <rdfs:label>WarcCollection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/DOWARC/dowarcLITE#WarcEvent -->
-
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcEvent">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:comment>An activity which relates to or involves creating, indexing, modifying or replaying a WARC file.</rdfs:comment>
-        <rdfs:label>WarcEvent</rdfs:label>
     </owl:Class>
     
 
@@ -650,17 +665,6 @@
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
         <rdfs:comment>Data object referred to, or contained by a WARC record as a meaningful subset of the content block. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
         <rdfs:label>WarcRecordPayload</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/DOWARC/dowarcLITE#ArchivedWebResource -->
-
-    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Representation"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>A resource made available online. It can be a website or a webpage or a digital object embedded in a webpage or linked to by a webpage. It is always intended as the digital &apos;representation of&apos; an untangible/intellectual entity. It is also &apos;represented by&apos; its archival counterpart, which is rendered (replayed) using WARC files.</rdfs:comment>
-        <rdfs:label>ArchivedWebResource</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
