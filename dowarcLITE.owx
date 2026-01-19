@@ -1,1234 +1,688 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/DOWARC/dowarcLITE"
+<rdf:RDF xmlns="http://www.semanticweb.org/k1812462/ontologies/2025/10/untitled-ontology-16/"
+     xml:base="http://www.semanticweb.org/k1812462/ontologies/2025/10/untitled-ontology-16/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/DOWARC/dowarcLITE"
-     versionIRI="https://github.com/DOWARC/dowarcLITE_1.0">
-    <Prefix name="" IRI="http://www.semanticweb.org/k1812462/ontologies/2025/10/untitled-ontology-16/"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://purl.org/pav/2.3</Import>
-    <Import>http://www.w3.org/ns/prov-o-inverses-20130430</Import>
-    <Import>https://id.loc.gov/ontologies/premis-3-0-0</Import>
-    <Import>https://rawgit.com/wf4ever/ro/master/ore-owl.owl</Import>
-    <Declaration>
-        <Class abbreviatedIRI="rdfs:Resource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Crawling"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Extracting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Indexing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Publishing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#QA"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Replaying"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcCdxFile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcCollection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcFile"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcRecord"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcRecordElement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcRecordHeader"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcRecordNamedField"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WarcRecordPayload"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#WebResource"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/dc/terms/relation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#locationOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://purl.org/dc/terms/date"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#Crawling"/>
-        <Class IRI="#WarcEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Extracting"/>
-        <Class IRI="#WarcEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Indexing"/>
-        <Class IRI="#WarcEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Publishing"/>
-        <Class IRI="#WarcEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#QA"/>
-        <Class IRI="#WarcEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Replaying"/>
-        <Class IRI="#WarcEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcCdxFile"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/File"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcCollection"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/Representation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcCollection"/>
-        <Class IRI="http://www.openarchives.org/ore/terms/Aggregation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcEvent"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcFile"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/File"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcFile"/>
-        <Class IRI="http://www.openarchives.org/ore/terms/Aggregation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcGraph"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/File"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcGraph"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/Representation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcGraph"/>
-        <Class IRI="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcGraph"/>
-        <Class IRI="http://www.openarchives.org/ore/terms/Aggregation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcGraph"/>
-        <Class IRI="http://www.openarchives.org/ore/terms/ResourceMap"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcRecord"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/Bitstream"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcRecord"/>
-        <Class IRI="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcRecord"/>
-        <Class IRI="http://www.openarchives.org/ore/terms/Aggregation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcRecordContentBlock"/>
-        <Class IRI="#WarcRecordElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcRecordElement"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/Bitstream"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcRecordElement"/>
-        <Class IRI="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcRecordHeader"/>
-        <Class IRI="#WarcRecordElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcRecordNamedField"/>
-        <Class IRI="#WarcRecordElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WarcRecordPayload"/>
-        <Class IRI="#WarcRecordElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WebResource"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/Representation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WebResource"/>
-        <Class abbreviatedIRI="rdfs:Resource"/>
-    </SubClassOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr"/>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/relationship"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/relationship"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.org/dc/terms/relation"/>
-        <ObjectProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
-    </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr"/>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
-    </InverseObjectProperties>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr"/>
-        <Class IRI="#WebResource"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/dc/terms/publisher"/>
-        <Class IRI="#WebResource"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/authoredBy"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/IntellectualEntity"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/createdBy"/>
-        <Class IRI="#WebResource"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/curatedBy"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecord"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordElement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WebResource"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/pav/providedBy"/>
-        <Class IRI="#WebResource"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="#WarcCdxFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="#WarcRecordElement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcRecord"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcRecord"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcRecordElement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#atLocation"/>
-        <Class IRI="#WebResource"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#Crawling"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#Extracting"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#Indexing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#Publishing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#QA"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#Replaying"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#invalidated"/>
-        <Class IRI="#QA"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#locationOf"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/StorageLocation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#locationOf"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/StorageMedium"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#Crawling"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#Extracting"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#Indexing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#Publishing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#QA"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#Replaying"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="http://www.w3.org/ns/prov#SoftwareAgent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <Class IRI="#Crawling"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <Class IRI="#Extracting"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <Class IRI="#Indexing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <Class IRI="#Publishing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <Class IRI="#QA"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <Class IRI="#Replaying"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <Class IRI="#WarcCdxFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#WarcCdxFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#WarcRecord"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#WarcRecordElement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#WarcCdxFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#WarcRecordElement"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
-        <Class IRI="#WebResource"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/dc/terms/publisher"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/dc/terms/publisher"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/authoredBy"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/authoredBy"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/createdBy"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/createdBy"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/curatedBy"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/curatedBy"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecord"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordElement"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/previousVersion"/>
-        <Class IRI="#WebResource"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/providedBy"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/pav/providedBy"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.loc.gov/premis/rdf/v3/storedAt"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/StorageMedium"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcRecord"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcRecordElement"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/aggregates"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
-        <Class IRI="#WarcRecord"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#WarcCdxFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#WarcRecord"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#WarcRecordElement"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#invalidated"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#invalidated"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#locationOf"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/File"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#locationOf"/>
-        <Class IRI="#WarcCdxFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#locationOf"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#locationOf"/>
-        <Class IRI="#WarcGraph"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#WarcCdxFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#WarcCollection"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#WarcFile"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#used"/>
-        <Class IRI="#WebResource"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="#Crawling"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="#Extracting"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="#Indexing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="#Publishing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="#QA"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="#Replaying"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociateFor"/>
-        <Class IRI="#WarcEvent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-        <Class IRI="http://www.w3.org/ns/prov#SoftwareAgent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <Class IRI="#WarcRecord"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#Crawling"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#Extracting"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#Indexing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#Publishing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-        <Class IRI="#QA"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
-        <Class IRI="#QA"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#Extracting"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#Indexing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#Publishing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#QA"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasUsedBy"/>
-        <Class IRI="#Replaying"/>
-    </ObjectPropertyRange>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://purl.org/dc/terms/date"/>
-        <Class IRI="#Publishing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://purl.org/pav/sourceAccessedOn"/>
-        <Class IRI="#Crawling"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://purl.org/pav/sourceAccessedOn"/>
-        <Class IRI="#Extracting"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://purl.org/pav/sourceAccessedOn"/>
-        <Class IRI="#Indexing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://purl.org/pav/sourceAccessedOn"/>
-        <Class IRI="#QA"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://purl.org/pav/sourceAccessedOn"/>
-        <Class IRI="#Replaying"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://purl.org/pav/version"/>
-        <Class IRI="#WarcRecord"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/note"/>
-        <Class IRI="#QA"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/size"/>
-        <Class IRI="#WarcCdxFile"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/size"/>
-        <Class IRI="#WarcCollection"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/size"/>
-        <Class IRI="#WarcFile"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/size"/>
-        <Class IRI="#WarcGraph"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/size"/>
-        <Class IRI="#WarcRecord"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/size"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/size"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/size"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/size"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.loc.gov/premis/rdf/v3/version"/>
-        <Class IRI="http://www.w3.org/ns/prov#SoftwareAgent"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcCdxFile"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcCollection"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcFile"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcGraph"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcRecord"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcRecordElement"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#generatedAtTime"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#value"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/StorageLocation"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#value"/>
-        <Class IRI="http://www.loc.gov/premis/rdf/v3/StorageMedium"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#value"/>
-        <Class IRI="#WarcRecordContentBlock"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#value"/>
-        <Class IRI="#WarcRecordHeader"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#value"/>
-        <Class IRI="#WarcRecordNamedField"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#value"/>
-        <Class IRI="#WarcRecordPayload"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/ns/prov#value"/>
-        <Class IRI="#WebResource"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="http://purl.org/dc/terms/date"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="http://www.w3.org/ns/prov#value"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr</IRI>
-        <Literal>A relationship in which an abstract intellectual entity is represented as a file or representation or a software agent is represented by an environment object. Has a reciprocal relationship of represents. (Source: https://id.loc.gov/vocabulary/preservation/relationshipSubType/isr.html)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr</IRI>
-        <Literal>is Represented By</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep</IRI>
-        <Literal>A relationship in which a file or representation is captured in an abstract intellectual entity description that it represents. It is a statement of what can depict or stand for the Intellectual Entity. Has a reciprocal relationship of isRepresentedBy. (Source: https://id.loc.gov/vocabulary/preservation/relationshipSubType/rep.html)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep</IRI>
-        <Literal>represents</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.org/dc/elements/1.1/relation</IRI>
-        <Literal>dc:relation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.org/dc/terms/relation</IRI>
-        <Literal>A related resource. Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Crawling</IRI>
-        <Literal>The act of creating an archive through the process of capturing data into a WARC file.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Crawling</IRI>
-        <Literal>Crawling</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Extracting</IRI>
-        <Literal>The act of extracting data from a WARC file and/or a CDX file.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Extracting</IRI>
-        <Literal>Extracting</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Indexing</IRI>
-        <Literal>The creation of an index (CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Indexing</IRI>
-        <Literal>Indexing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Publishing</IRI>
-        <Literal>The act of making a WARC file, or resources within a WARC file, availavable for use.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Publishing</IRI>
-        <Literal>Publishing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#QA</IRI>
-        <Literal>The act of checking the quality of a web archive using a combination of data-driven and manual checks. This process includes the act of patching, during which time missing content is added to the archive to improve its completeness or quality.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#QA</IRI>
-        <Literal>QA</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Replaying</IRI>
-        <Literal>Retrieval and rendering of the data stored in a WARC file over HTTP. This may be through a Wayback-style system via a browser, or programatically replayed in some other way.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Replaying</IRI>
-        <Literal>Replaying</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcCdxFile</IRI>
-        <Literal>An index (normally a CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcCdxFile</IRI>
-        <Literal>WarcCdxFile</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcCollection</IRI>
-        <Literal>A collection of WARC records aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a live web resource (e.g., a web site, a web page). Subclass of ore:Aggregation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcCollection</IRI>
-        <Literal>WarcCollection</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcEvent</IRI>
-        <Literal>An activity which relates to or involves creating, indexing, modifying or replaying a WARC file.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcEvent</IRI>
-        <Literal>WarcEvent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcFile</IRI>
-        <Literal>A container file that aggregates a sequence of structured information chunks (WARC records), storing data and metadata. WARC files are the output of web crawling automated activities. A WARC file can contain one or more digital object with multiple media types (i.e., MIME). Subclass of ore:Aggregation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcFile</IRI>
-        <Literal>WarcFile</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcGraph</IRI>
-        <Literal>An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCcollection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcGraph</IRI>
-        <Literal>WarcGraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcRecord</IRI>
-        <Literal>A WARC record is a component of a WARC file. A WARC record includes data retrieved from a source in the live Wide World Web, together with synthetic (meta)data providing information about the retrieved content. A WARC record has a header and a content block carrying the payload for the live web data object that was harvested over the HTTP. A WARC record is both an aggregated resource (component of a WARC file) and an aggregation (it includes sub-elements of its own).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcRecord</IRI>
-        <Literal>WarcRecord</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcRecordContentBlock</IRI>
-        <Literal>Part (zero or more octets) of a WARC record that follows the header and that forms the main body of a WARC record. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcRecordContentBlock</IRI>
-        <Literal>WarcRecordContentBlock</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcRecordElement</IRI>
-        <Literal>A bitstream object aggregated in a WARC record.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcRecordElement</IRI>
-        <Literal>WarcRecordElement</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcRecordHeader</IRI>
-        <Literal>Beginning of a WARC record, consisting of one first line declaring the record to be in the WARC format with a given version number, followed by lines of named fields up to a blank line. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcRecordHeader</IRI>
-        <Literal>WarcRecordHeader</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcRecordNamedField</IRI>
-        <Literal>Set of elements consisting of a name, a colon, and a value, with long values continued on indented lines. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcRecordNamedField</IRI>
-        <Literal>WarcRecordNamedField</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WarcRecordPayload</IRI>
-        <Literal>Data object referred to, or contained by a WARC record as a meaningful subset of the content block. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WarcRecordPayload</IRI>
-        <Literal>WarcRecordPayload</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#WebResource</IRI>
-        <Literal>A resource made available online. It can be a website or a webpage or a digital object embedded in a webpage or linked to by a webpage. It is always intended as the digital &apos;representation of&apos; an untangible/intellectual entity. It is also &apos;represented by&apos; its archival counterpart, which is rendered (replayed) using WARC files.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#WebResource</IRI>
-        <Literal>WebResource</Literal>
-    </AnnotationAssertion>
-</Ontology>
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://github.com/DOWARC/dowarcLITE">
+        <owl:versionIRI rdf:resource="https://github.com/DOWARC/dowarcLITE_1.0"/>
+        <owl:imports rdf:resource="http://purl.org/pav/2.3"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-inverses-20130430"/>
+        <owl:imports rdf:resource="https://id.loc.gov/ontologies/premis-3-0-0"/>
+        <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/ore-owl.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr -->
+
+    <owl:ObjectProperty rdf:about="http://id.loc.gov/vocabulary/preservation/relationshipSubType/isr">
+        <rdfs:subPropertyOf rdf:resource="http://www.loc.gov/premis/rdf/v3/relationship"/>
+        <owl:inverseOf rdf:resource="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:comment>A relationship in which an abstract intellectual entity is represented as a file or representation or a software agent is represented by an environment object. Has a reciprocal relationship of represents. (Source: https://id.loc.gov/vocabulary/preservation/relationshipSubType/isr.html)</rdfs:comment>
+        <rdfs:label>is Represented By</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep -->
+
+    <owl:ObjectProperty rdf:about="http://id.loc.gov/vocabulary/preservation/relationshipSubType/rep">
+        <rdfs:subPropertyOf rdf:resource="http://www.loc.gov/premis/rdf/v3/relationship"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+        <rdfs:comment>A relationship in which a file or representation is captured in an abstract intellectual entity description that it represents. It is a statement of what can depict or stand for the Intellectual Entity. Has a reciprocal relationship of isRepresentedBy. (Source: https://id.loc.gov/vocabulary/preservation/relationshipSubType/rep.html)</rdfs:comment>
+        <rdfs:label>represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/relation">
+        <rdfs:label>dc:relation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/relation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:comment>A related resource. Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/pav/authoredBy -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/authoredBy">
+        <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/IntellectualEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/createdBy -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/createdBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/curatedBy -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/curatedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/previousVersion -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/previousVersion">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/providedBy -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/providedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.loc.gov/premis/rdf/v3/storedAt -->
+
+    <rdf:Description rdf:about="http://www.loc.gov/premis/rdf/v3/storedAt">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:range rdf:resource="http://www.loc.gov/premis/rdf/v3/StorageMedium"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/aggregates -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/aggregates">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/isAggregatedBy -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/isAggregatedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#atLocation -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#atLocation">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#generated">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Crawling"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Extracting"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Indexing"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Replaying"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#invalidated -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#invalidated">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#locationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#locationOf">
+        <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/StorageLocation"/>
+        <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/StorageMedium"/>
+        <rdfs:range rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Crawling"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Extracting"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Indexing"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Replaying"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociateFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociateFor">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Crawling"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Extracting"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Indexing"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Replaying"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Crawling"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Extracting"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Indexing"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Replaying"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Crawling"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Extracting"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Indexing"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInvalidatedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasInvalidatedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasUsedBy">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Extracting"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Indexing"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#Replaying"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/pav/sourceAccessedOn -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/sourceAccessedOn">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Crawling"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Extracting"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Indexing"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Replaying"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/pav/version -->
+
+    <rdf:Description rdf:about="http://purl.org/pav/version">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.loc.gov/premis/rdf/v3/note -->
+
+    <rdf:Description rdf:about="http://www.loc.gov/premis/rdf/v3/note">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#QA"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.loc.gov/premis/rdf/v3/size -->
+
+    <rdf:Description rdf:about="http://www.loc.gov/premis/rdf/v3/size">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.loc.gov/premis/rdf/v3/version -->
+
+    <rdf:Description rdf:about="http://www.loc.gov/premis/rdf/v3/version">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generatedAtTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#generatedAtTime">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCdxFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcGraph"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#value -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#value">
+        <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/StorageLocation"/>
+        <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/StorageMedium"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WebResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#Crawling -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Crawling">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:comment>The act of creating an archive through the process of capturing data into a WARC file.</rdfs:comment>
+        <rdfs:label>Crawling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#Extracting -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Extracting">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:comment>The act of extracting data from a WARC file and/or a CDX file.</rdfs:comment>
+        <rdfs:label>Extracting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#Indexing -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Indexing">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:comment>The creation of an index (CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
+        <rdfs:label>Indexing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#Publishing -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Publishing">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:comment>The act of making a WARC file, or resources within a WARC file, availavable for use.</rdfs:comment>
+        <rdfs:label>Publishing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#QA -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#QA">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:comment>The act of checking the quality of a web archive using a combination of data-driven and manual checks. This process includes the act of patching, during which time missing content is added to the archive to improve its completeness or quality.</rdfs:comment>
+        <rdfs:label>QA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#Replaying -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#Replaying">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcEvent"/>
+        <rdfs:comment>Retrieval and rendering of the data stored in a WARC file over HTTP. This may be through a Wayback-style system via a browser, or programatically replayed in some other way.</rdfs:comment>
+        <rdfs:label>Replaying</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcCdxFile -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcCdxFile">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
+        <rdfs:comment>An index (normally a CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
+        <rdfs:label>WarcCdxFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcCollection -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcCollection">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Representation"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:comment>A collection of WARC records aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a live web resource (e.g., a web site, a web page). Subclass of ore:Aggregation.</rdfs:comment>
+        <rdfs:label>WarcCollection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcEvent -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcEvent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:comment>An activity which relates to or involves creating, indexing, modifying or replaying a WARC file.</rdfs:comment>
+        <rdfs:label>WarcEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcFile -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcFile">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:comment>A container file that aggregates a sequence of structured information chunks (WARC records), storing data and metadata. WARC files are the output of web crawling automated activities. A WARC file can contain one or more digital object with multiple media types (i.e., MIME). Subclass of ore:Aggregation.</rdfs:comment>
+        <rdfs:label>WarcFile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcGraph -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcGraph">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Representation"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
+        <rdfs:comment>An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCcollection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph.</rdfs:comment>
+        <rdfs:label>WarcGraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcRecord -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcRecord">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Bitstream"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:comment>A WARC record is a component of a WARC file. A WARC record includes data retrieved from a source in the live Wide World Web, together with synthetic (meta)data providing information about the retrieved content. A WARC record has a header and a content block carrying the payload for the live web data object that was harvested over the HTTP. A WARC record is both an aggregated resource (component of a WARC file) and an aggregation (it includes sub-elements of its own).</rdfs:comment>
+        <rdfs:label>WarcRecord</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:comment>Part (zero or more octets) of a WARC record that follows the header and that forms the main body of a WARC record. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
+        <rdfs:label>WarcRecordContentBlock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcRecordElement -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcRecordElement">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Bitstream"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdfs:comment>A bitstream object aggregated in a WARC record.</rdfs:comment>
+        <rdfs:label>WarcRecordElement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcRecordHeader -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:comment>Beginning of a WARC record, consisting of one first line declaring the record to be in the WARC format with a given version number, followed by lines of named fields up to a blank line. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
+        <rdfs:label>WarcRecordHeader</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcRecordNamedField">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:comment>Set of elements consisting of a name, a colon, and a value, with long values continued on indented lines. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
+        <rdfs:label>WarcRecordNamedField</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcRecordPayload -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload">
+        <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
+        <rdfs:comment>Data object referred to, or contained by a WARC record as a meaningful subset of the content block. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
+        <rdfs:label>WarcRecordPayload</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WebResource -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WebResource">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Representation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment>A resource made available online. It can be a website or a webpage or a digital object embedded in a webpage or linked to by a webpage. It is always intended as the digital &apos;representation of&apos; an untangible/intellectual entity. It is also &apos;represented by&apos; its archival counterpart, which is rendered (replayed) using WARC files.</rdfs:comment>
+        <rdfs:label>WebResource</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
 
 
 
