@@ -494,7 +494,7 @@
     <!-- https://github.com/DOWARC/dowarcLITE#ConfigFile -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#ConfigFile">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
     </owl:Class>
     
 
@@ -562,7 +562,7 @@
     <!-- https://github.com/DOWARC/dowarcLITE#WarcCdxFile -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcCdxFile">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:comment>An index (normally a CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
         <rdfs:label>WarcCdxFile</rdfs:label>
     </owl:Class>
@@ -583,9 +583,9 @@
     <!-- https://github.com/DOWARC/dowarcLITE#WarcFile -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcFile">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:comment>A container file that aggregates a sequence of structured information chunks (WARC records), storing data and metadata. WARC files are the output of web crawling automated activities. A WARC file can contain one or more digital object with multiple media types (i.e., MIME). Subclass of ore:Aggregation.</rdfs:comment>
         <rdfs:label>WarcFile</rdfs:label>
     </owl:Class>
@@ -595,11 +595,11 @@
     <!-- https://github.com/DOWARC/dowarcLITE#WarcGraph -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcGraph">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
         <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Representation"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:comment>An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCcollection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph.</rdfs:comment>
         <rdfs:label>WarcGraph</rdfs:label>
     </owl:Class>
