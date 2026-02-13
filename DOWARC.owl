@@ -1,42 +1,42 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://github.com/DOWARC/"
-     xml:base="https://github.com/DOWARC/"
+<rdf:RDF xmlns="https://github.com/DOWARC/dowarc#"
+     xml:base="https://github.com/DOWARC/dowarc"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ore="http://www.openarchives.org/ore/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:frbr="http://purl.org/vocab/frbr/core#"
      xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfg="http://www.w3.org/2004/03/trix/rdfg-1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:rico="https://www.ica.org/standards/RiC/ontology"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:skos1="http://www.w3.org/2008/05/skos#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:dowarc="https://github.com/dowarc/"
-     xmlns:premis="https://id.loc.gov/ontologies/premis-3-0-0">
+     xmlns:dcmit="http://purl.org/dc/dcmitype/"
+     xmlns:dowarc="https://github.com/DOWARC/dowarc#"
+     xmlns:premis="http://www.loc.gov/premis/rdf/v3/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://github.com/DOWARC/dowarc">
         <owl:versionIRI rdf:resource="https://github.com/DOWARC/dowarc_1.0"/>
         <owl:imports rdf:resource="http://purl.org/pav/2.3"/>
         <owl:imports rdf:resource="https://id.loc.gov/ontologies/premis-3-0-0"/>
         <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/master/ore-owl.owl"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</dc:date>
         <dc:title>DOWARC: a domain ontology for web archiving and web preservation</dc:title>
-        <terms:creator>Pallotto Strickland, Manuela</terms:creator>
-        <terms:creator>Storrar, Tom</terms:creator>
-        <terms:license>Apache License 2.0</terms:license>
-        <rdfs:comment rdf:datatype="string">0.1</rdfs:comment>
+        <dcterms:creator>Pallotto Strickland, Manuela</dcterms:creator>
+        <dcterms:creator>Storrar, Tom</dcterms:creator>
+        <dcterms:license>Apache License 2.0</dcterms:license>
         <rdfs:comment xml:lang="en">This is a domain ontology created to support the Semantic modelling of WARC files. RDF representations of web archiving data objects can play a critical role in addressing sustainable versioning practices in web archiving and web preservation.</rdfs:comment>
+        <rdfs:comment rdf:datatype="https://github.com/DOWARC/string">0.1</rdfs:comment>
         <rdfs:label>DOWARC</rdfs:label>
         <owl:versionInfo xml:lang="en">Current version, draft status; 2025-03-29</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -44,60 +44,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
 
 
-    <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/language -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/publisher -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#value -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#value">
-        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Datatypes
@@ -105,22 +61,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
-
-    <!-- string -->
-
-    <rdfs:Datatype rdf:about="string"/>
-    
 
 
     <!-- https://github.com/DOWARC/string -->
 
     <rdfs:Datatype rdf:about="https://github.com/DOWARC/string"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -128,229 +78,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
-
-    <!-- http://purl.org/pav/authoredBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/authoredBy">
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/contributedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/contributedBy"/>
-    
-
-
-    <!-- http://purl.org/pav/createdBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/createdBy">
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/curatedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/curatedBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WebArchivingAgent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/derivedFrom -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/derivedFrom">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
-        <rdfs:comment>Derived from a different resource. Derivation conserns itself with derived knowledge. If this resource has the same content as the other resource, but has simply been transcribed to fit a different model (like XML -"RDF or SQL -"CVS), use pavimportedFrom. If a resource was simply retrieved, use pavretrievedFrom. If the content has however been further refined or modified, pavderivedFrom should be used. Details about who performed the derivation (e.g. who did the refining or modifications) may be indicated with pavcontributedBy and its subproperties.</rdfs:comment>
-        <rdfs:isDefinedBy>http://purl.org/pav/</rdfs:isDefinedBy>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/hasCurrentVersion -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/hasCurrentVersion"/>
-    
-
-
-    <!-- http://purl.org/pav/hasEarlierVersion -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/hasEarlierVersion">
-        <rdfs:comment>This versioned resource has an earlier version. Any earlier version of this resource can be indicated with pavhasEarlierVersion, e.g.: "http://example.com/v4"pavhasEarlierVersion "http://example.com/v2"pavhasEarlierVersion "http://example.com/v1". The subproperty pavpreviousVersion SHOULD be used if the earlier version is the direct ancestor of this version. "http://example.com/v4"pavpreviousVersion "http://example.com/v3". This property is transitive, so it should not be necessary to repeat the earlier versions of an earlier version. A chain of previous versions can be declared using the subproperty pavpreviousVersion, implying that the previous previous version is also an earlier version. It might however still be useful to declare an earlier version explicitly, for instance because it is an earlier version of high relevance or because the complete chain of pavpreviousVersion is not available. To indicate that this version is a snapshot of a more general, non-versioned resource, e.g. "Weather Today"vs. "Weather Today on 2013-12-07", see pavhasVersion.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/hasVersion -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/hasVersion"/>
-    
-
-
-    <!-- http://purl.org/pav/importedFrom -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/importedFrom">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:comment>The original source of imported information. Import means that the content has been preserved, but transcribed somehow, for instance to fit a different representation model by converting formats. Examples of import are when the original was JSON and the current resource is RDF, or where the original was an document scan, and this resource is the plain text found through OCR. The imported resource does not have to be complete, but should be consistent with the knowledge conveyed by the original resource. If additional knowledge has been contributed, pavderivedFrom would be more appropriate. If the resource has been copied verbatim from the original representation (e.g. downloaded), use pavretrievedFrom. To indicate which agent(s) performed the import, use pavimportedBy. Use pavimportedOn to indicate when it happened.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/previousVersion -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/previousVersion">
-        <rdfs:comment>The previous version of a resource in a lineage. For instance a news article updated to correct factual information would point to the previous version of the article with pavpreviousVersion. If however the content has significantly changed so that the two resources no longer share lineage (say a new article that talks about the same facts), they can instead be related using pavderivedFrom. This property is normally used in a functional way, although PAV does not formally restrict this. Earlier versions which are not direct ancestors of this resource may instead be provided using the superproperty pavhasEarlierVersion. A version number of this resource can be provided using the data property pavversion. To indicate that this version is a snapshot of a more general, non-versioned resource, e.g. "Weather Today"vs. "Weather Today on 2013-12-07", see pavhasVersion. Note that it might be confusing to indicate pavpreviousVersion from a resource that also has pavhasVersion or pavhasCurrentVersion relations, as such resources are intended to be a long-living and "unversioned", while pavpreviousVersion is intended for use between permalink-like "snapshots"arranged in a linear history.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/retrievedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/retrievedBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#SoftwareAgent"/>
-        <rdfs:comment>An entity responsible for retrieving the data from an external source. The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription. The source that was retrieved should be given with pavretrievedFrom. The time of the retrieval should be indicated using pavretrievedOn. See pavimportedFrom for a discussion of import vs. retrieve vs. derived.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/pav/"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/pav/retrievedFrom -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/pav/retrievedFrom">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:comment>The URI where a resource has been retrieved from. The retrieving agent is usually a software entity, which has done the retrieval from the original source without performing any transcription. Retrieval indicates that this resource has the same representation as the original resource. If the resource has been somewhat transformed, use pavimportedFrom instead. The time of the retrieval should be indicated using pavretrievedOn. The agent may be indicated with pavretrievedBy.</rdfs:comment>
-        <rdfs:isDefinedBy>http://purl.org/pav/</rdfs:isDefinedBy>
-        <rdfs:label>Retrieved from</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.openarchives.org/ore/terms/aggregates -->
-
-    <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/aggregates">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.openarchives.org/ore/terms/describes -->
-
-    <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/describes">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.openarchives.org/ore/terms/isAggregatedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/isAggregatedBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.openarchives.org/ore/terms/isDescribedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/isDescribedBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.openarchives.org/ore/terms/proxyIn -->
-
-    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/proxyIn">
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.openarchives.org/ore/terms/similarTo -->
-
-    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/similarTo">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcoll"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#generated -->
-
-    <rdf:Description rdf:about="http://www.w3.org/ns/prov#generated">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#used -->
-
-    <rdf:Description rdf:about="http://www.w3.org/ns/prov#used">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Derivative"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Identifier"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCgraph"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
-
-    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
-        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:range rdf:resource="https://www.openarchives.org/ore/terms/AggregatedResource"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
-
-    <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxFile"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCfile"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
-        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-    </rdf:Description>
-    
 
 
     <!-- https://github.com/DOWARC/dowarc#identifiedBy -->
@@ -365,7 +93,7 @@
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#Identifier"/>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#identifies -->
@@ -378,10 +106,10 @@
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecord"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -389,326 +117,75 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
-
-    <!-- http://purl.org/dc/dcmitype/Collection -->
-
-    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Collection">
-        <rdfs:comment>An aggregation of resources. A collection is described as a group; its parts may also be separately described.</rdfs:comment>
-        <rdfs:isDefinedBy>http://purl.org/dc/dcmitype/Collection#</rdfs:isDefinedBy>
-        <rdfs:label>Collection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#Endeavour -->
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Endeavour">
-        <rdfs:comment>It describes different aspects of user interests in the products of intellectual or artistic artifact.</rdfs:comment>
-        <rdfs:label>Endeavour</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#Expression -->
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Expression">
-        <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
-        <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-        <rdfs:comment>The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms. An expression is the specific intellectual or artistic form that a work takes each time it is "realized."Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work.</rdfs:comment>
-        <rdfs:label>Expression</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#Item -->
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Item">
-        <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
-        <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-        <rdfs:comment>A single exemplar of a manifestation. The entity defined as item is a concrete entity. It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.).</rdfs:comment>
-        <rdfs:label>Item</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#Manifestation -->
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Manifestation">
-        <owl:disjointWith rdf:resource="http://purl.org/vocab/frbr/core#Work"/>
-        <rdfs:comment>The physical embodiment of an expression of a work. The entity defined as manifestation encompasses a wide range of materials and formats. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form.</rdfs:comment>
-        <rdfs:label>Manifestation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/vocab/frbr/core#Work -->
-
-    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Work">
-        <rdfs:comment>A distinct intellectual or artistic creation. A work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer&apos;s Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work.</rdfs:comment>
-        <rdfs:label>Work</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.loc.gov/premis/rdf/v3/Agent -->
-
-    <owl:Class rdf:about="http://www.loc.gov/premis/rdf/v3/Agent">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment>Actor (human, machine, or software) associated with one or more Event and/or Rights statement associated with a digital object.</rdfs:comment>
-        <rdfs:isDefinedBy>http://www.loc.gov/premis/rdf/v3/</rdfs:isDefinedBy>
-        <rdfs:label>Agent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.loc.gov/premis/rdf/v3/Event -->
-
-    <owl:Class rdf:about="http://www.loc.gov/premis/rdf/v3/Event">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:comment>Action performed within or outside the repository that affects its capability to preserve Objects over the long term.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.loc.gov/premis/rdf/v3/Event"/>
-        <rdfs:label>Event</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.loc.gov/premis/rdf/v3/HardwareAgent -->
-
-    <owl:Class rdf:about="http://www.loc.gov/premis/rdf/v3/HardwareAgent">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Agent"/>
-        <rdfs:isDefinedBy>http://www.loc.gov/premis/rdf/v3/HardwareAgent</rdfs:isDefinedBy>
-        <rdfs:label>Hardware agent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.loc.gov/premis/rdf/v3/IntellectualEntity -->
-
-    <owl:Class rdf:about="http://www.loc.gov/premis/rdf/v3/IntellectualEntity">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Object"/>
-        <rdfs:comment>A set of content that is considered a single intellectual unit for purposes of management and description: for example, a particular book, map, photograph, database, or piece of hardware or software. An Intellectual Entity can include other Intellectual Entities; for example, a web site can include a web page; a web page can include an image. An Intellectual Entity may have one or more digital representations. An Intellectual Entity may also describe an environment, defined as technology supporting a digital object in some way (e.g. by rendering or executing it). Environments can consist of software, hardware, or a combination of both.</rdfs:comment>
-        <rdfs:isDefinedBy>http://www.loc.gov/premis/rdf/v3/IntellectualEntity</rdfs:isDefinedBy>
-        <rdfs:label>IntellectualEntity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.loc.gov/premis/rdf/v3/Object -->
-
-    <owl:Class rdf:about="http://www.loc.gov/premis/rdf/v3/Object">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>Discrete unit of information subject to digital preservation. Subclasses of Object are Intellectual Entity, Representation, File and Bitstream.</rdfs:comment>
-        <rdfs:isDefinedBy>http://www.loc.gov/premis/rdf/v3/Object</rdfs:isDefinedBy>
-        <rdfs:label>Object</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.loc.gov/premis/rdf/v3/Organization -->
-
-    <owl:Class rdf:about="http://www.loc.gov/premis/rdf/v3/Organization">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Agent"/>
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/spec/#term_Organization"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.loc.gov/premis/rdf/v3/Organization"/>
-        <rdfs:label>Organization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.loc.gov/premis/rdf/v3/Person -->
-
-    <owl:Class rdf:about="http://www.loc.gov/premis/rdf/v3/Person">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Agent"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.loc.gov/premis/rdf/v3/Organization"/>
-        <rdfs:label>Person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.loc.gov/premis/rdf/v3/SoftwareAgent -->
-
-    <owl:Class rdf:about="http://www.loc.gov/premis/rdf/v3/SoftwareAgent">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Agent"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.loc.gov/premis/rdf/v3/SoftwareAgent"/>
-        <rdfs:label>SoftwareAgent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.openarchives.org/ore/terms/AggregatedResource -->
-
-    <owl:Class rdf:about="http://www.openarchives.org/ore/terms/AggregatedResource">
-        <rdfs:comment>A resource which is included in an Aggregation. Note that asserting that a resource is a member of the class of Aggregated Resources does not imply anything other than that it is aggregated by at least one Aggregation.</rdfs:comment>
-        <rdfs:label>Aggregated Resource</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.openarchives.org/ore/terms/Proxy -->
-
-    <owl:Class rdf:about="http://www.openarchives.org/ore/terms/Proxy"/>
-    
-
-
-    <!-- http://www.w3.org/2004/03/trix/rdfg-1/Graph -->
-
-    <owl:Class rdf:about="http://www.w3.org/2004/03/trix/rdfg-1/Graph">
-        <rdfs:comment>An RDF graph (with intensional semantics).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1"/>
-        <rdfs:label>Graph</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Activity -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
-        <rdfs:comment>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:label>prov:Activity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Agent -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
-        <rdfs:comment>An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent"s activity.</rdfs:comment>
-        <rdfs:isDefinedBy>http://www.w3.org/ns/prov#Agent</rdfs:isDefinedBy>
-        <rdfs:label>prov:Agent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Entity -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
-        <rdfs:comment>An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary.</rdfs:comment>
-        <rdfs:isDefinedBy>http://www.w3.org/ns/prov#Entity</rdfs:isDefinedBy>
-        <rdfs:label>prov:Entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#Organization -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#Organization">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-        <rdfs:comment>An organization is a social or legal institution such as a company, society, etc.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-        <rdfs:label>Organization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Agent -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
-        <rdfs:comment>Agent - An agent (eg. person, group, software or physical artifact). The Agent class is the class of agents; things that do stuff. A well known sub-class is Person, representing people. Other kinds of agents include Organization and Group.</rdfs:comment>
-        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Agent</rdfs:isDefinedBy>
-        <rdfs:label>foaf:Agent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Organization -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Person -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
-        <rdfs:comment>The Person class represents people. Something is a Person if it is a person. We don"t nitpic about whether they"re alive, dead, real, or imaginary. The Person class is a sub-class of the Agent class, since all people are considered "agents"in FOAF.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/spec/#term_Person"/>
-        <rdfs:label>Person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/spec/#term_Organization -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/spec/#term_Organization">
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment>The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc. This is a more "solid"class than Group, which allows for more ad-hoc collections of individuals. These terms, like the corresponding natural language concepts, have some overlap, but different emphasis.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/spec/#term_Organization"/>
-        <rdfs:label>Organization</rdfs:label>
-    </owl:Class>
-    
 
 
     <!-- https://github.com/DOWARC/dowarc#CrawlLog -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#CrawlLog">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment></rdfs:comment>
         <rdfs:label>CrawlLog</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Crawling -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Crawling">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment>The act of creating an archive through the process of capturing data into a WARC file.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The act of creating an archive through the process of capturing data into a WARC file.</rdfs:comment>
         <rdfs:label>Crawling</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Derivative -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Derivative">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>An object created as a derivative of a web archiving data entity. During the derivation process, modification of the information contained in the original object is allowed; however, some of the original data must be maintained, at a representational and/or content level. An example of Derivative is a list of URLs extracted from a WARC file. This class must be used only when describing web archiving data object. Subclass of prov-o:Entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An object created as a derivative of a web archiving data entity. During the derivation process, modification of the information contained in the original object is allowed; however, some of the original data must be maintained, at a representational and/or content level. An example of Derivative is a list of URLs extracted from a WARC file. This class must be used only when describing web archiving data object. Subclass of prov-o:Entity.</rdfs:comment>
         <rdfs:label>Derivative</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Extracting -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Extracting">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment>The act of extracting data from a WARC file and/or a CDX file.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The act of extracting data from a WARC file and/or a CDX file.</rdfs:comment>
         <rdfs:label>Extracting</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#HardwareAgent -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#HardwareAgent">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebArchivingAgent"/>
-        <rdfs:comment></rdfs:comment>
         <rdfs:label>HardwareAgent</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Identifier -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Identifier">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>An unambiguous reference (character string or numeric) to a data object.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An unambiguous reference (character string or numeric) to a data object.</rdfs:comment>
         <rdfs:label>Identifier</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Indexing -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Indexing">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment>The creation of an index (CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
+        <rdfs:comment xml:lang="en">The creation of an index (CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
         <rdfs:label>Indexing</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#OrganizationAgent -->
@@ -718,7 +195,7 @@
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebArchivingAgent"/>
         <rdfs:label>OrganizationAgent</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#PersonAgent -->
@@ -728,57 +205,57 @@
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebArchivingAgent"/>
         <rdfs:label>PersonAgent</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#PreservationEvent -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#PreservationEvent">
         <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Event"/>
-        <rdfs:comment>An action undertaken, or an activity occurring, within or outside the repository that influence its capability to preserve web archiving data objects. Subclass of premis:Event</rdfs:comment>
+        <rdfs:comment xml:lang="en">An action undertaken, or an activity occurring, within or outside the repository that influence its capability to preserve web archiving data objects. Subclass of premis:Event</rdfs:comment>
         <rdfs:label>PreservationEvent</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#PreservationObject -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#PreservationObject">
         <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Object"/>
-        <rdfs:comment>Web archiving data object subject to digital preservation. Subclass of premis:Object.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Web archiving data object subject to digital preservation. Subclass of premis:Object.</rdfs:comment>
         <rdfs:label>PreservationObject</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Publishing -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Publishing">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment>The act of making a WARC file, or resources within a WARC file, availavable for use</rdfs:comment>
+        <rdfs:comment xml:lang="en">The act of making a WARC file, or resources within a WARC file, availavable for use</rdfs:comment>
         <rdfs:label>Publishing</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#QA -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#QA">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment>The act of checking the quality of a web archive using a combination of data-driven and manual checks. This process includes the act of patching, during which time missing content is added to the archive to imprve its completeness or quality.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The act of checking the quality of a web archive using a combination of data-driven and manual checks. This process includes the act of patching, during which time missing content is added to the archive to imprve its completeness or quality.</rdfs:comment>
         <rdfs:label>QA</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Replaying -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#Replaying">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCevent"/>
-        <rdfs:comment>Retrieval and rendering of the data stored in a WARC file over HTTP. This may be through a Wayback-style system via a browser, or programatically replayed in some other way.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Retrieval and rendering of the data stored in a WARC file over HTTP. This may be through a Wayback-style system via a browser, or programatically replayed in some other way.</rdfs:comment>
         <rdfs:label>Replaying</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#SoftwareAgent -->
@@ -787,73 +264,67 @@
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WebArchivingAgent"/>
         <rdfs:label>SoftwareAgent</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Block-Digest -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Block-Digest">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>An optional parameter indicating the algorithm name and calculated value of a digest applied to the full block of the record. An example is a SHA-1 labelled Base32 ([RFC3548]) value. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Block-Digest"/>
+        <rdfs:comment xml:lang="en">An optional parameter indicating the algorithm name and calculated value of a digest applied to the full block of the record. An example is a SHA-1 labelled Base32 ([RFC3548]) value. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Block-Digest</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Concurrent-To -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Concurrent-To">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>The WARC-Record-IDs of any records created as part of the same capture event as the current record. A capture event comprises the information automatically gathered by a retrieval against a single target-URI; for example, it might be represented by a "response"or "revisit"record plus its associated "request"record. This field may be used to associate records of types "request", "response", "resource", "metadata", and "revisit"with one another when they arise from a single capture event (When so used, any WARC Concurrent-To association shall be considered bidirectional even if the header only appears on one record.) As an exception to the general rule, it is allowed to repeat several WARC-Concurrent-To fields within the same WARC record. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Concurrent-To"/>
+        <rdfs:comment xml:lang="en">The WARC-Record-IDs of any records created as part of the same capture event as the current record. A capture event comprises the information automatically gathered by a retrieval against a single target-URI; for example, it might be represented by a "response"or "revisit"record plus its associated "request"record. This field may be used to associate records of types "request", "response", "resource", "metadata", and "revisit"with one another when they arise from a single capture event (When so used, any WARC Concurrent-To association shall be considered bidirectional even if the header only appears on one record.) As an exception to the general rule, it is allowed to repeat several WARC-Concurrent-To fields within the same WARC record. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Concurrent-To</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Date -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Date">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>A 14-digit UTC timestamp formatted according to YYYY-MM-DDThh:mm:ssZ, described in the W3C profile of ISO8601 [W3CDTF]. The timestamp shall represent the instant that data capture for record creation began. Multiple records written as part of a single capture event (see section 5.7) use the same WARC-Date, even though the times of their writing will not be exactly synchronized. All records have a WARC-Date field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Date"/>
+        <rdfs:comment xml:lang="en">A 14-digit UTC timestamp formatted according to YYYY-MM-DDThh:mm:ssZ, described in the W3C profile of ISO8601 [W3CDTF]. The timestamp shall represent the instant that data capture for record creation began. Multiple records written as part of a single capture event (see section 5.7) use the same WARC-Date, even though the times of their writing will not be exactly synchronized. All records have a WARC-Date field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Date</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Filename -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Filename">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>The filename containing the current "warcinfo"record.The WARC-Filename field might be used in "warcinfo"type records and is not used for other record types. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Filename"/>
+        <rdfs:comment xml:lang="en">The filename containing the current "warcinfo"record.The WARC-Filename field might be used in "warcinfo"type records and is not used for other record types. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Filename</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-IP-Address -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-IP-Address">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>The numeric Internet address contacted to retrieve any included content. An IPv4 address is written as a "dotted quad"; an IPv6 address is written as per [RFC1884]. For an HTTP retrieval, this is the IP address used at retrieval time corresponding to the hostname in the record"s target-Uri. The WARC-IP-Address field is used on "response", "resource", "request", "metadata", and "revisit"records, but is not used on ‘warcinfo’, "conversion"or "continuation"records. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-IP-Address"/>
+        <rdfs:comment xml:lang="en">The numeric Internet address contacted to retrieve any included content. An IPv4 address is written as a "dotted quad"; an IPv6 address is written as per [RFC1884]. For an HTTP retrieval, this is the IP address used at retrieval time corresponding to the hostname in the record"s target-Uri. The WARC-IP-Address field is used on "response", "resource", "request", "metadata", and "revisit"records, but is not used on ‘warcinfo’, "conversion"or "continuation"records. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-IP-Address</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Identified-Payload-Type -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Identified-Payload-Type">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>The content-type of the record"s payload as determined by an independent check. The WARC-Identified-Payload-Type field might be used on WARC records with a well-defined payload and is not used on records without a well-defined payload. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Identified-Payload-Type"/>
+        <rdfs:comment xml:lang="en">The content-type of the record"s payload as determined by an independent check. The WARC-Identified-Payload-Type field might be used on WARC records with a well-defined payload and is not used on records without a well-defined payload. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Identified-Payload-Type</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Payload-Digest -->
@@ -861,73 +332,67 @@
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Payload-Digest">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Profile -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Profile">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>A URI signifying the kind of analysis and handling applied in a "revisit"record. (Like an XML namespace, the URI may, but need not, return human-readable or machine-readable documentation.) If reading software does not recognize the given URI as a supported kind of handling, it does not attempt to interpret the associated record block.The section "revisit"defines two initial profile options for the WARC-Profile header for "revisit"records. The WARC-Profile field is mandatory on "revisit"type records and undefined for other record types.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Profile"/>
+        <rdfs:comment xml:lang="en">A URI signifying the kind of analysis and handling applied in a "revisit"record. (Like an XML namespace, the URI may, but need not, return human-readable or machine-readable documentation.) If reading software does not recognize the given URI as a supported kind of handling, it does not attempt to interpret the associated record block.The section "revisit"defines two initial profile options for the WARC-Profile header for "revisit"records. The WARC-Profile field is mandatory on "revisit"type records and undefined for other record types.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Profile</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Record-ID -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Record-ID">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>An identifier assigned to the current record that is globally unique for its period of intended use. No identifier scheme is mandated by this specification, but each record-id shall be a legal URI and clearly indicate a documented and registered scheme to which it conforms (e.g., via a URI scheme prefix such as "http:"or "urn:"). All records have a WARC-Record-ID field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Record-ID"/>
+        <rdfs:comment xml:lang="en">An identifier assigned to the current record that is globally unique for its period of intended use. No identifier scheme is mandated by this specification, but each record-id shall be a legal URI and clearly indicate a documented and registered scheme to which it conforms (e.g., via a URI scheme prefix such as "http:"or "urn:"). All records have a WARC-Record-ID field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Record-ID</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Refers-To -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Refers-To">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>The WARC-Record-ID of a single record for which the present record holds additional content. The WARC-Refers-To field might be used to associate a "metadata"record to another record it describes. The WARC-Refers-To field might also be used to associate a record of type "revisit"or "conversion"with the preceding record which helped determine the present record content. The WARC-Refers-To field is not used in "warcinfo", "response", ‘resource’, "request", and "continuation"records.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Refers-To"/>
+        <rdfs:comment xml:lang="en">The WARC-Record-ID of a single record for which the present record holds additional content. The WARC-Refers-To field might be used to associate a "metadata"record to another record it describes. The WARC-Refers-To field might also be used to associate a record of type "revisit"or "conversion"with the preceding record which helped determine the present record content. The WARC-Refers-To field is not used in "warcinfo", "response", ‘resource’, "request", and "continuation"records.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Refers-To</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Segment-Number -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Segment-Number">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>Reports the current record"s relative ordering in a sequence of segmented records. In the first segment of any record that is completed in one or more later "continuation"WARC records, this parameter is mandatory. Its value there is "1". In a "continuation"record, this parameter is also mandatory. Its value is the sequence number of the current segment in the logical whole record, increasing by 1 in each next segment. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Segment-Number"/>
+        <rdfs:comment xml:lang="en">Reports the current record"s relative ordering in a sequence of segmented records. In the first segment of any record that is completed in one or more later "continuation"WARC records, this parameter is mandatory. Its value there is "1". In a "continuation"record, this parameter is also mandatory. Its value is the sequence number of the current segment in the logical whole record, increasing by 1 in each next segment. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Segment-Number</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Segment-Origin-ID -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Segment-Origin-ID">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>Identifies the starting record in a series of segmented records whose content blocks are reassembled to obtain a logically complete content block. This field is mandatory on all "continuation"records, and is not used in other records.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Segment-Origin-ID"/>
+        <rdfs:comment xml:lang="en">Identifies the starting record in a series of segmented records whose content blocks are reassembled to obtain a logically complete content block. This field is mandatory on all "continuation"records, and is not used in other records.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Segment-Origin-ID</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Segment-Total-Length -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Segment-Total-Length">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>In the final record of a segmented series, reports the total length of all segment content blocks when concatenated together. This field is mandatory on the last "continuation"record of a series, and is not used elsewhere. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Segment-Total-Length"/>
+        <rdfs:comment xml:lang="en">In the final record of a segmented series, reports the total length of all segment content blocks when concatenated together. This field is mandatory on the last "continuation"record of a series, and is not used elsewhere. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Segment-Total-Length</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Target-URI -->
@@ -935,81 +400,79 @@
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Target-URI">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Truncated -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Truncated">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>For practical reasons, writers of the WARC format may place limits on the time or storage allocated to archiving a single resource. As a result, only a truncated portion of the original resource may be available for saving into a WARC record. Any record might indicate that truncation of its content block has occurred and give the reason with a "WARC-Truncated"field. For example, if the capture of what appeared to be a multi-gigabyte resource was cut short after a transfer time limit was reached, the partial resource could be saved to a WARC record with this field. The WARC-Truncated field might be used on any WARC record. The WARC field Content-Length still reports the actual truncated size of the record block. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Truncated"/>
+        <rdfs:comment xml:lang="en">For practical reasons, writers of the WARC format may place limits on the time or storage allocated to archiving a single resource. As a result, only a truncated portion of the original resource may be available for saving into a WARC record. Any record might indicate that truncation of its content block has occurred and give the reason with a "WARC-Truncated"field. For example, if the capture of what appeared to be a multi-gigabyte resource was cut short after a transfer time limit was reached, the partial resource could be saved to a WARC record with this field. The WARC-Truncated field might be used on any WARC record. The WARC field Content-Length still reports the actual truncated size of the record block. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Truncated</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Type -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Type">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment>The type of WARC record: one of "warcinfo", "response", "resource", "request", "metadata", "revisit","conversion", or "continuation". Other types of WARC records may be defined in extensions of the core format. Types are further described in WARC Record Types. All records have a WARC-Type field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Type"/>
+        <rdfs:comment xml:lang="en">The type of WARC record: one of "warcinfo", "response", "resource", "request", "metadata", "revisit","conversion", or "continuation". Other types of WARC records may be defined in extensions of the core format. Types are further described in WARC Record Types. All records have a WARC-Type field. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Type</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Warcinfo-ID -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARC-Warcinfo-ID">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordNamedField"/>
-        <rdfs:comment> When present, indicates the WARC-Record-ID of the associated "warcinfo"record for this record. Typically, the Warcinfo-ID parameter is used when the context of the applicable "warcinfo"record is unavailable, such as after distributing single records into separate WARC files. WARC writing applications (such web crawlers) might choose to always record this parameter.The WARC-Warcinfo-ID field value overrides any association with a previously occurring (in the WARC) "warcinfo"record, thus providing a way to protect the true association when records are combined from different WARCs. The WARC-Warcinfo-ID field might be used in any record type except "warcinfo". (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Warcinfo-ID"/>
+        <rdfs:comment xml:lang="en"> When present, indicates the WARC-Record-ID of the associated "warcinfo"record for this record. Typically, the Warcinfo-ID parameter is used when the context of the applicable "warcinfo"record is unavailable, such as after distributing single records into separate WARC files. WARC writing applications (such web crawlers) might choose to always record this parameter.The WARC-Warcinfo-ID field value overrides any association with a previously occurring (in the WARC) "warcinfo"record, thus providing a way to protect the true association when records are combined from different WARCs. The WARC-Warcinfo-ID field might be used in any record type except "warcinfo". (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Warcinfo-ID</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCcdxField -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxField">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>The fields contained within a CDX or CDXJ file. Source: https://iipc.github.io/warc-specifications/specifications/cdx-format/cdx-2015/</rdfs:comment>
+        <rdfs:comment xml:lang="en">The fields contained within a CDX or CDXJ file. Source: https://iipc.github.io/warc-specifications/specifications/cdx-format/cdx-2015/</rdfs:comment>
         <rdfs:label>WARCcdxField</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCcdxFile -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcdxFile">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-        <rdfs:comment>An index (normally a CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">An index (normally a CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
         <rdfs:label>WARCcdxFile</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCcoll -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCcoll">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
-        <rdfs:comment>A collection of WARC records aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a live web resource (e.g., a web site, a web page). Subclass of ore:Aggregation.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">A collection of WARC records aggregating all the resources harvested by web crawling activities, which, taken together, provide an exhaustive representation of a live web resource (e.g., a web site, a web page). Subclass of ore:Aggregation.</rdfs:comment>
         <rdfs:label>WARCcoll</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCevent -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCevent">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:comment>An activity which relates to or involves creating, indexing, modifying or replaying a WARC file.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An activity which relates to or involves creating, indexing, modifying or replaying a WARC file.</rdfs:comment>
         <rdfs:label>WARCevent</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCfile -->
@@ -1017,10 +480,10 @@
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCfile">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>A container file that aggregates a sequence of structured information chunks (WARC records), storing data and metadata. WARC files are the output of web crawling automated activities. A WARC file can contain one or more digital object with multiple media types (i.e., MIME). Subclass of ore:Aggregation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A container file that aggregates a sequence of structured information chunks (WARC records), storing data and metadata. WARC files are the output of web crawling automated activities. A WARC file can contain one or more digital object with multiple media types (i.e., MIME). Subclass of ore:Aggregation.</rdfs:comment>
         <rdfs:label>WARCfile</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCgraph -->
@@ -1029,10 +492,10 @@
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCcollection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph (hasPart/isPartOf).</rdfs:comment>
+        <rdfs:comment xml:lang="en">An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCcollection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph (hasPart/isPartOf).</rdfs:comment>
         <rdfs:label>WARCgraph</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCrecord -->
@@ -1041,59 +504,60 @@
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment>A WARC record is a component of a WARC file. A WARC record includes data retrieved from a source in the live Wide World Web, together with synthetic (meta)data providing information about the retrieved content. A WARC record has a header and a content block carrying the payload for the live web data object that was harvested over the HTTP. A WARC record is both an aggregated resource (component of a WARC file) and an aggregation (it includes sub-elements of its own).</rdfs:comment>
+        <rdfs:comment xml:lang="en">A WARC record is a component of a WARC file. A WARC record includes data retrieved from a source in the live Wide World Web, together with synthetic (meta)data providing information about the retrieved content. A WARC record has a header and a content block carrying the payload for the live web data object that was harvested over the HTTP. A WARC record is both an aggregated resource (component of a WARC file) and an aggregation (it includes sub-elements of its own).</rdfs:comment>
         <rdfs:label>WARCrecord</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCrecordContentBlock -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordContentBlock">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:comment>Part (zero or more octets) of a WARC record that follows the header and that forms the main body of a WARC record. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Part (zero or more octets) of a WARC record that follows the header and that forms the main body of a WARC record. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
         <rdfs:label>WARCrecordContentBlock</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCrecordElement -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordElement">
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:comment>A resource aggregated in a WARC record.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment xml:lang="en">A resource aggregated in a WARC record.</rdfs:comment>
         <rdfs:label>WARCrecordElement</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCrecordHeader -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordHeader">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:comment>Beginning of a WARC record, consisting of one first line declaring the record to be in the WARC format with a given version number, followed by lines of named fields up to a blank line. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Beginning of a WARC record, consisting of one first line declaring the record to be in the WARC format with a given version number, followed by lines of named fields up to a blank line. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
         <rdfs:label>WARCrecordHeader</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCrecordNamedField -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordNamedField">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:comment>Set of elements consisting of a name, a colon, and a value, with long values continued on indented lines. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Set of elements consisting of a name, a colon, and a value, with long values continued on indented lines. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARCrecordPayload -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WARCrecordPayload">
         <rdfs:subClassOf rdf:resource="https://github.com/DOWARC/dowarc#WARCrecordElement"/>
-        <rdfs:comment>Data object referred to, or contained by a WARC record as a meaningful subset of the content block. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Data object referred to, or contained by a WARC record as a meaningful subset of the content block. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
         <rdfs:label>WARCrecordPayload</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WebArchivingAgent -->
@@ -1101,73 +565,13 @@
     <owl:Class rdf:about="https://github.com/DOWARC/dowarc#WebArchivingAgent">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment>Subclass of "foaf:Agent"and "prov:Agent", specified in a web archiving environment. "Class: foaf:Agent. An agent (eg. person, group, software or physical artifact)."(Source: http://xmlns.com/foaf/spec/#term_Agent) - "Class: prov:Agent. An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent"s activity."(Source: https://www.w3.org/TR/prov-o/#Agent)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Subclass of "foaf:Agent"and "prov:Agent", specified in a web archiving environment. "Class: foaf:Agent. An agent (eg. person, group, software or physical artifact)."(Source: http://xmlns.com/foaf/spec/#term_Agent) - "Class: prov:Agent. An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent"s activity."(Source: https://www.w3.org/TR/prov-o/#Agent)</rdfs:comment>
         <rdfs:label>WebArchivingAgent</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- https://www.ica.org/standards/RiC/ontology#Activity -->
 
-    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Activity">
-        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment>The doing of something for some human purpose.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology#"/>
-        <rdfs:label>Activity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#Agent -->
-
-    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Agent">
-        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment>A Person, or Group, or an entity created by a Person or Group (Mechanism), or a Position, that acts in the world.</rdfs:comment>
-        <rdfs:isDefinedBy>https://www.ica.org/standards/RiC/ontology#</rdfs:isDefinedBy>
-        <rdfs:label>Agent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#Instantiation -->
-
-    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation">
-        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment>The inscription of information made by an Agent on a physical carrier in any persistent, recoverable form as a means of communicating information through time and space.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology#"/>
-        <rdfs:label>Instantiation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#RecordResource -->
-
-    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource">
-        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Thing"/>
-        <rdfs:comment>Information produced or acquired and retained by an Agent in thecourse of life or work activity.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology#"/>
-        <rdfs:label>RecordResource</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#Thing -->
-
-    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Thing">
-        <rdfs:comment>Any idea, material thing, or event within the realm of human experience.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://www.ica.org/standards/RiC/ontology#"/>
-        <rdfs:label>Thing</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.openarchives.org/ore/terms/AggregatedResource -->
-
-    <owl:Class rdf:about="https://www.openarchives.org/ore/terms/AggregatedResource"/>
-    
-
-
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1175,7 +579,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#ArcDocumentLength -->
@@ -1184,7 +588,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>ArcDocumentLength</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedFrame -->
@@ -1193,7 +597,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedFrame</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedHost -->
@@ -1202,7 +606,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedHost</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedImage -->
@@ -1211,7 +615,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedImage</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedJumpPoint -->
@@ -1220,7 +624,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedJumpPoint</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedLink -->
@@ -1229,7 +633,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedLink</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedPath -->
@@ -1238,7 +642,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedPath</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedRedirect -->
@@ -1247,17 +651,17 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedRedirect</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedUrl -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CanonizedUrl">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>Canonicalization is applied to URIs to remove trivial differences in the URIs that do not reflect that the URI reference different resources. Examples include removing session ID parameters, unneccessary port declerations (e.g. :80 when crawling HTTP). (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/#appendix-a--canonicalization)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Canonicalization is applied to URIs to remove trivial differences in the URIs that do not reflect that the URI reference different resources. Examples include removing session ID parameters, unneccessary port declerations (e.g. :80 when crawling HTTP). (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/#appendix-a--canonicalization)</rdfs:comment>
         <rdfs:label>CanonizedUrl</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedUrlFoundInScript -->
@@ -1266,7 +670,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedUrlFoundInScript</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedUrlInOtherHrefTags -->
@@ -1275,7 +679,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedUrlInOtherHrefTags</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CanonizedUrlInOtherSrcTags -->
@@ -1284,7 +688,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CanonizedUrlInOtherSrcTags</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CdxFrame -->
@@ -1293,7 +697,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CdxFrame</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CdxImage -->
@@ -1302,7 +706,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CdxImage</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CdxLink -->
@@ -1311,7 +715,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CdxLink</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CdxTitle -->
@@ -1320,17 +724,17 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CdxTitle</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CompressedARCFileOffset -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CompressedARCFileOffset">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>The "offset"is the number of bytes from the start of the WARC when the relevant record begins. (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The "offset"is the number of bytes from the start of the WARC when the relevant record begins. (Source: https://nlevitt.github.io/warc-specifications/specifications/cdx-format/openwayback-cdxj/)</rdfs:comment>
         <rdfs:label>CompressedARCFileOffset</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CompressedDatFileOffset -->
@@ -1339,17 +743,17 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>CompressedDatFileOffset</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#CompressedRecordSize -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#CompressedRecordSize">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>The number of octets in the compressed record in the WARC file. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The number of octets in the compressed record in the WARC file. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>CompressedRecordSize</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Content-TypeType -->
@@ -1357,33 +761,33 @@
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Content-TypeType">
         <owl:sameAs rdf:resource="https://github.com/DOWARC/dowarc#MimeTypeOfOriginalDocument"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#MimeTypeOfOriginalDocument -->
 
     <rdf:Description rdf:about="https://github.com/DOWARC/dowarc#MimeTypeOfOriginalDocument"/>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Date -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Date">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>A timestamp for this record, stored as the 14 digits from the text form of a WARC::Date without the associated marker characters, i.e. YYYYmmddHHMMSS instead of YYYY-mm-ddTHH:MM:SSZ. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">A timestamp for this record, stored as the 14 digits from the text form of a WARC::Date without the associated marker characters, i.e. YYYYmmddHHMMSS instead of YYYY-mm-ddTHH:MM:SSZ. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>Date</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#FileName -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#FileName">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>The name of the WARC volume containing this record. This value is assumed to be relative to the directory containing the CDX file and to always be a Unix-style filename, regardless of the local file name conventions. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The name of the WARC volume containing this record. This value is assumed to be relative to the directory containing the CDX file and to always be a Unix-style filename, regardless of the local file name conventions. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>FileName</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#IP -->
@@ -1392,7 +796,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>IP</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#LanguageString -->
@@ -1401,47 +805,47 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>LanguageString</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#MassagedURL -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MassagedURL">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>The URL used in the request, as for the "a"field, but with the hostname translated to SURT form and the scheme component removed so that the value starts with the TLD. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The URL used in the request, as for the "a"field, but with the hostname translated to SURT form and the scheme component removed so that the value starts with the TLD. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>MassagedURL</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#MetaTagsAIF -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MetaTagsAIF">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>This field seems to be very common in CDX files, but no values have been observed and this field appears to be completely undocumented. Ignored on read, but written as "-"if included when building an index. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">This field seems to be very common in CDX files, but no values have been observed and this field appears to be completely undocumented. Ignored on read, but written as "-"if included when building an index. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>MetaTagsAIF</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#MimeType -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MimeType">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>The MIME type reported in the Content-Type header of the response. Written as "-"if the record does not contain an HTTP response with an entity body. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The MIME type reported in the Content-Type header of the response. Written as "-"if the record does not contain an HTTP response with an entity body. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>MimeType</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#MimeTypeOfOriginalDocument -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#MimeTypeOfOriginalDocument">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>Content-Type of the resource record - in alexa-made dat file (Source: https://archive.org/web/researcher/dat_file_format.php)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Content-Type of the resource record - in alexa-made dat file (Source: https://archive.org/web/researcher/dat_file_format.php)</rdfs:comment>
         <rdfs:label>MimeTypeOfOriginalDocument</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#MultiColumnLanguageDescription -->
@@ -1450,18 +854,18 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>MultiColumnLanguageDescription</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#NewStyleChecksum -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#NewStyleChecksum">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <pav:importedFrom rdf:resource="https://github.com/DOWARC/dowarc#WARC-Payload-Digest"/>
-        <rdfs:comment>Typically the base32-encoded SHA1 digest of the response payload. This value is copied from the WARC-Payload-Digest header of a record if available, otherwise "-"is written. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Typically the base32-encoded SHA1 digest of the response payload. This value is copied from the WARC-Payload-Digest header of a record if available, otherwise "-"is written. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>NewStyleChecksum</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/DOWARC/dowarc#WARC-Payload-Digest"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#NewsGroup -->
@@ -1470,7 +874,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>NewsGroup</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#OldStyleChecksum -->
@@ -1479,7 +883,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>OldStyleChecksum</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#OriginalHost -->
@@ -1488,7 +892,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>OriginalHost</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#OriginalJumpPoint -->
@@ -1497,7 +901,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>OriginalJumpPoint</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#OriginalPath -->
@@ -1506,18 +910,18 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>OriginalPath</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#OriginalURL -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#OriginalURL">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <pav:importedFrom rdf:resource="https://github.com/DOWARC/dowarc#WARC-Target-URI"/>
-        <rdfs:comment>The URL that was used in the request that produced this response. The url_prefix search key matches a prefix of this value. This value is copied from the WARC-Target-URI header and is written as "-"if the record does not have that header. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The URL that was used in the request that produced this response. The url_prefix search key matches a prefix of this value. This value is copied from the WARC-Target-URI header and is written as "-"if the record does not have that header. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>OriginalURL</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/DOWARC/dowarc#WARC-Target-URI"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Port -->
@@ -1526,27 +930,27 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>Port</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Redirect -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#Redirect">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>The contents of the Location header of the response, URL-escaped. Some implementations do not properly set this field. Written as "-"if not present or if the record does not contain an HTTP response. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The contents of the Location header of the response, URL-escaped. Some implementations do not properly set this field. Written as "-"if not present or if the record does not contain an HTTP response. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>Redirect</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#ResponseCode -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#ResponseCode">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
-        <rdfs:comment>The HTTP status code used in the response. Written as "-"if the record does not contain an HTTP response. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The HTTP status code used in the response. Written as "-"if the record does not contain an HTTP response. (Source: https://metacpan.org/pod/WARC::Index::File::CDX)</rdfs:comment>
         <rdfs:label>ResponseCode</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#RulespaceCategory -->
@@ -1555,7 +959,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>RulespaceCategory</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#UncompressedArcFileOffset -->
@@ -1564,7 +968,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>UncompressedArcFileOffset</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#UncompressedDatFileOffset -->
@@ -1573,7 +977,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>UncompressedDatFileOffset</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#Uniqueness -->
@@ -1582,7 +986,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>Uniqueness</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#UrlFoundInScript -->
@@ -1591,7 +995,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>UrlFoundInScript</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#UrlInOtherHrefTages -->
@@ -1600,7 +1004,7 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>UrlInOtherHrefTages</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#UrlInOtherSrcTags -->
@@ -1609,42 +1013,42 @@
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARCcdxField"/>
         <rdfs:label>UrlInOtherSrcTags</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Payload-Digest -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#WARC-Payload-Digest"/>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Refers-To-Date -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#WARC-Refers-To-Date">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Refers-To"/>
-        <rdfs:comment> The WARC-Refers-To-Date field might be used in ‘revisit’ records and is not used in "warcinfo", "response", "metadata", "conversion", ‘resource’, "request", and "continuation"records.  (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
+        <rdfs:comment xml:lang="en"> The WARC-Refers-To-Date field might be used in ‘revisit’ records and is not used in "warcinfo", "response", "metadata", "conversion", ‘resource’, "request", and "continuation"records.  (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Refers-To-Date</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Refers-To-Target-URI -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#WARC-Refers-To-Target-URI">
         <rdf:type rdf:resource="https://github.com/DOWARC/dowarc#WARC-Refers-To"/>
-        <rdfs:comment> The WARC-Refers-To-Target-URI field might be used in ‘revisit’ records and is not used in "warcinfo", "response", "metadata", "conversion", ‘resource’, "request", and "continuation"records. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
+        <rdfs:comment xml:lang="en"> The WARC-Refers-To-Target-URI field might be used in ‘revisit’ records and is not used in "warcinfo", "response", "metadata", "conversion", ‘resource’, "request", and "continuation"records. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Refers-To-Target-URI</rdfs:label>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- https://github.com/DOWARC/dowarc#WARC-Target-URI -->
 
     <owl:NamedIndividual rdf:about="https://github.com/DOWARC/dowarc#WARC-Target-URI"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotations
@@ -1653,18 +1057,17 @@
      -->
 
     <rdf:Description rdf:about="https://github.com/DOWARC/dowarc#WARC-Payload-Digest">
+        <rdfs:comment xml:lang="en">An optional parameter indicating the algorithm name and calculated value of a digest applied to the payload referred to or contained by the record - which is not necessarily equivalent to the record block. The payload of an application/http block is its ‘entity-body’ (per [RFC2616]). In contrast to WARC-Block-Digest, the WARC-Payload-Digest field may also be used for data not actually present in the current record block, for example when a block is left off in accordance with a ‘revisit’ profile (see ‘revisit’), or when a record is segmented (the WARC-Payload-Digest recorded in the first segment of a segmented record shall be the digest of the payload of the logical record). The WARC-Payload-Digest field might be used on WARC records with a well-defined payload and is not used on records without a well-defined payload.</rdfs:comment>
         <rdfs:comment>An optional parameter indicating the algorithm name and calculated value of a digest applied to the payload referred to or contained by the record - which is not necessarily equivalent to the record block. An example is a SHA-1 labelled Base32 ([RFC3548]) value. The payload of an application/http block is its "entity-body"(per [RFC2616]). In contrast to WARC-Block Digest, the WARC-Payload-Digest field is also  used for data not actually present in the current record block, for example when a block is left off in accordance with a "revisit"profile (see "revisit"), or when a record is segmented (the WARC-Payload-Digest recorded in the first segment of a segmented record is the digest of the payload of the logical record). The WARC-Payload-Digest field is used on WARC records with a well-defined payload and is not used on records without a well-defined payload.(Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:comment>An optional parameter indicating the algorithm name and calculated value of a digest applied to the payload referred to or contained by the record - which is not necessarily equivalent to the record block. The payload of an application/http block is its ‘entity-body’ (per [RFC2616]). In contrast to WARC-Block-Digest, the WARC-Payload-Digest field may also be used for data not actually present in the current record block, for example when a block is left off in accordance with a ‘revisit’ profile (see ‘revisit’), or when a record is segmented (the WARC-Payload-Digest recorded in the first segment of a segmented record shall be the digest of the payload of the logical record). The WARC-Payload-Digest field might be used on WARC records with a well-defined payload and is not used on records without a well-defined payload.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Payload-Digest"/>
         <rdfs:label>WARC-Payload-Digest</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://github.com/DOWARC/dowarc#WARC-Target-URI">
-        <rdfs:comment>The original URI whose capture gave rise to the information content in this record. In the context of web harvesting, this is the URI that was the target of a crawler’s retrieval request. For a ‘revisit’ record, it is the URI that was the target of a retrieval request. Indirectly, such as for a ‘metadata’, or ‘conversion’ record, it is a copy of the WARC-Target-URI appearing in the original record to which the newer record pertains. The URI in this value shall be properly escaped according to [RFC3986] and written with no internal whitespace. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://github.com/DOWARC/dowarc#WARC-Target-URI"/>
+        <rdfs:comment xml:lang="en">The original URI whose capture gave rise to the information content in this record. In the context of web harvesting, this is the URI that was the target of a crawler’s retrieval request. For a ‘revisit’ record, it is the URI that was the target of a retrieval request. Indirectly, such as for a ‘metadata’, or ‘conversion’ record, it is a copy of the WARC-Target-URI appearing in the original record to which the newer record pertains. The URI in this value shall be properly escaped according to [RFC3986] and written with no internal whitespace. (Source: ISO 28500; https://iipc.github.io/warc-specifications/)</rdfs:comment>
         <rdfs:label>WARC-Target-URI</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
