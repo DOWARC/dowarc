@@ -18,7 +18,7 @@
         <owl:imports rdf:resource="http://purl.org/pav/2.3"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-inverses-20130430"/>
         <owl:imports rdf:resource="https://id.loc.gov/ontologies/premis-3-0-0"/>
-        <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/ore-owl.owl"/>
+        <owl:imports rdf:resource="http://wf4ever.github.io/ro/ore-owl.owl"/>
     </owl:Ontology>
     
 
