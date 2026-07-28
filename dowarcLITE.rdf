@@ -21,10 +21,9 @@
         <owl:versionIRI rdf:resource="https://github.com/DOWARC/dowarcLITE_1.0"/>
         <owl:imports rdf:resource="http://purl.org/pav/2.3"/>
         <owl:imports rdf:resource="http://wf4ever.github.io/ro/ore-owl.owl"/>
-        <owl:imports rdf:resource="http://www.openarchives.org/ore/1.0/terms/"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-inverses-20130430"/>
         <owl:imports rdf:resource="https://id.loc.gov/ontologies/premis-3-0-0"/>
-		 <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2024</dc:date>
         <dc:title>dowarcLITE: a (lite) domain ontology for web archiving and web preservation</dc:title>
         <terms:creator>Pallotto Strickland, Manuela</terms:creator>
         <terms:creator>Storrar, Tom</terms:creator>
@@ -33,7 +32,6 @@
         <rdfs:comment xml:lang="en">This is a domain ontology created to support the Semantic modelling of WARC files. RDF representations of web archiving data objects can play a critical role in addressing sustainable versioning practices in web archiving and web preservation.</rdfs:comment>
         <rdfs:label>dowarcLITE</rdfs:label>
         <owl:versionInfo xml:lang="en">Current version, draft status; 2026-04-20</owl:versionInfo>
-    
     </owl:Ontology>
     
 
@@ -49,12 +47,47 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
     <!-- http://purl.org/dc/terms/publisher -->
 
     <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Person"/>
     </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- string -->
+
+    <rdfs:Datatype rdf:about="string"/>
+    
+
+
+    <!-- http://www.semanticweb.org/k1812462/ontologies/2025/10/untitled-ontology-16/string -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/k1812462/ontologies/2025/10/untitled-ontology-16/string"/>
     
 
 
@@ -193,6 +226,20 @@
     
 
 
+    <!-- http://www.loc.gov/premis/rdf/v3/identifier -->
+
+    <rdf:Description rdf:about="http://www.loc.gov/premis/rdf/v3/identifier">
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.loc.gov/premis/rdf/v3/signature -->
 
     <rdf:Description rdf:about="http://www.loc.gov/premis/rdf/v3/signature">
@@ -218,14 +265,34 @@
     <!-- http://www.openarchives.org/ore/terms/aggregates -->
 
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/aggregates">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
+        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:comment>Aggregations, by definition, aggregate resources. The ore:aggregates relationship expresses that the object resource is a member of the set of Aggregated Resources of the subject (the Aggregation). This relationship between the Aggregation and its Aggregated Resources is thus more specific than a simple part/whole relationship, as expressed by dcterms:hasPart for example.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Aggregates</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/describes -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/describes">
+        <owl:inverseOf rdf:resource="http://www.openarchives.org/ore/terms/isDescribedBy"/>
+        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
+        <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:comment>This relationship asserts that the subject (a Resource Map) describes the object (an Aggregation).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Describes</rdfs:label>
     </rdf:Description>
     
 
@@ -233,16 +300,87 @@
     <!-- http://www.openarchives.org/ore/terms/isAggregatedBy -->
 
     <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/isAggregatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordContentBlock"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordElement"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordHeader"/>
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcCollection"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcFile"/>
         <rdfs:range rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
+        <rdfs:comment>The inverse relationship of ore:aggregates, ore:isAggregatedBy asserts that an Aggregated Resource is aggregated by an Aggregation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Is Aggregated By</rdfs:label>
     </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/isDescribedBy -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/isDescribedBy">
+        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
+        <rdfs:comment>The inverse relationship of ore:describes, in this case the object of the relationship is the Resource Map and the subject is the Aggregation which it describes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Is Described By</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/lineage -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/lineage">
+        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <rdfs:comment>ore:lineage is a relationship between two Proxy objects, both of which MUST have the same Resource for which they are proxies. The meaning is that the Resource for which the subject of the relationship is a Proxy was discovered in the Aggregation in which the object Proxy&apos;s resource is aggregated.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Lineage</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/proxyFor -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/proxyFor">
+        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdfs:comment>Proxy objects are used to represent a Resource as it is aggregated in a particular Aggregation. The ore:proxyFor relationship is used to link the proxy to the Aggregated Resource it is a proxy for. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregated Resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Proxy For</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/proxyIn -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/proxyIn">
+        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:comment>Proxy objects must link to the Aggregation in which the resource being proxied is aggregated. The ore:proxyIn relationship is used for this purpose. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Proxy In</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/similarTo -->
+
+    <rdf:Description rdf:about="http://www.openarchives.org/ore/terms/similarTo">
+        <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <rdfs:comment>The subject of this relationship MUST be an Aggregation.  This Aggregation should be considered an expression within the ORE context of the object of the relationship, as it is broadly equivalent to the resource. For example, the Aggregation may consist of the resources which, together, make up a journal article which has a DOI assigned to it. The Aggregation is not the article to which the DOI was assigned, but is a representation of it in some manner.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Similar To</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
     
 
 
@@ -410,11 +548,25 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
     <!-- http://purl.org/dc/terms/date -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#Publishing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/format">
+        <rdfs:label>Format</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -439,6 +591,14 @@
     
 
 
+    <!-- http://www.loc.gov/premis/rdf/v3/originalName -->
+
+    <rdf:Description rdf:about="http://www.loc.gov/premis/rdf/v3/originalName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.loc.gov/premis/rdf/v3/size -->
 
     <rdf:Description rdf:about="http://www.loc.gov/premis/rdf/v3/size">
@@ -454,6 +614,33 @@
     <rdf:Description rdf:about="http://www.loc.gov/premis/rdf/v3/version">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
     </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+        <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/Identifier"/>
+        <rdfs:domain rdf:resource="http://www.loc.gov/premis/rdf/v3/Signature"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>rdf:value is an instance of rdf:Property that may be used in describing structured values.
+
+rdf:value has no meaning on its own. It is provided as a piece of vocabulary that may be used in idioms such as illustrated in example below:
+
+Example 1
+&lt;http://www.example.com/2002/04/products#item10245&gt;
+    &lt;http://www.example.org/terms/weight&gt; [
+       rdf:value 2.4 ;
+       &lt;http://www.example.org/terms/units&gt; &lt;http://www.example.org/units/kilograms&gt;
+       ] .
+Despite the lack of formal specification of the meaning of this property, there is value in defining it to encourage the use of a common idiom in examples of this kind.
+
+The rdfs:domain of rdf:value is rdfs:Resource. The rdfs:range of rdf:value is rdfs:Resource.</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.w3.org/TR/rdf-schema/#ch_value</rdfs:isDefinedBy>
+        <rdfs:label>rdf:value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -507,6 +694,15 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/DOWARC/dowarcLITE#WARC-Identified-Payload-Type">
         <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecordPayload"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WARC-Payload-Digest -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/DOWARC/dowarcLITE#WARC-Payload-Digest">
+        <rdfs:domain rdf:resource="https://github.com/DOWARC/dowarcLITE#WarcRecord"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -592,6 +788,15 @@
     
 
 
+    <!-- https://github.com/DOWARC/dowarcLITE#mimetype -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/DOWARC/dowarcLITE#mimetype">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/FileFormat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/DOWARC/dowarcLITE#warc_file_name -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/DOWARC/dowarcLITE#warc_file_name">
@@ -612,6 +817,54 @@
     
 
 
+    <!-- http://purl.org/dc/terms/MediaTypeOrExtent -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/MediaTypeOrExtent"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/AggregatedResource -->
+
+    <owl:Class rdf:about="http://www.openarchives.org/ore/terms/AggregatedResource">
+        <rdfs:comment>A resource which is included in an Aggregation. Note that asserting that a resource is a member of the class of Aggregated Resources does not imply anything other than that it is aggregated by at least one Aggregation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Aggregated Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/Aggregation -->
+
+    <owl:Class rdf:about="http://www.openarchives.org/ore/terms/Aggregation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+        <rdfs:comment>A set of related resources (Aggregated Resources), grouped together such that the set can be treated as a single resource. This is the entity described within the ORE interoperability framework by a Resource Map.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Aggregation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/Proxy -->
+
+    <owl:Class rdf:about="http://www.openarchives.org/ore/terms/Proxy">
+        <rdfs:comment>A Proxy represents an Aggregated Resource as it exists in a specific Aggregation. All assertions made about an entity are globally true, not only within the context of the Aggregation. As such, in order to make assertions which are only true of a resource as it exists in an Aggregation, a Proxy object is required. For example, one might want to cite an article as it appears in a specific journal, or assign aggregation-specific metadata to a Resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Proxy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/ResourceMap -->
+
+    <owl:Class rdf:about="http://www.openarchives.org/ore/terms/ResourceMap">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
+        <rdfs:comment>A description of an Aggregation according to the OAI-ORE data model. Resource Maps are serialised to a machine readable format according to the implementation guidelines.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
+        <rdfs:label>Resource Map</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
 
     <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
@@ -622,7 +875,6 @@
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#ArchivedWebResource">
         <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Representation"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:comment>A resource made available online. It can be a website or a webpage or a digital object embedded in a webpage or linked to by a webpage. It is always intended as the digital &apos;representation of&apos; an untangible/intellectual entity. It is also &apos;represented by&apos; its archival counterpart, which is rendered (replayed) using WARC files.</rdfs:comment>
         <rdfs:label>ArchivedWebResource</rdfs:label>
     </owl:Class>
@@ -632,7 +884,8 @@
     <!-- https://github.com/DOWARC/dowarcLITE#ConfigFile -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#ConfigFile">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
     </owl:Class>
     
 
@@ -697,10 +950,18 @@
     
 
 
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcAIP -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcAIP">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/DOWARC/dowarcLITE#WarcCdxFile -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcCdxFile">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
         <rdfs:comment>An index (normally a CDX or CDXJ) file of a WARC file. Source: https://pywb.readthedocs.io/en/master/manual/indexing.html</rdfs:comment>
         <rdfs:label>WarcCdxFile</rdfs:label>
     </owl:Class>
@@ -721,9 +982,9 @@
     <!-- https://github.com/DOWARC/dowarcLITE#WarcFile -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcFile">
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/File"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:comment>A container file that aggregates a sequence of structured information chunks (WARC records), storing data and metadata. WARC files are the output of web crawling automated activities. A WARC file can contain one or more digital object with multiple media types (i.e., MIME). Subclass of ore:Aggregation.</rdfs:comment>
         <rdfs:label>WarcFile</rdfs:label>
     </owl:Class>
@@ -733,7 +994,7 @@
     <!-- https://github.com/DOWARC/dowarcLITE#WarcFileSignature -->
 
     <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcFileSignature">
-        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Signature"/>
+        <rdfs:subClassOf rdf:resource="http://www.loc.gov/premis/rdf/v3/Fixity"/>
     </owl:Class>
     
 
@@ -745,7 +1006,6 @@
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:comment>An RDF graph that represents and describes the relationships between the WARC file and the resources it aggregates, as well as the relationships between the aggregated resources. A WARC graph can be used to represent the relationship between the resources stored in a WARCcollection and the web page(s) or web site(s) from which the resources were harvested. In this respect, a WARCgraph can provide a representation of the live web object being archived. A WARCgraph can be a subgraph of another WARCgraph.</rdfs:comment>
         <rdfs:label>WarcGraph</rdfs:label>
     </owl:Class>
@@ -802,6 +1062,42 @@
         <rdfs:comment>Data object referred to, or contained by a WARC record as a meaningful subset of the content block. (Source: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.0/#terms-and-definitions)</rdfs:comment>
         <rdfs:label>WarcRecordPayload</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://github.com/DOWARC/dowarcLITE#WarcSIP -->
+
+    <owl:Class rdf:about="https://github.com/DOWARC/dowarcLITE#WarcSIP">
+        <rdfs:subClassOf rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/ -->
+
+    <owl:NamedIndividual rdf:about="http://www.openarchives.org/ore/terms/">
+        <terms:publisher>
+            <rdf:Description>
+                <rdfs:label>The Open Archives Initiative ORE Project</rdfs:label>
+            </rdf:Description>
+        </terms:publisher>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/"/>
+        <terms:title>The OAI ORE terms vocabulary</terms:title>
+        <rdfs:comment>The set of terms provided by the OAI ORE initiative</rdfs:comment>
+        <rdfs:label>The OAI ORE terms vocabulary</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.openarchives.org/ore/toc"/>
+    </owl:NamedIndividual>
     
 
 
