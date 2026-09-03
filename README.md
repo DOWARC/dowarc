@@ -10,3 +10,4 @@ DOWARC is currently in draft status as <code>*dowarc*LITE</code>. It was present
 
 If you use <code>*dowarc*LITE</code> in your work, please cite it using the following metadata:
 
+Pallotto Strickland, M., & Storrar, T. (2026). *DOWARC ontology* (Version 1.0) [Computer software]. https://github.com/DOWARC/dowarc/blob/main/dowarcLITE.rdf
